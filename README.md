@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project aims to leverage advanced Large Language Models (LLMs) to generate a full-length, 200,000-word novel set in the RWBY universe. The narrative will pick up directly after Team RWBYJ departs the Ever After, with the ambitious goal of providing a definitive conclusion to Salem's storyline.
+This project aims to leverage advanced Large Language Models (LLMs) to generate a full-length, 200,000-word novel set in the RWBY universe. The narrative will pick up directly after Team RWBYJ departs the Ever After. The core aim is to provide a comprehensive resolution to the entire RWBY universe, specifically addressing and concluding the conflict with Salem.
 
 ### Key Goals:
 - Generate approximately 200,000 words of novel content, distributed across roughly 50 chapters (3,000-6,000 words per chapter).
@@ -16,7 +16,7 @@ This project aims to leverage advanced Large Language Models (LLMs) to generate 
 The novel generation process employs a dual-LLM architecture designed for both creative text generation and rigorous narrative consistency.
 
 ### 1. Author LLM (Text Generation)
-- **Role:** Focuses on generating the actual novel text, chapter by chapter, with its context primarily limited to the current section being written.
+- **Role:** Focuses on generating the actual novel text, chapter by chapter, with its context limited primarily to the current section being written.
 - **Current Model:** `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` (chosen for optimal performance on Google Colab's T4 GPUs).
 - **Illustration Placement:** The Author LLM will be instructed to insert a specific marker (`[EPIC_MOMENT_END]`) at the end of the most visually epic moment it generates within each chapter. A post-processing script will then replace this marker with the pre-defined illustration prompt for that chapter.
 
@@ -26,26 +26,22 @@ The novel generation process employs a dual-LLM architecture designed for both c
 
 ### Vector RAG (Retrieval Augmented Generation) System
 - **Functionality:** This system will convert both the accumulating novel's text and a comprehensive RWBY "Knowledge Database" into numerical vectors using an embedding model. These vectors are stored in a vector database.
-- **Benefit:** Allows the Critic LLM to perform semantic searches against this database, retrieving *only* the most relevant plot points, character details, and lore snippets to ensure it has necessary information without exceeding its context window. This system will be active from the initial chapter generation (for the Knowledge Database) and expand as the novel's text grows.
+- **Benefit:** Allows the Critic LLM to perform semantic searches against this database, retrieving *only* the most relevant plot points and details to ensure it has necessary information without exceeding its context window. This system will be active from the initial chapter generation (for the Knowledge Database) and expand as the novel's text grows.
 
 ## RWBY Knowledge Database ("Knowledge Crystals")
 
 Crucial for the Critic LLM, this database ensures consistency and guides the novel's resolution by providing comprehensive RWBY lore. It consists of meticulously organized Markdown files, which will be chunked, embedded, and stored in the vector database.
 
 ### Completed Categories:
-- `rwby_characters.md`: Detailed profiles of all relevant characters, including their appearance, weapon, semblance, abilities, personality, key relationships, and brief arc summaries.
+- `rwby_characters.md`: Detailed profiles of all relevant characters, including their appearance, weapon, semblance, abilities, personality, key relationships, brief arc summaries, and now **Quirks/Mannerisms**.
 - `rwby_locations.md`: Comprehensive descriptions of key kingdoms, continents, and significant sites across Remnant.
 - `rwby_lore_magic.md`: In-depth explanations of fundamental magical systems and concepts like Aura, Semblances, Dust, Maidens, Relics, and Grimm.
 - `rwby_plot_events.md`: Detailed, volume-by-volume summaries of crucial past events, from the formation of Team RWBY to their return from the Ever After.
 
-## Novel Plot Outline (`rwby_novel_plot_outline.md`)
+## Novel Plot Outline & Chapter Prompts
 
-A comprehensive, chapter-by-chapter markdown outline (approximately 50 chapters) has been generated to guide the entire novel's narrative arc. This outline includes:
-- Main events and key plot points for each chapter.
-- Specific characters expected to be prominent in each chapter.
-- Pre-defined illustration prompts for each chapter, to be inserted via post-processing.
-- Incorporates specific user requirements for character interactions (e.g., Blake/Sun/Yang dynamic, Ren/Nora resolution, Neo's redemption, Summer Rose's fate) and ensures intricate involvement of key characters (Robyn, Taiyang, Raven - with Raven playing a major role).
-- Confirms the inclusion of Neo Politan and Emerald Sustrai in the final seamless allied team.
+- **`rwby_novel_plot_outline.md`**: A comprehensive, chapter-by-chapter markdown outline (approximately 50 chapters) guiding the entire novel's narrative arc. It includes main events, key plot points, specific characters expected, and pre-defined illustration prompts for each chapter. It incorporates user requirements for character interactions and ensures intricate involvement of key characters (Robyn, Taiyang, Raven - with Raven playing a major role), while also confirming the inclusion of Neo Politan and Emerald Sustrai in the final seamless allied team.
+- **`rwby_chapter_prompts.md`**: A dedicated markdown file containing detailed, chapter-by-chapter prompts for the Author LLM, extracted directly from the novel plot outline. This operational manual is ready for generating each chapter.
 
 ## Development Environment
 
@@ -70,8 +66,8 @@ A comprehensive, chapter-by-chapter markdown outline (approximately 50 chapters)
 3.  **Open in Colab:** Open the main Colab notebook (`RWBY_Novel_Generation.ipynb` or similar) directly in Google Colab.
 4.  **Install Dependencies:** Run the initial cells in the Colab notebook to install necessary `pip` packages.
 5.  **Review Knowledge Database:** Familiarize yourself with the detailed lore files in the `knowledge_db/` directory (`rwby_characters.md`, `rwby_locations.md`, `rwby_lore_magic.md`, `rwby_plot_events.md`).
-6.  **Review Novel Plot Outline:** Consult `rwby_novel_plot_outline.md` for the chapter-by-chapter narrative plan.
-7.  **Start Generating!** Formulate the initial prompt for the Author LLM, based on Chapter 1 of the outline, and begin generating novel chapters. Implement the post-processing script for illustration prompts and set up the Vector RAG system for the Critic LLM as chapters accumulate.
+6.  **Review Novel Plot Outline & Chapter Prompts:** Consult `rwby_novel_plot_outline.md` for the chapter-by-chapter narrative plan and `rwby_chapter_prompts.md` for the specific prompts to feed the Author LLM.
+7.  **Start Generating!** Utilize the prompts from `rwby_chapter_prompts.md` to begin generating novel chapters with the Author LLM. Implement the post-processing script for illustration prompts and set up the Vector RAG system for the Critic LLM as chapters accumulate.
 
 ## Project Structure (Anticipated)
 
@@ -81,11 +77,12 @@ A comprehensive, chapter-by-chapter markdown outline (approximately 50 chapters)
 ├── README.md                    # This file
 ├── .gitignore                   # Specifies files/folders to ignore (e.g., vllm_models/)
 ├── knowledge_db/                # Directory for RWBY lore Markdown files
-│   ├── rwby_characters.md
-│   ├── rwby_locations.md
-│   ├── rwby_lore_magic.md
-│   ├── rwby_plot_events.md
-│   └── rwby_novel_plot_outline.md # The detailed chapter-by-chapter plot
+│   ├── rwby_characters.md       # Detailed character profiles
+│   ├── rwby_locations.md        # Comprehensive location descriptions
+│   ├── rwby_lore_magic.md       # Explanations of magic and lore
+│   ├── rwby_plot_events.md      # Detailed plot summaries by volume
+│   ├── rwby_novel_plot_outline.md # The detailed chapter-by-chapter plot
+│   └── rwby_chapter_prompts.md  # All chapter generation prompts
 └── output/                      # Future directory for generated novel chapters
     ├── chapter_01.md
     └── ...
