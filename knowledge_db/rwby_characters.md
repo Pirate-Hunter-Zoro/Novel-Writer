@@ -330,8 +330,7 @@
 * **Key Relationships:** Blake Belladonna (former partner), Sienna Khan (former leader), White Fang (former organization).
 * **Brief Arc Summary (up to Ever After):** Blake's former mentor and partner in the White Fang. Became increasingly radical and violent, assassinating Sienna Khan to take control. His obsessive pursuit of Blake and desire for revenge against humanity led him to attack Haven and ultimately be defeated and killed by Blake and Yang.
 
-## Sun's Teammates (Brief)
-### Scarlet David
+## Scarlet David
 * **Appearance:** Red hair, often seen in a piratical outfit.
 * **Weapon:** Cutlass and flintlock pistol.
 * **Semblance:** Unknown / Not revealed.
@@ -340,7 +339,7 @@
 * **Key Relationships:** Team SSSN.
 * **Brief Arc Summary (up to Ever After):** Member of Team SSSN. Participated in the Vytal Festival tournament and the defense of Beacon.
 
-### Sage Ayana
+## Sage Ayana
 * **Appearance:** Green hair, large build.
 * **Weapon:** Greatsword.
 * **Semblance:** Unknown / Not revealed.
@@ -349,8 +348,7 @@
 * **Key Relationships:** Team SSSN.
 * **Brief Arc Summary (up to Ever After):** Member of Team SSSN. Participated in the Vytal Festival tournament and the defense of Beacon.
 
-## Team CFVY's Remaining Members (Brief)
-### Yatsuhashi Daichi
+## Yatsuhashi Daichi
 * **Appearance:** Tall, muscular, dark skin, dreadlocks.
 * **Weapon:** Fulcrum - a large, blunt cleaver-like blade that vibrates with kinetic energy.
 * **Semblance:** Memory Wipe - can temporarily erase memories of a target, though he dislikes using it.
@@ -359,7 +357,7 @@
 * **Key Relationships:** Team CFVY.
 * **Brief Arc Summary (up to Ever After):** Member of Team CFVY. Participated in the Vytal Festival and the defense of Beacon. Continued fighting Grimm alongside his team.
 
-### Fox Alistair
+## Fox Alistair
 * **Appearance:** Orange hair, blind, has distinct scars over his eyes.
 * **Weapon:** Sharp Gauntlets (unnamed) - a pair of bladed gauntlets.
 * **Semblance:** Telepathy - can communicate directly into others' minds.
@@ -475,22 +473,3 @@
 * **Personality:** More aligned with Ironwood's initial plans, but became increasingly wary as his actions escalated.
 * **Key Relationships:** Councilman Sleet.
 * **Brief Arc Summary (up to Ever After):** A member of the Atlas Council who initially supported Ironwood but became concerned by his extreme measures during the crisis. Her fate after the Fall of Atlas is not explicitly shown, but implied to be among the evacuees.
-
-## Maria Calavera's Teammates (Brief, from flashbacks)
-### Lyssa Calavera (Deceased)
-* **Appearance:** Young woman, wears armor.
-* **Weapon:** A rapier and shield.
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Skilled Huntress.
-* **Personality:** Brave, loyal.
-* **Key Relationships:** Maria Calavera (teammate), other teammates.
-* **Brief Arc Summary (up to Ever After):** Part of Maria Calavera's original team. Was killed by the Grimm Reaper (Tyrian's predecessor) during a mission.
-
-### Elise (Deceased)
-* **Appearance:** Young woman, wears armor.
-* **Weapon:** Dual daggers.
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Agile combatant.
-* **Personality:** Brave, loyal.
-* **Key Relationships:** Maria Calavera (teammate), other teammates.
-* **Brief Arc Summary (up to Ever After):** Part of Maria Calavera's original team. Was killed by the Grimm Reaper (Tyrian's predecessor) during a mission.
