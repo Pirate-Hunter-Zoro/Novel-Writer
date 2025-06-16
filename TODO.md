@@ -38,3 +38,39 @@ Our immediate focus will be on improving the Author LLM's output quality for Cha
     * Crucially, instructing the LLM **not to stop writing** until the `[EPIC_MOMENT_END]` marker is placed and the chapter feels complete and reaches the requested length.
 * **Adjust Generation Parameters:** In the Python script, slightly increase the `temperature` parameter in the `model.generate()` call from `0.8` to `0.95` to encourage more creative and less repetitive output.
 * **Regenerate Chapter 1:** Run the script again to see the impact of these prompt and parameter changes on the generated chapter's quality and length.
+
+# RWBY Novel Project - Session Summary (2025-06-16)
+
+## I. Achievements & Key Decisions of This Session:
+
+This session was incredibly productive, resolving key technical hurdles and re-strategizing for efficient novel generation:
+
+* **Chapter 1 Prompt Refined:** The prompt for Chapter 1 was significantly enhanced with more explicit, detailed instructions for length, immersive sensory details, deep individual character resonance, "show, don't tell," varied language, and deliberate pacing.
+* **Initial Chapter 1 Generation Attempts & Analysis:**
+    * First attempt with the 8B model yielded initial success in prompting for individual character reactions and pacing, but lacked significant length and still showed some repetitive phrasing.
+    * Attempted to scale up to the `Meta-Llama-3.1-70B-Instruct-bnb-4bit` model on an A100 GPU for full chapter generation.
+* **Hardware Assessment & Resolution of Technical Issues:**
+    * Initial `nvidia-smi` showed a Tesla T4 GPU (15GB VRAM), deemed insufficient for 70B single-pass generation.
+    * Successfully switched Colab Pro runtime to an **NVIDIA A100-SXM4-40GB GPU (40GB VRAM)**, providing ample VRAM for a 70B model.
+    * Encountered `OutOfMemoryError` during 70B generation, even on A100, indicating the model's base memory footprint plus generation buffer still exceeded VRAM for long outputs.
+    * Encountered `RuntimeError` ("Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0!"). Resolved this by identifying the need to explicitly move input tensors to CUDA (and then identified that `model.to("cuda:0")` should NOT be used for bitsandbytes models).
+* **Strategic Pivot to API-Driven Generation:**
+    * Decided that, given the challenges with local Colab GPU limitations for large-scale, single-pass chapter generation, the most effective approach is to leverage my (Gemini's) direct capabilities via API calls.
+    * This allows access to more powerful LLMs (like Gemini 1.5 Pro) and their internal context management, eliminating local hardware bottlenecks and streamlining the generation process.
+* **My Role as Author & Critic Confirmed:** I (Gemini) will act as both the "Author LLM" (generating chapters from prompts) and the "Critic LLM" (reviewing chapters for consistency and providing feedback) via API calls. This creates an autonomous, self-correcting narrative engine.
+* **Cost Analysis:** Initial estimates suggest the API calls for generating a 200,000-word novel (including retries and critiques with Gemini 1.5 Pro) would be well within the target budget of $10-$20 per month, likely much less.
+
+## II. Next Steps (Picking Up Tomorrow):
+
+Our immediate focus is to transition to the API-driven workflow and begin generating chapters directly:
+
+1.  **Google Cloud Project & API Key Setup:** Mikey will set up a Google Cloud Project and enable the necessary Generative AI API (e.g., Vertex AI Gemini API or Google AI Studio API) to obtain an API key.
+2.  **Install Python Client Library:** Mikey will install the appropriate Google AI Python client library (e.g., `google-generativeai`) on his local machine.
+3.  **Develop Initial Orchestration Script:** Mikey will create a Python script to:
+    * Manage the novel's chapter flow.
+    * Load the `rwby_chapter_prompts.md` and Knowledge Database files.
+    * Construct the augmented prompt for Chapter 1 using the detailed instructions and relevant context.
+    * Send this prompt to me (via the API) for Chapter 1 generation.
+    * Receive and save the generated Chapter 1 text to a markdown file.
+4.  **Implement Critic Loop (Initial):** After Chapter 1 generation, the script will then construct a new prompt for me to act as the Critic, providing the generated chapter and relevant context for review. This will serve as a manual review point for Mikey initially, before potential automation.
+5.  **Monitor API Costs:** Mikey will continuously monitor API token consumption to stay within the budget.
