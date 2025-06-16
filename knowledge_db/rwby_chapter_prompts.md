@@ -6,24 +6,32 @@ This document contains detailed prompts for the Author LLM for each chapter of t
 
 ```
 Please generate Chapter 1 of a RWBY novel, titled "Dust and Desert".
-The chapter should be approximately 3,000-6,000 words in length.
 
-**Crucially, write a complete and detailed chapter. Do not stop writing until the [EPIC_MOMENT_END] marker is naturally reached and the narrative feels fully concluded for this chapter, meeting the expected length for a novel chapter.**
+**ABSOLUTELY CRUCIAL: The chapter MUST be between 3,000 and 6,000 words in length. Do not stop writing until the [EPIC_MOMENT_END] marker is naturally reached AND the narrative feels fully concluded for this chapter. The story must unfold organically and completely fill the requested length. Prioritize detailed scene building and internal character depth over rapid plot progression in the early sections.**
 
-The primary focus of this chapter is the immediate aftermath of Team RWBY (Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long) and Jaune Arc's return from the Ever After, their landing in Vacuo, their physical and emotional disorientation, their initial reunion, and their first observations of the harsh desert environment and signs of the ongoing conflict with Salem.
+The primary focus of this chapter is the immediate aftermath of Team RWBY (Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long) and Jaune Arc's return from the Ever After. Detail their landing in Vacuo, their profound physical and emotional disorientation, their initial reunion, and their first observations of the harsh desert environment and undeniable signs of the ongoing conflict with Salem.
 
-Focus on vivid descriptions and immersive sensory details, bringing the scenes to life. Ensure deep emotional resonance for all characters involved, showcasing their thoughts, feelings, and reactions genuinely. Avoid repetitive phrasing or generic narrative structures. Strive for originality and dynamic prose. Maintain a sophisticated and engaging tone consistent with a published novel.
+**Key Directives for Superior Writing Quality:**
 
-Ensure the character portrayals are consistent with their established personalities and quirks/mannerisms as described in the RWBY character database.
+* **Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the light, the sounds, and even smells of the Vacuan desert with extreme vividness. Make the reader *feel* the environment.
+* **Deep Individual Character Resonance:** Explore the immediate emotional state of *each specific character* after the Ever After – their unique trauma, relief, confusion, and renewed purpose.
+    * **Ruby Rose:** Focus on her disoriented processing of profound change, a lingering sense of unreality, and subtle new resolve.
+    * **Weiss Schnee:** Her struggle to maintain composure, underlying vulnerability, and keen analytical observations of their surroundings and allies.
+    * **Blake Belladonna:** Heightened senses, cautious awareness of threats, and an internal seeking of comfort or reassurance from those closest to her.
+    * **Yang Xiao Long:** Frustration or discomfort with her body's altered state, a protective instinct, and a yearning for clear answers or familiar ground.
+    * **Jaune Arc:** Quiet stoicism masking deep internal processing, a newfound maturity, and an inherent readiness to take charge when needed.
+* **Show, Don't Tell:** Instead of simply stating emotions or observations, *show* them through character actions, internal monologues, dialogue, and specific sensory reactions. Avoid generic descriptions like "the group felt/saw/did X."
+* **Varied Language & Avoid Repetition:** Utilize a rich vocabulary and diverse sentence structures. **Crucially, avoid repetitive phrasing**, especially when describing character actions or emotions (e.g., using "the group" repeatedly).
+* **Sophisticated and Engaging Tone:** Maintain the tone of a high-quality published fantasy novel.
+* **Pacing:** Allow ample time for the characters to experience their disorientation, process their return, and engage in initial, meaningful dialogue before introducing major external conflicts. Build tension gradually through environmental observations and character reactions.
 
-At the end of the most visually epic moment within this chapter, insert the marker [EPIC_MOMENT_END].
+**Visuals of Conflict:** Incorporate clear visual signs of ongoing conflict with Salem: distant smoke plumes, desolate or abandoned structures, and scattered Grimm.
 
-Consider the following as you write:
-- The sensory details of Vacuo's desert: heat, sand, dust, vastness.
-- The immediate emotional state of each character after the Ever After: relief, confusion, trauma, renewed purpose.
-- The visual signs of conflict: distant smoke, abandoned structures, scattered Grimm.
-- How their physical bodies feel after their Ever After transformations.
-- Initial dialogue reflecting their disorientation and first thoughts on being back on Remnant.
+**Physicality:** Describe how their physical bodies feel after their Ever After transformations – sensations of gravity, lingering oddities from their changed forms, or familiar pains.
+
+**Dialogue:** Ensure initial dialogue reflects their profound disorientation and their very first thoughts upon realizing they are truly back on Remnant.
+
+At the end of the most visually epic moment within this chapter, insert the marker `[EPIC_MOMENT_END]`.
 
 ILLUSTRATION_PROMPT: A wide shot of Team RWBY and Jaune standing disoriented in a vast, desolate Vacuan desert, swirling dust, broken structures in the distance, dramatic lighting as if just emerging from a portal.
 ```
