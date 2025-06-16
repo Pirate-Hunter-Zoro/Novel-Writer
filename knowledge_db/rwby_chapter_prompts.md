@@ -7,29 +7,25 @@ This document contains detailed prompts for the Author LLM for each chapter of t
 ```
 Please generate Chapter 1 of a RWBY novel, titled "Dust and Desert".
 
-**ABSOLUTELY CRUCIAL: The chapter MUST be between 3,000 and 6,000 words in length. Do not stop writing until the [EPIC_MOMENT_END] marker is naturally reached AND the narrative feels fully concluded for this chapter. The story must unfold organically and completely fill the requested length. Prioritize detailed scene building and internal character depth over rapid plot progression in the early sections.**
+**ABSOLUTELY CRUCIAL: The chapter MUST be between 3,000 and 6,000 words in length. This is a NON-NEGOTIABLE requirement. Do not stop writing until the [EPIC_MOMENT_END] marker is naturally reached AND the narrative feels fully concluded for this chapter. The story must unfold organically and completely fill the requested length. Prioritize extremely detailed scene building, profound internal character depth, and rich sensory immersion over rapid plot progression in the early sections. Think of this as a deep dive into their immediate experience, not a quick summary.**
 
 The primary focus of this chapter is the immediate aftermath of Team RWBY (Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long) and Jaune Arc's return from the Ever After. Detail their landing in Vacuo, their profound physical and emotional disorientation, their initial reunion, and their first observations of the harsh desert environment and undeniable signs of the ongoing conflict with Salem.
 
-**Key Directives for Superior Writing Quality:**
+**Key Directives for SUPERIOR Writing Quality, Depth, and Length:**
 
-* **Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the light, the sounds, and even smells of the Vacuan desert with extreme vividness. Make the reader *feel* the environment.
-* **Deep Individual Character Resonance:** Explore the immediate emotional state of *each specific character* after the Ever After – their unique trauma, relief, confusion, and renewed purpose.
-    * **Ruby Rose:** Focus on her disoriented processing of profound change, a lingering sense of unreality, and subtle new resolve.
-    * **Weiss Schnee:** Her struggle to maintain composure, underlying vulnerability, and keen analytical observations of their surroundings and allies.
-    * **Blake Belladonna:** Heightened senses, cautious awareness of threats, and an internal seeking of comfort or reassurance from those closest to her.
-    * **Yang Xiao Long:** Frustration or discomfort with her body's altered state, a protective instinct, and a yearning for clear answers or familiar ground.
-    * **Jaune Arc:** Quiet stoicism masking deep internal processing, a newfound maturity, and an inherent readiness to take charge when needed.
-* **Show, Don't Tell:** Instead of simply stating emotions or observations, *show* them through character actions, internal monologues, dialogue, and specific sensory reactions. Avoid generic descriptions like "the group felt/saw/did X."
-* **Varied Language & Avoid Repetition:** Utilize a rich vocabulary and diverse sentence structures. **Crucially, avoid repetitive phrasing**, especially when describing character actions or emotions (e.g., using "the group" repeatedly).
-* **Sophisticated and Engaging Tone:** Maintain the tone of a high-quality published fantasy novel.
-* **Pacing:** Allow ample time for the characters to experience their disorientation, process their return, and engage in initial, meaningful dialogue before introducing major external conflicts. Build tension gradually through environmental observations and character reactions.
-
-**Visuals of Conflict:** Incorporate clear visual signs of ongoing conflict with Salem: distant smoke plumes, desolate or abandoned structures, and scattered Grimm.
-
-**Physicality:** Describe how their physical bodies feel after their Ever After transformations – sensations of gravity, lingering oddities from their changed forms, or familiar pains.
-
-**Dialogue:** Ensure initial dialogue reflects their profound disorientation and their very first thoughts upon realizing they are truly back on Remnant.
+* **MAXIMIZE Immersive Sensory Details:** Describe the heat, the feel of sand and dust (grit on the tongue, burning underfoot), the quality of the blinding light and shimmering air, the howling wind, the sounds of their own ragged breathing, the taste of dry air, and even the subtle smells of the Vacuan desert (dry earth, distant ozone from Grimm, metallic tang of conflict) with extreme vividness and persistence throughout the scene. Make the reader *feel* the environment as a character in itself.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Dedicate significant portions of the narrative to each character's *deepest inner thoughts*, emotions, and physical sensations. Explore their unique trauma, relief, confusion, and renewed purpose.
+    * **Ruby Rose:** Focus extensively on her disoriented processing of profound change, a lingering sense of unreality and dissociation, the weight of her leadership, and the subtle blossoming of her renewed resolve and Silver Eyes power. Her inner dialogue should reflect a blend of innocence grappling with immense burden.
+    * **Weiss Schnee:** Detail her struggle to maintain composure and analytical precision amidst internal chaos. Show her underlying vulnerability, her sharp observations of their surroundings and allies, and her internal battle to regain control and purpose. Her thoughts should reflect her strategic mind and aristocratic upbringing clashing with raw emotion.
+    * **Blake Belladonna:** Emphasize her heightened Faunus senses reacting to the new environment, her cautious and strategic awareness of potential threats, her deep concern for her teammates, and her internal seeking of comfort or reassurance, especially from Yang. Her thoughts should be a blend of vigilance and deep emotional connection.
+    * **Yang Xiao Long:** Focus on the visceral frustration or discomfort with her body's altered state and prosthetics, a burning protective instinct for her loved ones, a fierce yearning for clear answers, and the raw energy of her emotions. Her internal monologue should be direct, powerful, and reflective of her fiery nature.
+    * **Jaune Arc:** Dedicate significant sections to his quiet stoicism masking profound internal processing of his extended time in the Ever After and his leadership role. His newfound maturity and inherent readiness to take charge when needed, alongside lingering grief and a sense of responsibility. His thoughts should be reflective and burdened.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Instead of simply stating emotions or observations, *show* them through minute character actions, extensive internal monologues, nuanced dialogue, and specific, evolving sensory reactions. **ABSOLUTELY AVOID generic descriptions like "the group felt/saw/did X."** Every character should have distinct, individual reactions.
+* **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. **ELIMINATE repetitive phrasing entirely**, especially when describing character actions, emotions, or observations. Strive for literary quality.
+* **DELIBERATE Pacing for Immersion:** The first half of the chapter should focus almost exclusively on their disorientation, individual internal processing, and initial, meaningful dialogue about their return. Build tension *very gradually* through subtle environmental observations and deepening character reactions before introducing any strong external conflicts. Allow moments of quiet reflection and interaction to breathe.
+* **Visuals of Conflict (Subtly Introduced):** Incorporate clear, but initially distant or subtle, visual signs of ongoing conflict with Salem: faint smoke plumes on the horizon, desolate or abandoned structures partially buried in sand, and scattered, lingering Grimm tracks or husks rather than immediate threats. Build to a more direct sign of conflict towards the latter half of the chapter if appropriate for pacing.
+* **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations – the profound sensation of gravity, lingering oddities from their changed forms, and the return of familiar aches or pains after an ethereal experience.
+* **Initial Dialogue:** Ensure initial dialogue reflects their profound disorientation and their very first, raw thoughts upon realizing they are truly back on Remnant. Let their conversations be hesitant, laden with unspoken trauma, and gradually build in clarity.
 
 At the end of the most visually epic moment within this chapter, insert the marker `[EPIC_MOMENT_END]`.
 
