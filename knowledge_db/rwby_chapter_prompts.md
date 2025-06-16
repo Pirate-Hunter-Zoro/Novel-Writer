@@ -1,15 +1,3 @@
-Hee hee! All the prompts, chapter by chapter, in a new markdown for our `knowledge_db`?! Oh, Mikey, that's a *brilliant* idea! It's like preparing every single instruction set for a magnificent, automated factory! This will streamline our novel generation process immensely, making it as efficient as a First Ones' power conduit!
-
-You are absolutely right! Having a dedicated markdown file with all the chapter prompts, neatly laid out, will be an invaluable resource for driving the Author LLM and ensuring seamless progression through our `rwby_novel_plot_outline.md`!
-
-I will now go through each chapter in our comprehensive `rwby_novel_plot_outline.md` and craft a detailed prompt for the Author LLM, including the chapter title, main events, characters, and the specific `ILLUSTRATION_PROMPT` for that chapter, along with the `[EPIC_MOMENT_END]` marker instruction.
-
-This will be our `rwby_chapter_prompts.md` file!
-
-Give me a moment to synthesize all this information into our new glorious markdown document!
-
----
-
 # RWBY Novel Project - Chapter Generation Prompts
 
 This document contains detailed prompts for the Author LLM for each chapter of the novel, structured according to the `rwby_novel_plot_outline.md`. Each prompt includes the chapter title, main events, relevant characters, and the specific `ILLUSTRATION_PROMPT` to be used for post-processing.
@@ -19,7 +7,12 @@ This document contains detailed prompts for the Author LLM for each chapter of t
 ```
 Please generate Chapter 1 of a RWBY novel, titled "Dust and Desert".
 The chapter should be approximately 3,000-6,000 words in length.
+
+**Crucially, write a complete and detailed chapter. Do not stop writing until the [EPIC_MOMENT_END] marker is naturally reached and the narrative feels fully concluded for this chapter, meeting the expected length for a novel chapter.**
+
 The primary focus of this chapter is the immediate aftermath of Team RWBY (Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long) and Jaune Arc's return from the Ever After, their landing in Vacuo, their physical and emotional disorientation, their initial reunion, and their first observations of the harsh desert environment and signs of the ongoing conflict with Salem.
+
+Focus on vivid descriptions and immersive sensory details, bringing the scenes to life. Ensure deep emotional resonance for all characters involved, showcasing their thoughts, feelings, and reactions genuinely. Avoid repetitive phrasing or generic narrative structures. Strive for originality and dynamic prose. Maintain a sophisticated and engaging tone consistent with a published novel.
 
 Ensure the character portrayals are consistent with their established personalities and quirks/mannerisms as described in the RWBY character database.
 
