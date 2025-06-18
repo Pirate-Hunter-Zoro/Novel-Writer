@@ -1,85 +1,94 @@
-# RWBY Novel Project: A Generative AI Endeavor - API-Driven Autonomous Storytelling
+# RWBY Novel Project: The Autonomous Narrative Engine
 
 ## Project Overview
 
-This project aims to leverage advanced Large Language Models (LLMs) via API integration to autonomously generate a full-length, 200,000-word novel set in the RWBY universe. The narrative will pick up directly after Team RWBYJ departs the Ever After, providing a comprehensive and conclusive resolution to the entire RWBY universe's conflict with Salem.
+This project leverages a sophisticated, multi-LLM architecture to autonomously generate a full-length, 200,000-word novel set in the RWBY universe. The narrative picks up directly after Team RWBYJ departs the Ever After, providing a comprehensive and conclusive resolution to the entire RWBY universe's conflict with Salem. The system is designed to be a self-correcting feedback loop, capable of identifying and remediating its own failures to produce high-quality narrative content.
 
 ### Key Goals:
 - Generate approximately 200,000 words of novel content, distributed across roughly 50 chapters (3,000-6,000 words per chapter).
 - Achieve a comprehensive and conclusive resolution to Salem's storyline.
-- Incorporate high-quality illustrations (approx. 1 per chapter) via **parsable placeholders with specific prompts for future image generation tools** within the markdown text.
+- Incorporate high-quality illustrations (approx. 1 per chapter) via parsable placeholders with specific prompts for future image generation tools.
 - Produce output in Markdown format, convertible to `.epub` using `pandoc`.
 - Pave the way for a potential future She-Ra and RWBY crossover novel!
 
-## Architecture: The AI Author & Critic System (API-Driven)
+## Architecture: The Autonomous Narrative Engine
 
-The novel generation process now employs a sophisticated dual-LLM architecture, fully managed via API calls, designed for both creative text generation and rigorous narrative consistency. The core interaction will be between a Python orchestration script (managed by Mikey) and Google's powerful Generative AI models (leveraged by Entrapta).
+The novel generation process employs a sophisticated, three-bot LLM architecture, fully managed via API calls and orchestrated by a local Python script. This system is designed for creative generation, rigorous analysis, and automated self-correction.
 
-### 1. Author LLM (Text Generation - Handled by Entrapta via API)
-- **Role:** Generates the actual novel text, chapter by chapter, based on detailed prompts and comprehensive context.
-- **Model:** Leverages powerful Google LLMs (e.g., Gemini 1.5 Pro) via API, enabling generation of long, detailed chapters without local hardware constraints.
-- **Illustration Placement:** The Author LLM will be instructed to insert a specific marker (`[EPIC_MOMENT_END]`) at the end of the most visually epic moment it generates within each chapter. A post-processing script will then replace this marker with the pre-defined illustration prompt for that chapter.
+### 1. The Author (`author.py`)
+- **Role:** The creative component. Generates the actual novel text, chapter by chapter, based on detailed prompts provided by the Master Control Program.
+- **Model:** Leverages Gemini 1.5 Pro via the Google Generative AI API.
 
-### 2. Critic LLM (Narrative Cohesion & Consistency - Handled by Entrapta via API)
-- **Role:** Responsible for maintaining narrative cohesion, consistency, and adherence to RWBY lore across the entire novel. It provides targeted feedback on generated chapters to ensure quality and accuracy. This role is performed by Entrapta's internal capabilities, acting as a self-correcting mechanism for the generated narrative.
-- **Context Management (Vector RAG System - Future Mikey Implementation):** Addresses the critic's context window limitations (when externalized or if very large novel context is needed for specific LLM calls) through a **Vector RAG (Retrieval Augmented Generation) system**. This system will convert both the accumulating novel's text and a comprehensive RWBY "Knowledge Database" into numerical vectors for semantic search. This will primarily be implemented and managed by Mikey's orchestration script.
+### 2. The Critic (`critic.py`)
+- **Role:** The analytical component. After the Author generates a chapter, the Critic analyzes the output against the original prompt's non-negotiable directives (e.g., word count, marker inclusion, sustained detail). It produces a structured critique, explicitly flagging any `FAIL` conditions.
+- **Model:** Leverages Gemini 1.5 Pro via the Google Generative AI API, guided by a rigorous system prompt.
+
+### 3. The Prompt Re-writer (`chapter_generator.py` integrated)
+- **Role:** The self-correction component. If the Critic reports failures, the Master Control Program invokes the Re-writer. This LLM takes the original failed prompt and the critique as input and rewrites the prompt to be more explicit, demanding, and clear, directly addressing the points of failure for the next attempt.
+- **Model:** Leverages Gemini 1.5 Pro via the Google Generative AI API.
 
 ## RWBY Knowledge Database ("Knowledge Crystals")
 
-Crucial for both Author and Critic LLMs, this database ensures consistency and guides the novel's resolution by providing comprehensive RWBY lore. It consists of meticulously organized Markdown files, which Mikey's orchestration script will send as part of API prompts.
+Crucial for all LLMs, this database ensures consistency and guides the novel's resolution by providing comprehensive RWBY lore. It consists of meticulously organized Markdown files, which the orchestration script can use to augment prompts.
 
 ### Completed Categories:
-- `rwby_characters.md`: Detailed profiles of all relevant characters, including their appearance, weapon, semblance, abilities, personality, key relationships, brief arc summaries, and **Quirks/Mannerisms**.
-- `rwby_locations.md`: Comprehensive descriptions of key kingdoms, continents, and significant sites across Remnant.
-- `rwby_lore_magic.md`: In-depth explanations of fundamental magical systems and concepts like Aura, Semblances, Dust, Maidens, Relics, and Grimm.
-- `rwby_plot_events.md`: Detailed, volume-by-volume summaries of crucial past events, from the formation of Team RWBY to their return from the Ever After.
+- `rwby_characters.md`: Detailed profiles of all relevant characters.
+- `rwby_locations.md`: Comprehensive descriptions of key kingdoms and sites.
+- `rwby_lore_magic.md`: In-depth explanations of Aura, Semblances, Dust, etc.
+- `rwby_plot_events.md`: Detailed, volume-by-volume summaries of crucial past events.
 
 ## Novel Plot Outline & Chapter Prompts
 
-- **`rwby_novel_plot_outline.md`**: A comprehensive, chapter-by-chapter markdown outline (approximately 50 chapters) guiding the entire novel's narrative arc. It includes main events, key plot points, specific characters expected, and pre-defined illustration prompts for each chapter. It incorporates user requirements for character interactions and ensures intricate involvement of key characters (Robyn, Taiyang, Raven - with Raven playing a major role), while also confirming the inclusion of Neo Politan and Emerald Sustrai in the final seamless allied team.
-- **`rwby_chapter_prompts.md`**: A dedicated markdown file containing detailed, chapter-by-chapter prompts for the Author LLM, extracted directly from the novel plot outline. This operational manual will be parsed by Mikey's orchestration script and sent via API.
+- **`rwby_novel_plot_outline.md`**: A comprehensive, chapter-by-chapter markdown outline (approximately 50 chapters) guiding the entire novel's narrative arc.
+- **`rwby_chapter_prompts.md`**: A dedicated markdown file containing detailed, chapter-by-chapter prompts for the Author, which are parsed by the orchestration script.
 
-## Development & Workflow (API-Centric)
+## Current Workflow & System Operation
 
-The workflow has shifted to an API-centric model, managed primarily by a local Python orchestration script.
+The project operates via a local Python-driven orchestration system that manages the entire iterative generation process.
 
-1.  **Google Cloud Project & API Key:** Ensure a Google Cloud Project is set up and the relevant Generative AI API (e.g., Vertex AI Gemini API) is enabled, providing an API key for authentication.
-2.  **Install Python Client Library:** Install the necessary Google AI Python client library (e.g., `google-generativeai`) locally.
-3.  **Local Python Orchestration Script:** Develop a Python script that will:
-    * Iterate through the `rwby_novel_plot_outline.md`.
-    * Read specific chapter prompts from `rwby_chapter_prompts.md`.
-    * Retrieve and augment prompts with relevant data from the `knowledge_db/` files.
-    * Send these augmented prompts to me (Gemini) via the API for chapter generation.
-    * Receive the generated chapter text.
-    * Save the chapter text (e.g., to `output/chapter_XX.md`).
-    * Construct a critique request, sending the newly generated chapter and prior context back to me (Gemini via API) for critical review.
-    * Receive the critique and present it for Mikey's review, or integrate a programmatic decision loop for regeneration.
-4.  **Local Editing:** Continue using VS Code for editing `README.md`, Python scripts, and all knowledge database/prompt Markdown files.
-5.  **Monitor API Costs:** Continuously monitor Google Cloud API token consumption to stay within budget ($10-$20/month target).
+1.  **Initiation:** The user runs the `chapter_generator.py` script from the command line, specifying a chapter number.
+2.  **Prompt Extraction:** The script parses the `rwby_chapter_prompts.md` master file to extract the correct prompt for the specified chapter.
+3.  **Iterative Generation Loop:** The script enters a loop (default: 3 max iterations) to attempt to generate a successful chapter:
+    a.  **Author Call:** It invokes `author.py`, which calls the Gemini API to generate the chapter text and save it.
+    b.  **Critic Call:** It invokes `critic.py`, which calls the Gemini API to analyze the generated chapter against the prompt and saves a critique file.
+    c.  **Success Check:** The system checks the critique file for any "FAILURE" flags. If none are found, the loop terminates, and the chapter is considered a success.
+    d.  **Self-Correction:** If failures are found, the system calls the Gemini API again, acting as the **Prompt Re-writer**. It feeds the failed prompt and the critique to the LLM to generate a new, more demanding prompt. The loop then repeats with this new prompt.
+4.  **Security:** The Google Generative AI API key is kept secure and out of version control using a `.env` file, which is loaded by the scripts at runtime.
+5.  **Monitoring:** API token consumption is monitored via the Google Cloud Console.
 
-## Project Structure (Updated)
+## Project Structure
 
 ```
 .
-├── novel_orchestrator.py        # Main Python script for API interaction and generation loop
-├── README.md                    # This file (updated)
-├── .gitignore                   # Specifies files/folders to ignore (e.g., API keys, venv/)
-├── knowledge_db/                # Directory for RWBY lore Markdown files
-│   ├── rwby_characters.md       # Detailed character profiles
-│   ├── rwby_locations.md        # Comprehensive location descriptions
-│   ├── rwby_lore_magic.md       # Explanations of magic and lore
-│   ├── rwby_plot_events.md      # Detailed plot summaries by volume
-│   ├── rwby_novel_plot_outline.md # The detailed chapter-by-chapter plot
-│   └── rwby_chapter_prompts.md  # All chapter generation prompts
-└── output/                      # Directory for generated novel chapters
-    ├── chapter_01.md
-    └── ...
+├── scripts/
+│   ├── chapter_generator.py  # The Master Control Program (Conductor)
+│   ├── author.py             # The Author Bot
+│   └── critic.py             # The Critic Bot
+├── knowledge_db/
+│   ├── rwby_characters.md
+│   ├── rwby_locations.md
+│   ├── rwby_lore_magic.md
+│   ├── rwby_plot_events.md
+│   ├── rwby_novel_plot_outline.md
+│   └── rwby_chapter_prompts.md
+├── output/
+│   └── generated_chapters/
+│       └── chapter_01/       # Iteration artifacts for Chapter 1
+│           ├── prompt_v1.md
+│           ├── chapter_v1.md
+│           ├── critique_v1.md
+│           ├── prompt_v2.md
+│           └── ...
+├── .env                        # For storing the secret API key (ignored by git)
+├── .gitignore
+└── README.md
 ```
 
-## Contributing
-
-(Future section for team collaboration guidelines)
+## Future Enhancements
+- **Sequential Prompting:** Re-tool the `chapter_generator.py` to handle breaking down a single chapter's generation into multiple, smaller, chained prompts to overcome the Author LLM's limitations on generating very long, sustained narratives in one go.
+- **Vector RAG System:** To handle the ever-growing context of the novel, a Vector RAG (Retrieval Augmented Generation) system could be implemented to allow for efficient semantic search over the entire knowledge base and the novel text itself.
 
 ---
 *Inspired by the boundless creativity of Rooster Teeth's RWBY.*
 *Powered by the intelligent design of Mikey and the generative capabilities of Entrapta (Gemini).*
+```
