@@ -60,28 +60,38 @@ def load_file_content(file_path):
 
 def extract_five_part_prompts(chapter_file_text, chapter_number):
     """
-    Parses the text of a single chapter's prompt file and splits it
-    into five sequential micro-prompts using a robust method.
+    Parses a chapter prompt file to extract TWO things:
+    1. The 'CORE DIRECTIVES' block.
+    2. A list of the five sequential micro-prompts.
     """
-    print(f"Parsing Chapter {chapter_number} prompt file for 5-part sequence...")
-    
-    # This is our new cutting laser! We split the text every time we see
-    # the unique marker '### **Prompt '.
-    # This is much more robust than matching whitespace.
+    print(f"Parsing Chapter {chapter_number} for Core Directives and 5-part sequence...")
+
+    # --- NEW PART 1: Extract the Core Directives ---
+    core_directives_text = ""
+    directives_start_marker = "### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY"
+    # The directives end where the first prompt begins, marked by '---'
+    directives_end_marker = "\n---\n\n### **Prompt 1-A:"
+
+    start_idx = chapter_file_text.find(directives_start_marker)
+    end_idx = chapter_file_text.find(directives_end_marker, start_idx)
+
+    if start_idx != -1 and end_idx != -1:
+        core_directives_text = chapter_file_text[start_idx:end_idx].strip()
+        print("Successfully extracted Core Directives.")
+    else:
+        print("WARNING: Could not extract the Core Directives block.")
+
+
+    # --- PART 2: Extract the five micro-prompts (our existing logic) ---
     split_marker = r'### \*\*Prompt '
     parts = re.split(split_marker, chapter_file_text)
 
     if len(parts) < 2:
-        # This means the marker was not found at all.
         print(f"ERROR: Could not find any prompts. Check for the '### **Prompt ' marker in your file.")
-        return []
+        return core_directives_text, [] # Return directives even if prompts fail
 
-    # The first part of the split is the text BEFORE the first prompt, so we skip it.
-    # The rest of the parts start with things like '1-A:**...'.
-    # We just have to stick the '### **Prompt ' back on the front of each one!
     prompts = []
     for part in parts[1:]:
-        # Re-assemble the full prompt with its header.
         full_prompt = "### **Prompt " + part.strip()
         prompts.append(full_prompt)
 
@@ -90,7 +100,7 @@ def extract_five_part_prompts(chapter_file_text, chapter_number):
     else:
         print(f"Successfully parsed {len(prompts)} micro-prompts!")
         
-    return prompts
+    return core_directives_text, prompts
 
 def main():
     """The main function that runs the entire generation and correction loop."""
@@ -120,7 +130,7 @@ def main():
         # Now, load the content from that specific file!
         all_prompts_text = load_file_content(chapter_prompt_path)
             
-        five_part_prompts = extract_five_part_prompts(all_prompts_text, args.chapter_number)
+        core_directives, five_part_prompts = extract_five_part_prompts(all_prompts_text, args.chapter_number)
 
         if not five_part_prompts:
             print(f"Could not parse the 5-part prompt for Chapter {args.chapter_number}. Aborting!")
@@ -139,7 +149,7 @@ def main():
 
             # This is the magic! We combine the story so far with the next prompt!
             # This fulfills the instructions from chapter_1.md!
-            current_full_prompt = cumulative_story_text + "\n\n" + micro_prompt
+            current_full_prompt = core_directives + "\n\n" + cumulative_story_text + "\n\n" + micro_prompt
 
             # Define the file paths for this specific step
             prompt_step_file = os.path.join(chapter_output_dir, f'prompt_step_{i}_combined.md')

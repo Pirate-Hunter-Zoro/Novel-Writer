@@ -1,18 +1,23 @@
 **[Begin Section 1-D]**
 
-Ruby hauled the mangled door open with a groan of tortured metal, revealing the cockpit's shadowed interior. The air inside was thick with the metallic tang of blood and the acrid scent of burnt Dust.  The confined space felt oppressive after the vastness of the desert, the silence broken only by the intermittent sparks from the ruined engine outside.
+Ruby took point, Crescent Rose transforming into its scythe form.  The shattered cockpit door creaked open, revealing a scene of chaos bathed in shadow. The air hung heavy with the metallic tang of blood and the acrid stench of burnt Dust. The confined space felt oppressive, the silence amplifying every creak and groan of the damaged skiff.  Dents marred the control console, sparking wires snaking out like fractured veins. A pilot’s helmet lay discarded on the floor, its visor cracked, revealing a dark stain on the inner padding.  One of the seats was ripped clean from its moorings, tossed against the far wall amidst a tangle of wires and broken glass.
 
-Yang squeezed past Ruby, her Ember Celica flaring briefly, casting long, dancing shadows that amplified the claustrophobia. Weiss followed, Myrtenaster held before her like a beacon, its pale light cutting through the gloom. Blake, ever silent, slipped through last, her eyes adjusting quickly to the dimness.
+Jaune squeezed past Ruby, his shield held before him like a bulwark against the unknown.  "Anything?" he whispered, his voice tight with apprehension.
 
-The cockpit was a scene of chaos. The control panel was dented and scarred, wires sparking where they’d been torn loose.  A pilot's chair lay overturned, its headrest ripped clean off.  A discarded weapon, a shattered semblance conduit, lay beneath the console, a silent testament to a desperate last stand.  A single, bloodstained gauntlet, still clutching the controls, remained fixed to the yoke.
+Weiss followed, Myrtenaster humming softly. "Just… carnage," she replied, her eyes scanning the debris.  "A desperate last stand, by the looks of it."  She pointed to a dented and discarded weapon lying near the pilot’s chair – a shattered rapier, its blade snapped in two.
 
-They spread out, searching for any sign of survivors, any clue as to what had happened.  Weiss examined the console, her brow furrowed in concentration as she tried to decipher the mangled readings.  Yang checked the emergency transponder, finding it smashed beyond repair.  Blake, moving with a predator's grace, searched the shadowed corners, her senses alert for any sign of movement.
+**(Path A)**
 
-Then, Ruby found it. Tucked beneath the overturned pilot’s seat, partially obscured by a tangle of wires, lay a datapad. Its screen was cracked, spiderwebbed with fractures, but still flickering with a faint luminescence.  She picked it up carefully, her heart pounding in her chest.  With a trembling finger, she activated the screen.  A single, unfinished message, stamped with the crimson alert of an emergency transmission, filled the display:
+A glint of metal beneath the dislodged seat caught Jaune's eye. He reached down, pulling out a battered datapad. Its screen was fractured, spiderwebbed with cracks, but still flickered with a faint luminescence.  He tapped the screen, and a single, chilling message filled the display: "They're here... Sky is falling... Grimm are not... not like before... request immedi—" The message abruptly cut off, leaving the final word hanging, a silent scream in the suffocating darkness.
 
-“They’re here… Sky is falling… Grimm are not… not like before… request immedi—”
+Ruby leaned in, her eyes wide with dawning horror.  "Not like before?" she whispered, the words barely audible above the pounding of her heart. The implications of that unfinished sentence hung heavy in the air, a chilling premonition of a threat far greater than they had ever imagined.
 
-The message cut off abruptly, the final word incomplete, frozen mid-transmission. The implications of those fragmented sentences hung heavy in the air, heavier than the stifling heat of the cockpit.  Ruby’s breath caught in her throat.  The Grimm were different.  More dangerous.  And they were *here*.
+
+**(Path B)**
+
+A low growl rumbled from the shadows in the far corner of the cockpit, a sound that made the hairs on the back of Ruby’s neck stand on end.  A mangled form shifted in the darkness, revealing a single, grievously wounded Beowolf. Trapped amidst the wreckage, its leg twisted at an unnatural angle, it snarled, its eyes burning with a desperate, feral rage. Pathetic, yet still dangerous.
+
+With a guttural roar, the Beowolf lunged, its jaws snapping. Time seemed to slow as Ruby reacted instinctively, Crescent Rose flashing in a silver arc.  The blade plunged deep into the Grimm’s chest, silencing its roar with a choked gurgle. Its burning gaze locked with hers for a heartbeat, a flicker of defiance before the light faded, leaving behind only the heavy silence of death and the chilling realization that this, the brutal, personal act of taking a life, was their new reality.
 
 
 **[End Section 1-D]**

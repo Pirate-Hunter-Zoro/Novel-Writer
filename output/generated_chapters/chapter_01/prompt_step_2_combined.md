@@ -1,24 +1,36 @@
 **[Begin Section 1-A]**
 
-The world tears itself into existence around them not with a gentle fade, but with a cataclysm of sensation. One moment, the non-space of the Ever After. The next, a furnace blast of heat, a blinding white sun, and the solid, unforgiving ground. Ruby slammed into the earth, breath punched from her lungs.  The taste of dust filled her mouth, gritty and real. *Real.*  Her vision swam, a dizzying whirl of white sky and shifting sand.  *Sun… ground… air… I can breathe…*  A frantic, disjointed litany in her head.
+The world tears itself into existence around them not with a gentle fade, but with a cataclysm of sensation. One moment, the non-space of the Ever After. The next, a furnace blast of heat, a blinding white sun, and the solid, unforgiving ground.  Ruby hit the ground hard, the air knocked from her lungs. The world swam in a dizzying haze of white and ochre.  *Sand.*  Grit stung her eyes, scratching against her skin.  *Hot.*  An oppressive, suffocating heat pressed down, baking the air itself. *Real.*  The solidity of the ground beneath her was a brutal affirmation, a jarring counterpoint to the ethereal unreality she'd just left.  *Where…?*
 
-Jaune landed beside her with a choked gasp, his vomit staining the pale sand. “W-what…?” he stammered, the word lost in the wind that whipped across the dunes, hot and dry as a dragon’s breath.
+A choked gasp beside her. Weiss, face pale, clawed at her throat, coughing.  "Air… can't… breathe…"
 
-Weiss’s cry was thin and sharp, a sound swallowed by the immensity of the desert.  She scrambled back on her hands, her face bone-white, eyes squeezed shut.  *No… not again… not another void…* Her thoughts were frantic whispers against the roar of the wind and the pounding in her ears. *But… this is different… this is…*
+Jaune groaned, shielding his eyes. "My head…"
 
-Blake hit the ground with a muffled thud, landing cat-like despite the disorientation.  For a moment, she simply lay there, the scorching sand searing through her clothes.  The metallic scent of blood filled her nostrils, and she realized her hands were scraped raw. *Remnant… the air… it burns…*  A wave of nausea rolled over her, the Ever After’s lingering unreality clashing violently with the raw, brutal reality of this place.
+Blake landed with a cat-like grace, but even she staggered, a low growl rumbling in her chest.  Her golden eyes, narrowed against the glare, darted around, taking in the desolate landscape. *Empty. Hostile.*
 
-Yang groaned, shielding her eyes from the glare with a forearm.  Her head throbbed with a dull ache. *Sand… heat… I can feel the ground…*  A small, disbelieving smile touched her lips. *Solid ground…* She pushed herself up, shaking off the lingering dizziness. "Guys?" Her voice was raspy, barely a whisper.
+Yang sat up, shaking her head, a dazed expression on her face.  Her voice, when it came, was raspy. "What… the…"
 
-Ruby blinked, trying to focus.  The swirling sand gradually settled, revealing a landscape of endless dunes, stretching to the horizon in every direction.  The sky was an oppressive, cloudless expanse of white.  The heat radiated from the ground, baking her through her clothes. "Weiss? Blake? Jaune?"  Her voice was thin, cracking with dryness.
+The only sound other than their ragged breathing was the low whine of the wind whipping across the endless expanse of sand.  The sky, a merciless, unbroken dome of blue, offered no shade, no respite.  It pressed down on them, a vast and indifferent presence.
 
-A whimper came from nearby.  Ruby turned and saw Weiss huddled on the ground, her face buried in her knees.  Blake sat beside her, her eyes wide and unfocused, still grappling with the shock.  Jaune was on his hands and knees, retching again.
+Ruby blinked, trying to clear her vision.  The initial wave of disorientation began to recede, replaced by a chilling sense of vulnerability.  *Vacuo.*  The word formed in her mind, unbidden, unwelcome.  They were back. But at what cost?
 
-"We're… we're here," Ruby whispered, more to herself than to them. "We're back."
+"Blake?"  Her voice was a croak.
 
-“Back…?” Weiss’s voice was a choked whisper. “Where… is *here*?”
+Blake swallowed, her voice thick.  "Here."
 
-"Remnant," Yang croaked, her voice still thick with disorientation.  She looked around, her gaze sweeping over the desolate landscape. "I think… I think we're in Vacuo."
+"Weiss?"
+
+A weak cough. "Present… barely."
+
+"Yang?"
+
+"Ugh… yeah."
+
+"Jaune?"
+
+"Spinning… but here."
+
+Five figures, huddled together in the vast emptiness, their silhouettes stark against the blinding white sand.  They were back on Remnant. Alive.  But utterly lost.
 
 **[End Section 1-A]**
 

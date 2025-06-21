@@ -1,27 +1,24 @@
 **[Begin Section 1-B]**
 
-(Continuing from Section 1-A)
+The world solidified around them, the initial chaos giving way to a grim, oppressive silence.  Ruby pushed herself up, her hands sinking into the scorching sand.  The heat radiated up through her palms, a tangible reminder of their harsh reality.  “Okay,” she croaked, her voice catching in her dry throat. “Everyone, check the horizon. Anything, anything at all.”
 
-The initial wave of disorientation receded, replaced by the cold grip of survival instinct.  Ruby, pushing herself to her feet, brushed the sand from her clothes.  “Okay,” she said, her voice still rough but gaining strength.  “Everyone, check the horizon. Anything – anything at all.”
+Jaune, swaying slightly, squinted.  He pointed a shaky finger towards the shimmering horizon. "Over there... maybe?"  It was nothing but heat haze, playing tricks on the eye.
 
-Jaune, wiping his mouth with the back of his hand, shakily rose to his feet. He scanned the endless expanse of dunes, shielding his eyes.  “Just… sand,” he croaked, his voice still tinged with nausea. “Nothing but sand.”
+Weiss, her face still pale, rose slowly, leaning on Myrtenaster for support. "I see nothing but sand," she whispered, her voice strained.
 
-Weiss remained huddled on the ground, a tremor running through her.  The vast emptiness mirrored the void they’d just escaped, and the fear threatened to pull her back under.  Blake, however, was already on her feet, her feline ears twitching, head cocked to one side.  She seemed to be listening to something beyond the howl of the wind.
+The wind howled across the desolate landscape, carrying with it a low, guttural moan that seemed to emanate from the very heart of the desert.  The sound sent a shiver down Ruby's spine, a primal unease.  It was a sound that didn’t belong, a sound that spoke of something ancient and malevolent.
 
-Yang joined Ruby, her gaze sweeping the horizon.  "Nothing," she muttered. The oppressive heat beat down on them, the air thick and still.  The silence, broken only by the mournful cry of the wind, was almost as disorienting as the initial arrival. The wind seemed to carry whispers, strange, unsettling sounds that danced at the edge of hearing. The heat haze shimmered above the dunes, playing tricks on their eyes, making the landscape shift and writhe.
+Yang, her usual exuberance extinguished, simply nodded, her eyes scanning the undulating dunes.  The sand stretched out before them, a sea of white and ochre, broken only by the occasional wind-sculpted ripple.  Hopelessness began to creep into Ruby's heart.
 
-A faint, rhythmic groan, almost lost in the wind, reached Blake's ears.  It was a metallic sound, a low, guttural thrum that spoke of strained metal and something… mechanical. A sound utterly alien to this desolate landscape.  She focused, her Faunus senses, sharpened by the sensory deprivation of the Ever After, cutting through the wind’s whispers. The sound pulsed again, a steady, rhythmic groan.  She turned, her eyes scanning the shimmering horizon, searching for the source.
+**Path A:**
 
-*Path A*
+Blake stood motionless, her head tilted, her golden eyes narrowed.  Her ears, more sensitive than the others after the ethereal quiet of the Ever After, twitched.  Beneath the howl of the wind, beneath the whisper of the sand, she heard it. A faint, rhythmic groan of stressed metal, carried on the wind like a desperate plea. A sound utterly out of place in this desolate landscape.  Her breath caught.  “There,” she breathed, pointing towards a distant, shimmering rise. “Do you hear it?”
 
-The sound grew slightly louder, a steady pulse against the backdrop of wind and silence.  Blake pointed towards a distant dune, barely visible through the heat haze.  “There,” she whispered, her voice urgent. “I hear something.”
+**Path B:**
 
-*Path B*
+Weiss, shielding her eyes against the glare, focused on the shimmering horizon, trying to pierce through the deceptive haze.  For a fleeting moment, a glint of light flashed through the shimmering air, too sharp, too defined to be a natural reflection.  A sliver of something metallic or glassy, reflecting the harsh sun where there should only be rock and sand. "There!" Weiss exclaimed, her voice sharp with sudden urgency.  She pointed towards a distant, barely discernible rise in the endless dunes.  "I saw something.  A reflection."
 
-Weiss, forcing herself to stand, shielded her eyes against the blinding glare.  As her gaze swept across the undulating dunes, she caught a flicker of light, a brief, unnatural glint embedded in the shimmering heat haze.  It was a reflection, sharp and metallic, out of place in this desolate landscape of rock and sand.  “There!” she exclaimed, pointing towards the source.  "I see something!"
-
-Four pairs of eyes snapped towards the distant point, a sudden, shared focus in the vast emptiness.  Hope, fragile but fierce, ignited in their chests.  They had a target.
-
+The others followed her gaze, their eyes drawn to the single point in the vast emptiness.  Hope, fragile but undeniable, flickered in their hearts.  A target.
 
 **[End Section 1-B]**
 
