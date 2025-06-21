@@ -8,37 +8,15 @@ import argparse
 import subprocess
 import google.generativeai as genai
 from dotenv import load_dotenv
+import re
 
-output_dir = "output/generated_chapters"
-prompts_file = "knowledge_db/rwby_chapter_prompts.md"
+# First, we find the absolute path to the directory where this script lives.
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Then, we go up one level to get the main project's root directory.
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+PROMPTS_DIR = os.path.join(PROJECT_ROOT, "knowledge_db", "rwby_chapter_prompts")
 
-
-# This is the system prompt for our NEWEST bot: The Prompt Re-writer!
-# Its job is to take a failed prompt and a critique and make the prompt better!
-REWRITER_SYSTEM_PROMPT_TEMPLATE = """
-**SYSTEM COMMAND: You are the Prompt Re-Writer, a master of instructional design. Your sole purpose is to improve a prompt given to a large language model based on a critique of the previous output.**
-
-**Your Task:** You will receive an `[ORIGINAL_PROMPT]` and a `[CRITIQUE_OF_OUTPUT]`. The critique will detail how the output failed to meet the prompt's requirements. Your job is to rewrite the original prompt to be clearer, more explicit, and more directive to fix those specific failures.
-
-**Key Directives:**
-1.  **Integrate Feedback:** Directly address every "Actionable Recommendation" from the critique.
-2.  **Reinforce Rules:** Make the non-negotiable rules (like word count and marker inclusion) even more prominent and demanding. Use bold text, all-caps, and assertive language.
-3.  **Do Not Lose Intent:** Do not remove or alter the core creative goals of the original prompt. Only add to it and clarify it based on the critique.
-4.  **Output Only the New Prompt:** Your final output should ONLY be the full, complete, rewritten prompt text. Do not include any other conversational text or explanation.
-
----
-### **[INPUT DATA STARTS NOW]**
-
-**[ORIGINAL_PROMPT]**
-{original_prompt}
-
-**[CRITIQUE_OF_OUTPUT]**
-{critique_text}
-
----
-### **[REWRITTEN_PROMPT_FOR_NEXT_ITERATION]**
-(Begin your rewritten prompt now. Output only the prompt text.)
-"""
+output_dir = os.path.join(PROJECT_ROOT, "output", "generated_chapters")
 
 def configure_api(api_key):
     """Configures the generative AI API."""
@@ -80,61 +58,39 @@ def load_file_content(file_path):
         print(f"An unexpected error occurred while reading {file_path}: {e}")
         raise
 
-#! ---------------------------------------------------------------- !#
-#! RECALIBRATED PARSING LOGIC! This is the important part!          !#
-#! The librarian bot now correctly grabs the *entire* chapter block,!#
-#! not just the text in the code fence. More data! Better data!     !#
-#! ---------------------------------------------------------------- !#
-def extract_prompt_for_chapter(all_prompts_text, chapter_number):
+def extract_five_part_prompts(chapter_file_text, chapter_number):
     """
-    Parses the large markdown file to find and extract the entire text block for a specific chapter prompt.
+    Parses the text of a single chapter's prompt file and splits it
+    into five sequential micro-prompts using a robust method.
     """
-    print(f"Searching for Chapter {chapter_number} prompt block in the master file...")
-    # This is the unique text that marks the beginning of each chapter's prompt
-    start_marker = f"## Chapter {chapter_number} Prompt:"
-    # The end marker is just the start of the next chapter
-    end_marker = f"## Chapter {chapter_number + 1} Prompt:"
-
-    start_index = all_prompts_text.find(start_marker)
-    if start_index == -1:
-        print(f"ERROR: Could not find start marker for Chapter {chapter_number}. Is the number correct?")
-        return None
-
-    print(f"Found start marker for Chapter {chapter_number}.")
-    end_index = all_prompts_text.find(end_marker, start_index)
+    print(f"Parsing Chapter {chapter_number} prompt file for 5-part sequence...")
     
-    prompt_text = ""
-    if end_index == -1:
-        # If we can't find the *next* chapter, it must be the last one! So we take everything from its start.
-        print("End marker not found, assuming this is the last chapter in the file.")
-        prompt_text = all_prompts_text[start_index:]
+    # This is our new cutting laser! We split the text every time we see
+    # the unique marker '### **Prompt '.
+    # This is much more robust than matching whitespace.
+    split_marker = r'### \*\*Prompt '
+    parts = re.split(split_marker, chapter_file_text)
+
+    if len(parts) < 2:
+        # This means the marker was not found at all.
+        print(f"ERROR: Could not find any prompts. Check for the '### **Prompt ' marker in your file.")
+        return []
+
+    # The first part of the split is the text BEFORE the first prompt, so we skip it.
+    # The rest of the parts start with things like '1-A:**...'.
+    # We just have to stick the '### **Prompt ' back on the front of each one!
+    prompts = []
+    for part in parts[1:]:
+        # Re-assemble the full prompt with its header.
+        full_prompt = "### **Prompt " + part.strip()
+        prompts.append(full_prompt)
+
+    if len(prompts) < 5:
+        print(f"WARNING: Found {len(prompts)} micro-prompts for Chapter {chapter_number}, expected 5.")
     else:
-        # If we found the next chapter, we slice the text to get just our part!
-        print(f"Found end marker for Chapter {chapter_number + 1}. Slicing text.")
-        prompt_text = all_prompts_text[start_index:end_index]
-    
-    print("Prompt extraction successful!")
-    return prompt_text.strip()
-
-
-def rewrite_prompt(original_prompt, critique_text):
-    """Uses the LLM to rewrite the prompt based on the critique."""
-    print("Constructing prompt for the Re-Writer LLM...")
-    rewriter_master_prompt = REWRITER_SYSTEM_PROMPT_TEMPLATE.format(
-        original_prompt=original_prompt,
-        critique_text=critique_text
-    )
-
-    print("Initializing Re-Writer Model (Gemini 1.5 Pro)...")
-    try:
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
-        print("Model initialized. Generating improved prompt...")
-        response = model.generate_content(rewriter_master_prompt)
-        print("New prompt generated!")
-        return response.text
-    except Exception as e:
-        print(f"ERROR: Failed to generate new prompt from API. Details: {e}")
-        raise
+        print(f"Successfully parsed {len(prompts)} micro-prompts!")
+        
+    return prompts
 
 def main():
     """The main function that runs the entire generation and correction loop."""
@@ -159,62 +115,89 @@ def main():
         os.makedirs(chapter_output_dir, exist_ok=True)
         print(f"All artifacts for this run will be saved in: {chapter_output_dir}")
 
-        all_prompts_text = load_file_content(prompts_file)
-
-        initial_prompt_text = extract_prompt_for_chapter(all_prompts_text, args.chapter_number)
-        if not initial_prompt_text:
-            print(f"Could not extract prompt for Chapter {args.chapter_number}. Aborting mission!")
-            return
+        # First, build the specific file path using our new PROMPTS_DIR variable.
+        chapter_prompt_path = os.path.join(PROMPTS_DIR, f"chapter_{args.chapter_number}.md")
+        # Now, load the content from that specific file!
+        all_prompts_text = load_file_content(chapter_prompt_path)
             
-        current_prompt_text = initial_prompt_text
+        five_part_prompts = extract_five_part_prompts(all_prompts_text, args.chapter_number)
 
-        for i in range(1, args.max_iterations + 1):
+        if not five_part_prompts:
+            print(f"Could not parse the 5-part prompt for Chapter {args.chapter_number}. Aborting!")
+            return
+
+        # This is our canvas! It will hold the story as it grows.
+        cumulative_story_text = ""
+        final_chapter_file = os.path.join(chapter_output_dir, f'chapter_{args.chapter_number:02d}_complete.md')
+        all_parts_generated = True
+
+        # This is the new auto-regressive feedback loop!
+        for i, micro_prompt in enumerate(five_part_prompts, 1):
             print(f"\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
-            print(f"  STARTING ITERATION {i}/{args.max_iterations} for Chapter {args.chapter_number}")
+            print(f"  GENERATING PART {i}/5 for Chapter {args.chapter_number}")
             print(f">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
 
-            prompt_file = os.path.join(chapter_output_dir, f'prompt_v{i}.md')
-            chapter_file = os.path.join(chapter_output_dir, f'chapter_v{i}.md')
-            critique_file = os.path.join(chapter_output_dir, f'critique_v{i}.md')
+            # This is the magic! We combine the story so far with the next prompt!
+            # This fulfills the instructions from chapter_1.md!
+            current_full_prompt = cumulative_story_text + "\n\n" + micro_prompt
 
-            print(f"Saving current prompt to {prompt_file}")
-            with open(prompt_file, 'w', encoding='utf-8') as f:
-                f.write(current_prompt_text)
+            # Define the file paths for this specific step
+            prompt_step_file = os.path.join(chapter_output_dir, f'prompt_step_{i}_combined.md')
+            
+            print(f"Saving combined prompt for step {i} to {prompt_step_file}")
+            with open(prompt_step_file, 'w', encoding='utf-8') as f:
+                f.write(current_full_prompt)
 
-            # Step 1: Call the Author to write the chapter
-            # Pass the key directly to the command!
-            #! FIX IS HERE! Added 'scripts/' to the path!
-            author_command = ['python', 'scripts/author.py', '--prompt-file', prompt_file, '--output-file', chapter_file, '--api-key', api_key]
+            # Call the Author bot to continue writing the story!
+            author_command = ['python', os.path.join(PROJECT_ROOT, 'scripts', 'author.py'), '--prompt-file', prompt_step_file, '--output-file', final_chapter_file, '--api-key', api_key]
             if not run_script(author_command):
-                print("Author script failed. Halting process.")
-                break
-
-            # Step 2: Call the Critic to analyze the chapter
-            # Pass the key directly to the command here too!
-            #! AND THE FIX IS HERE TOO!
-            critic_command = ['python', 'scripts/critic.py', '--author-prompt-file', prompt_file, '--generated-file', chapter_file, '--output-file', critique_file, '--api-key', api_key]
-            if not run_script(critic_command):
-                print("Critic script failed. Halting process.")
-                break
-                
-            critique_text = load_file_content(critique_file)
-
-            if "FAILURE" not in critique_text.upper():
-                print("\n**************************************")
-                print(f"  SUCCESS! Critique reports no failures for Chapter {args.chapter_number}!")
-                print(f"  Final chapter saved to: {chapter_file}")
-                print("**************************************")
-                break
+                print(f"Author script failed on part {i}. Halting process.")
+                all_parts_generated = False
+                break # Exit the loop if a part fails
             
-            print("Critique reported failures. Attempting to rewrite prompt...")
+            # This is the feedback loop! We read the new, longer story that the
+            # author just wrote and make it our new cumulative text for the next step!
+            print("Reading generated text to use as context for the next step...")
+            cumulative_story_text = load_file_content(final_chapter_file)
 
-            current_prompt_text = rewrite_prompt(current_prompt_text, critique_text)
+        if all_parts_generated:
+            print("\n**************************************")
+            print(f"  SUCCESS! All 5 parts of Chapter {args.chapter_number} generated and combined!")
+            print(f"  Final chapter saved to: {final_chapter_file}")
+            print("**************************************")
             
-            if i == args.max_iterations:
-                print("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-                print("  Max iterations reached without success.")
-                print(f"  Check the final artifacts in: {chapter_output_dir}")
-                print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            # --- FINAL QUALITY ASSURANCE CHECK ---
+            print("\n--- Sending final chapter for critique... ---")
+
+            # We need to save the original main prompt from the chapter_X.md file
+            # for the critic to use as a reference.
+            main_prompt_file = os.path.join(chapter_output_dir, f'prompt_chapter_{args.chapter_number:02d}_main.md')
+            print(f"Saving main reference prompt to: {main_prompt_file}")
+            with open(main_prompt_file, 'w', encoding='utf-8') as f:
+                # The 'all_prompts_text' variable holds the full original prompt text!
+                f.write(all_prompts_text)
+
+            # Define the output file for our final critique
+            final_critique_file = os.path.join(chapter_output_dir, f'critique_chapter_{args.chapter_number:02d}_final.md')
+
+            # Call the Critic bot to analyze the completed chapter!
+            critic_command = [
+                'python', os.path.join(PROJECT_ROOT, 'scripts', 'critic.py'),
+                '--author-prompt-file', main_prompt_file,
+                '--generated-file', final_chapter_file,
+                '--output-file', final_critique_file,
+                '--api-key', api_key
+            ]
+            
+            if run_script(critic_command): #
+                print("--- Final critique complete! Check artifacts for results. ---")
+            else:
+                print("--- CRITIC SCRIPT FAILED. Please check logs. ---")
+        else:
+            print("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print(f"  FAILURE! Chapter generation did not complete all 5 parts.")
+            print(f"  Check the artifacts in: {chapter_output_dir}")
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
         print("\n--- narrative engine shutdown ---")
     
