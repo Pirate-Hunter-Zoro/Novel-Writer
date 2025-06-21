@@ -1,24 +1,40 @@
+### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY (Include in each prompt)**
+
+* **Word Count Goal:** This section should be approximately 1000-1200 words.
+* **MAXIMIZE Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the blinding light and shimmering air, the howling wind, and the sounds of ragged breathing with extreme vividness.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Dedicate significant portions of the narrative to each character's deepest inner thoughts, emotions, and physical sensations.
+  * **Ruby:** Disoriented processing, lingering unreality, the weight of leadership, renewed resolve.
+  * **Weiss:** Struggle to maintain composure, sharp observations, internal battle for control.
+  * **Blake:** Heightened Faunus senses, cautious awareness, deep concern for her team.
+  * **Yang:** Visceral frustration, burning protective instinct, raw energy of her emotions.
+  * **Jaune:** Quiet stoicism masking profound internal processing, newfound maturity, lingering grief.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use minute character actions, extensive internal monologues, and nuanced dialogue. AVOID generic descriptions. Every character must have a distinct, individual reaction.
+* **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
+* **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
+
 **[Begin Section 1-D]**
 
-Ruby took point, Crescent Rose transforming into its scythe form.  The shattered cockpit door creaked open, revealing a scene of chaos bathed in shadow. The air hung heavy with the metallic tang of blood and the acrid stench of burnt Dust. The confined space felt oppressive, the silence amplifying every creak and groan of the damaged skiff.  Dents marred the control console, sparking wires snaking out like fractured veins. A pilot’s helmet lay discarded on the floor, its visor cracked, revealing a dark stain on the inner padding.  One of the seats was ripped clean from its moorings, tossed against the far wall amidst a tangle of wires and broken glass.
+Ruby squeezed through the mangled frame of the cockpit door, Crescent Rose scraping against the twisted metal.  The interior was a suffocating tomb, the air thick with the coppery tang of blood and the acrid stench of burnt wiring.  Dust motes danced in the slivers of light that pierced the gloom, illuminating a scene of desperate struggle. The control console was dented and scarred, buttons smashed, levers snapped clean off.  A pilot’s chair lay overturned, its restraints torn, a single, bloodstained glove lying limply on the floor like a discarded chrysalis.
 
-Jaune squeezed past Ruby, his shield held before him like a bulwark against the unknown.  "Anything?" he whispered, his voice tight with apprehension.
+Weiss followed, her semblance flickering into existence, a small orb of light illuminating the cramped space. The stark white glow revealed more details: deep gouges in the bulkhead, a shattered viewport speckled with dried blood, a discarded fire axe lying half-buried beneath a pile of debris.  "This wasn't just a crash," she whispered, her voice barely audible above the keening wind that whistled through the ruptured hull. "There was a fight."
 
-Weiss followed, Myrtenaster humming softly. "Just… carnage," she replied, her eyes scanning the debris.  "A desperate last stand, by the looks of it."  She pointed to a dented and discarded weapon lying near the pilot’s chair – a shattered rapier, its blade snapped in two.
+Blake, her feline senses heightened, moved with a predatory grace, her eyes scanning every shadow, every corner.  The scent of fear, thick and cloying, clung to the air, mingling with the metallic reek of spilled blood. She could almost hear the echoes of the struggle – the panicked shouts, the snarls of the Grimm, the clang of metal against bone.  She reached out, her hand brushing against something cold and smooth beneath a pile of twisted metal.  She pulled it free – a Huntsman's sidearm, its grip slick with blood, its chamber empty.  
 
-**(Path A)**
+Yang, her fists clenched so tight her knuckles were white, felt a surge of protectiveness so fierce it almost choked her.  The Ever After had stripped her bare, leaving her raw and vulnerable. But it had also ignited a primal fire within her, a burning need to protect those she loved.  She scanned the cockpit, her eyes narrowed, searching for any sign of survivors, any hint of what had happened here. The silence, broken only by the whine of the wind, was deafening.  It pressed against her, suffocating her with the weight of the unknown.
 
-A glint of metal beneath the dislodged seat caught Jaune's eye. He reached down, pulling out a battered datapad. Its screen was fractured, spiderwebbed with cracks, but still flickered with a faint luminescence.  He tapped the screen, and a single, chilling message filled the display: "They're here... Sky is falling... Grimm are not... not like before... request immedi—" The message abruptly cut off, leaving the final word hanging, a silent scream in the suffocating darkness.
+Jaune, his movements slow and deliberate, knelt beside the overturned pilot's chair.  He picked up the discarded glove, turning it over in his hands.  It was small, delicate, likely belonging to a woman.  He closed his eyes, the image of Pyrrha flashing through his mind – her bright smile, her warm laughter, the feel of her hand in his. He pushed the memory away, the familiar ache in his chest intensifying.  He had to focus.  He had to be strong.  For his team. For Pyrrha.
 
-Ruby leaned in, her eyes wide with dawning horror.  "Not like before?" she whispered, the words barely audible above the pounding of her heart. The implications of that unfinished sentence hung heavy in the air, a chilling premonition of a threat far greater than they had ever imagined.
+A glint of metal caught his eye.  Partially wedged beneath the pilot's seat, a cracked datapad lay half-buried in the debris.  He reached for it, his fingers brushing against the smooth, cold surface.  He pulled it free, the screen flickering to life.  A single, chilling message, half-written, dominated the display.  The text was fragmented, distorted, but the words were clear enough.
 
+Ruby leaned closer, her breath catching in her throat as she read the words aloud, her voice trembling with a dawning horror. "They're… here… Sky is falling…"
 
-**(Path B)**
+Weiss's hand flew to her mouth, stifling a gasp. Blake's eyes widened, her pupils dilating in the dim light.  Yang's semblance flared, casting flickering shadows across the cockpit.  
 
-A low growl rumbled from the shadows in the far corner of the cockpit, a sound that made the hairs on the back of Ruby’s neck stand on end.  A mangled form shifted in the darkness, revealing a single, grievously wounded Beowolf. Trapped amidst the wreckage, its leg twisted at an unnatural angle, it snarled, its eyes burning with a desperate, feral rage. Pathetic, yet still dangerous.
+Jaune continued, his voice a hollow whisper, "Grimm… are not… not like before…"
 
-With a guttural roar, the Beowolf lunged, its jaws snapping. Time seemed to slow as Ruby reacted instinctively, Crescent Rose flashing in a silver arc.  The blade plunged deep into the Grimm’s chest, silencing its roar with a choked gurgle. Its burning gaze locked with hers for a heartbeat, a flicker of defiance before the light faded, leaving behind only the heavy silence of death and the chilling realization that this, the brutal, personal act of taking a life, was their new reality.
+The final words hung in the air, heavy with unspoken dread.
 
+"Request… immedi–"  The message cut off abruptly, the screen flickering and dying, plunging the cockpit back into darkness.
 
 **[End Section 1-D]**
 

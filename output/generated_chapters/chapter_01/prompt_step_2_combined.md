@@ -1,36 +1,48 @@
+### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY (Include in each prompt)**
+
+* **Word Count Goal:** This section should be approximately 1000-1200 words.
+* **MAXIMIZE Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the blinding light and shimmering air, the howling wind, and the sounds of ragged breathing with extreme vividness.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Dedicate significant portions of the narrative to each character's deepest inner thoughts, emotions, and physical sensations.
+  * **Ruby:** Disoriented processing, lingering unreality, the weight of leadership, renewed resolve.
+  * **Weiss:** Struggle to maintain composure, sharp observations, internal battle for control.
+  * **Blake:** Heightened Faunus senses, cautious awareness, deep concern for her team.
+  * **Yang:** Visceral frustration, burning protective instinct, raw energy of her emotions.
+  * **Jaune:** Quiet stoicism masking profound internal processing, newfound maturity, lingering grief.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use minute character actions, extensive internal monologues, and nuanced dialogue. AVOID generic descriptions. Every character must have a distinct, individual reaction.
+* **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
+* **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
+
 **[Begin Section 1-A]**
 
-The world tears itself into existence around them not with a gentle fade, but with a cataclysm of sensation. One moment, the non-space of the Ever After. The next, a furnace blast of heat, a blinding white sun, and the solid, unforgiving ground.  Ruby hit the ground hard, the air knocked from her lungs. The world swam in a dizzying haze of white and ochre.  *Sand.*  Grit stung her eyes, scratching against her skin.  *Hot.*  An oppressive, suffocating heat pressed down, baking the air itself. *Real.*  The solidity of the ground beneath her was a brutal affirmation, a jarring counterpoint to the ethereal unreality she'd just left.  *Where…?*
+The world tore itself into existence, not with a gentle dawn, but a brutal, sensory overload. One heartbeat, the ethereal non-space of the Ever After; the next, a furnace blast of searing heat slammed into them, a blinding white sun lancing through their eyelids, and the brutal, unyielding embrace of solid ground.
 
-A choked gasp beside her. Weiss, face pale, clawed at her throat, coughing.  "Air… can't… breathe…"
+Ruby landed hard, the air whooshing from her lungs. Her vision swam, the white expanse of the desert sky a dizzying canvas against which black spots danced. *Ground.* The word echoed in the hollow spaces of her mind, a strange, almost forgotten concept.  The Ever After… gone?  Her thoughts were fractured shards, incapable of forming a coherent picture. Heat, radiating waves of it, baked her skin. Grit, fine and insidious, invaded her nostrils, coating her tongue with the taste of dust.  *We’re back? But… how?*
 
-Jaune groaned, shielding his eyes. "My head…"
+Weiss gasped, a choked sound lost in the dry, crackling air. Her hands flew to her head, fingers digging into her scalp as if to anchor herself to reality.  This stark, merciless sun, this oppressive weight of gravity… it felt alien, almost painful after the ethereal lightness of the Ever After. *Control,* she thought fiercely, fighting the wave of nausea rising within her. *I must maintain control.*  Her senses, heightened by panic, registered the gritty sand clinging to her clothes, the burning kiss of the sun on her skin, the unsettling silence broken only by the rasp of her own breath.
 
-Blake landed with a cat-like grace, but even she staggered, a low growl rumbling in her chest.  Her golden eyes, narrowed against the glare, darted around, taking in the desolate landscape. *Empty. Hostile.*
+Blake landed with a feline grace, her Faunus ears twitching involuntarily at the sudden onslaught of sound – or rather, the lack of it.  The oppressive silence of the desert pressed in on her, broken only by the distant, mournful sigh of the wind. Her senses, already sharp, felt amplified, almost painfully so, in this raw, desolate landscape.  *Vacuo,* she realized with a chilling certainty, the scent of dust and decay confirming her fears.  A deep, visceral concern for her team clawed at her throat.  Where were they?  Were they all… *here*?
 
-Yang sat up, shaking her head, a dazed expression on her face.  Her voice, when it came, was raspy. "What… the…"
+Yang hit the ground with a guttural growl of frustration. The raw, physical reality of Vacuo slammed into her like a physical blow, the sudden shift in gravity a jarring reminder of her own body, a body that felt heavy, sluggish, alien.   The heat, relentless and brutal, stoked the embers of her simmering rage. *Damn it!*  The Ever After… all that time, all that struggle… and for what? To be dumped back into this hellhole? Her fists clenched, the familiar surge of Semblance a flicker in her veins, a desperate yearning for action, for release.
 
-The only sound other than their ragged breathing was the low whine of the wind whipping across the endless expanse of sand.  The sky, a merciless, unbroken dome of blue, offered no shade, no respite.  It pressed down on them, a vast and indifferent presence.
+Jaune landed heavily, the impact jarring his still-grieving soul.  He lay there for a moment, the weight of the world pressing down on him, the heat a physical manifestation of the burning emptiness within. Then, slowly, deliberately, he pushed himself upright.  He blinked against the harsh glare, the desert stretching before him, an endless expanse of white and gold.  *We’re back,* he thought, the words a hollow echo in the vast emptiness of his mind.  He swallowed, the taste of dust thick on his tongue, and forced himself to take a shaky breath.  He had to be strong.  For Pyrrha.  For his team.
 
-Ruby blinked, trying to clear her vision.  The initial wave of disorientation began to recede, replaced by a chilling sense of vulnerability.  *Vacuo.*  The word formed in her mind, unbidden, unwelcome.  They were back. But at what cost?
+“Ruby?” Weiss’s voice, tight with strain, cut through the swirling chaos.
 
-"Blake?"  Her voice was a croak.
+Ruby blinked, her vision slowly clearing.  She saw Weiss, her face pale and drawn, Blake’s amber eyes wide with apprehension, Yang’s fists clenched at her sides, and Jaune, his usual boisterous energy replaced by a quiet stoicism.  “Here,” she croaked, her voice raspy.
 
-Blake swallowed, her voice thick.  "Here."
+“Blake?”
 
-"Weiss?"
+“Present.”  Blake’s voice was low, steady, a small anchor in the storm.
 
-A weak cough. "Present… barely."
+“Yang?”
 
-"Yang?"
+A grunt.  “Yeah.”
 
-"Ugh… yeah."
+“Jaune?”
 
-"Jaune?"
+“Here.”
 
-"Spinning… but here."
-
-Five figures, huddled together in the vast emptiness, their silhouettes stark against the blinding white sand.  They were back on Remnant. Alive.  But utterly lost.
+Five figures, huddled together in the vast, unforgiving expanse of the Vacuan desert.  They were back, but the Ever After, and the trials they had endured, clung to them like a shroud, a silent testament to the battles they had fought and the losses they had suffered. They were together, yet profoundly alone, adrift in a sea of sand and silence.
 
 **[End Section 1-A]**
 

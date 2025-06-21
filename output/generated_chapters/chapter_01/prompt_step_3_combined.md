@@ -1,24 +1,50 @@
+### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY (Include in each prompt)**
+
+* **Word Count Goal:** This section should be approximately 1000-1200 words.
+* **MAXIMIZE Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the blinding light and shimmering air, the howling wind, and the sounds of ragged breathing with extreme vividness.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Dedicate significant portions of the narrative to each character's deepest inner thoughts, emotions, and physical sensations.
+  * **Ruby:** Disoriented processing, lingering unreality, the weight of leadership, renewed resolve.
+  * **Weiss:** Struggle to maintain composure, sharp observations, internal battle for control.
+  * **Blake:** Heightened Faunus senses, cautious awareness, deep concern for her team.
+  * **Yang:** Visceral frustration, burning protective instinct, raw energy of her emotions.
+  * **Jaune:** Quiet stoicism masking profound internal processing, newfound maturity, lingering grief.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use minute character actions, extensive internal monologues, and nuanced dialogue. AVOID generic descriptions. Every character must have a distinct, individual reaction.
+* **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
+* **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
+
 **[Begin Section 1-B]**
 
-The world solidified around them, the initial chaos giving way to a grim, oppressive silence.  Ruby pushed herself up, her hands sinking into the scorching sand.  The heat radiated up through her palms, a tangible reminder of their harsh reality.  “Okay,” she croaked, her voice catching in her dry throat. “Everyone, check the horizon. Anything, anything at all.”
+**(Following directly from Section 1-A)**
 
-Jaune, swaying slightly, squinted.  He pointed a shaky finger towards the shimmering horizon. "Over there... maybe?"  It was nothing but heat haze, playing tricks on the eye.
+The swirling chaos in Ruby’s mind began to settle, replaced by a grim determination.  She pushed herself to her feet, the unfamiliar weight of her body a tangible anchor in this alien landscape.  “Okay,” she said, her voice still rough, but gaining strength.  “We need to figure out where we are… and how to get out of here.”
 
-Weiss, her face still pale, rose slowly, leaning on Myrtenaster for support. "I see nothing but sand," she whispered, her voice strained.
+Jaune, already on his feet, nodded, his gaze sweeping the horizon.  The vastness of the desert, stretching endlessly in every direction, was daunting. "Let's spread out," he suggested, his voice quiet but firm, a newfound maturity clinging to his words. "See if we can find anything… anything at all."
 
-The wind howled across the desolate landscape, carrying with it a low, guttural moan that seemed to emanate from the very heart of the desert.  The sound sent a shiver down Ruby's spine, a primal unease.  It was a sound that didn’t belong, a sound that spoke of something ancient and malevolent.
+The team moved as one, a silent understanding passing between them. The oppressive silence of the desert pressed in, amplifying every crunch of their boots in the sand, every ragged breath. The heat, radiating from the pale sand, shimmered in the air, creating phantom images that danced at the edge of their vision.  The wind howled, a mournful cry that carried with it the faint whispers of… something.  Something unsettling.
 
-Yang, her usual exuberance extinguished, simply nodded, her eyes scanning the undulating dunes.  The sand stretched out before them, a sea of white and ochre, broken only by the occasional wind-sculpted ripple.  Hopelessness began to creep into Ruby's heart.
+Ruby’s own breath hitched in her throat. The Ever After… it felt like a lifetime ago, yet its echoes reverberated through her, a dissonant symphony of memory and loss.  She shook her head, trying to dispel the lingering unreality.  *Focus,* she told herself fiercely.  *We need to focus.*
 
-**Path A:**
+Weiss, her initial panic receding, forced herself to methodically scan the horizon.  The glare was brutal, making her eyes water. She shielded them with a hand, her brow furrowed in concentration.  Each dune looked identical to the last, an endless repetition of sand and sky.  This stark, unforgiving landscape… it felt like a physical manifestation of her own inner turmoil.  *Control,* she repeated the mantra in her mind. *Observe. Analyze.*
 
-Blake stood motionless, her head tilted, her golden eyes narrowed.  Her ears, more sensitive than the others after the ethereal quiet of the Ever After, twitched.  Beneath the howl of the wind, beneath the whisper of the sand, she heard it. A faint, rhythmic groan of stressed metal, carried on the wind like a desperate plea. A sound utterly out of place in this desolate landscape.  Her breath caught.  “There,” she breathed, pointing towards a distant, shimmering rise. “Do you hear it?”
+Blake moved with a feline grace, her Faunus ears twitching, picking up the subtle nuances of the desert wind.  The Ever After, with its muted senses and ethereal stillness, had heightened her sensitivity to the physical world.  Now, every rustle of the wind, every distant cry of a desert bird, every grain of sand shifting beneath her feet, registered with almost painful clarity.  And then… she heard it.  A faint, rhythmic groan, carried on the wind, a sound that didn’t belong in this desolate landscape.  A sound of… metal.  Stressed metal.  Her breath hitched.
 
-**Path B:**
+// **OR, if using Path B:**
 
-Weiss, shielding her eyes against the glare, focused on the shimmering horizon, trying to pierce through the deceptive haze.  For a fleeting moment, a glint of light flashed through the shimmering air, too sharp, too defined to be a natural reflection.  A sliver of something metallic or glassy, reflecting the harsh sun where there should only be rock and sand. "There!" Weiss exclaimed, her voice sharp with sudden urgency.  She pointed towards a distant, barely discernible rise in the endless dunes.  "I saw something.  A reflection."
+Blake moved with a feline grace, her Faunus ears twitching, picking up the subtle nuances of the desert wind.  The Ever After… its strangeness still clung to her, a faint echo of unreality.  She shook her head, trying to clear the lingering disorientation.  *Focus,* she urged herself. *Protect.*
 
-The others followed her gaze, their eyes drawn to the single point in the vast emptiness.  Hope, fragile but undeniable, flickered in their hearts.  A target.
+Weiss, her initial panic receding, forced herself to methodically scan the horizon. The glare was brutal, making her eyes water.  She shielded them with a hand, squinting against the shimmering heat haze.  And then she saw it.  A brief, unnatural glint of light, a flash of something that didn't belong in this monotonous landscape of sand and rock.  A reflection… off metal? Glass? It was gone as quickly as it appeared, but the image burned itself into her mind. *There!*  Her heart leaped with a sudden surge of hope.
+
+// **Continuing from either Path A or B:**
+
+Blake/Weiss froze, her body tensing.  “Did you…?” she began, her voice barely a whisper.
+
+Simultaneously, the others stopped, their gazes drawn to her sudden stillness.
+
+Blake/Weiss pointed a trembling finger towards the shimmering horizon. “There.”  A single word, laden with meaning.
+
+All eyes turned to the indicated point, straining to see through the heat haze and swirling dust.  For a moment, there was nothing but the endless expanse of desert.  Then, as the wind shifted, a shape emerged from the shimmering air, a dark silhouette against the blinding white sky.  A small, battered transport skiff, half-buried in the sand.
+
+A collective breath was drawn, a shared surge of hope in the face of despair.  They had a target.
 
 **[End Section 1-B]**
 

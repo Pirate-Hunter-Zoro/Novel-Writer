@@ -1,3 +1,17 @@
+### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY (Include in each prompt)**
+
+* **Word Count Goal:** This section should be approximately 1000-1200 words.
+* **MAXIMIZE Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the blinding light and shimmering air, the howling wind, and the sounds of ragged breathing with extreme vividness.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Dedicate significant portions of the narrative to each character's deepest inner thoughts, emotions, and physical sensations.
+  * **Ruby:** Disoriented processing, lingering unreality, the weight of leadership, renewed resolve.
+  * **Weiss:** Struggle to maintain composure, sharp observations, internal battle for control.
+  * **Blake:** Heightened Faunus senses, cautious awareness, deep concern for her team.
+  * **Yang:** Visceral frustration, burning protective instinct, raw energy of her emotions.
+  * **Jaune:** Quiet stoicism masking profound internal processing, newfound maturity, lingering grief.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use minute character actions, extensive internal monologues, and nuanced dialogue. AVOID generic descriptions. Every character must have a distinct, individual reaction.
+* **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
+* **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
+
 
 
 ### **Prompt 1-A: Arrival and Disorientation**

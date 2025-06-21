@@ -1,27 +1,19 @@
 **[Begin Section 1-E]**
 
-**(Path A)**
+The silence that followed the datapad’s dying flicker was heavier than the dust-laden air.  The ghostly echoes of screams and snarls, previously imagined, now felt chillingly real. The reality of their situation, previously a hazy blur of disorientation and fatigue, now sharpened into a terrible clarity. Ruby’s grip on Crescent Rose tightened, the cool metal a grounding presence in the suffocating stillness.  The childish wonder that had colored her initial return was gone, replaced by a steely glint in her silver eyes.  The Ever After hadn’t just changed them; it had changed the world.  And the burden of leadership, a weight she’d carried with a naive optimism, now pressed down on her with the force of a physical blow.  *We have to find the others,* she thought, the words a silent mantra.  *We have to warn them.*
 
-The silence in the wrecked skiff pressed down on them, heavier than the desert air outside. Ruby’s fingers tightened around Crescent Rose, the cool metal a stark contrast to the burning fear that coiled in her gut.  "Not like before…" she echoed, the fragmented message a chilling prophecy.  What could be worse than the Grimm they already knew?
+Weiss’s carefully constructed composure finally fractured.  A tremor ran through her, a shuddering breath escaping her lips.  She could still smell the blood, the acrid tang of burnt flesh and wiring a phantom sensation on her tongue.  The sterile, controlled environment of Atlas, the pristine white of Schnee manor, felt like a distant dream. This… this was a nightmare.  Raw, brutal, and inescapable.  She pressed her fingers against her temples, fighting the urge to succumb to panic. *Control yourself, Weiss,* she thought fiercely. *Panic solves nothing.*  Her gaze, sharp and assessing, swept over her teammates.  They were all shaken, but they were still here. Still together.  That had to be enough. For now.
 
-Jaune carefully placed the datapad back on the floor, the shattered screen a reflection of their fractured hope.  He didn’t need to voice his fears; they were mirrored in Weiss's pale face and the grim set of Yang's jaw.  Blake simply stared at the message, her violet eyes dark with a chilling understanding.  The world had shifted, not with a bang, but with a whispered warning.
+Blake pressed her back against the bulkhead, the cold metal a stark contrast to the burning anxiety that churned in her gut. The scent of fear, previously faint and ephemeral, now saturated the air, a suffocating blanket that clung to her fur. Her Faunus senses, normally a source of strength, now felt like a curse, amplifying the horror of the scene, painting a vivid picture of the carnage that had unfolded within the cramped confines of the cockpit.  Her hand instinctively went to Gambol Shroud, the familiar weight of the weapon a small comfort in the face of the overwhelming dread. *This is different,* she thought, the realization a chilling whisper in her mind. *The Grimm… they’re evolving.*
 
-They stepped out of the skiff, blinking against the harsh Vacuan sun. The desert, once a symbol of their escape, now seemed a vast, unforgiving arena.  The wind whispered through the wreckage, a mournful dirge for a world they no longer recognized.
+Yang’s semblance flickered and died, the brief burst of energy a futile attempt to dispel the oppressive weight that settled on her chest.  The raw, visceral frustration she felt was a physical ache, a burning need to lash out, to break something, to *do* something.  But there was nothing to hit, nothing to destroy, except the suffocating fear that threatened to consume her.  She reached out, placing a hand on Blake’s shoulder, the silent gesture a lifeline in the swirling darkness.  *We’ll get through this,* she thought, the words a fierce promise.  *Together.*
 
-**(Path B)**
+Jaune remained kneeling beside the overturned chair, the bloodstained glove still clutched in his hand.  The datapad’s message, those fragmented, chilling words, echoed in his mind.  He saw Pyrrha again, her vibrant aura extinguished, her body broken and lifeless.  The grief, a constant companion for so long, now sharpened into a cold, hard resolve.  He rose slowly, his movements deliberate, his gaze sweeping the horizon with a newfound strategic weight.  The desert stretched before them, a vast, unforgiving expanse of sand and rock.  But it wasn't empty.  He could feel it now, a palpable sense of menace, a lurking darkness that hid beneath the blinding sun.  *We're not alone,* he thought, his voice a silent vow. *And we're ready.*
 
-The Beowolf’s lifeless eyes stared up at them, a stark reminder of the brutal reality they had returned to.  Ruby’s hand trembled slightly as she retracted Crescent Rose, the weight of the Grimm’s life, however brief, a tangible burden. The metallic scent of blood mingled with the desert air, a grim perfume clinging to them.
+They emerged from the wreckage into the harsh glare of the Vacuan sun.  The desert wind whipped around them, carrying the fine sand that stung their skin and gritted between their teeth.  The world felt different now, heavier, more real.  The lingering unreality of the Ever After was gone, replaced by a grim understanding.  They were no longer just survivors.  They were soldiers, returned to a war they hadn’t realized they were fighting.
 
-No one spoke.  The echoes of the Beowolf’s final roar still reverberated in the suffocating silence.  Jaune’s gaze drifted to the horizon, no longer searching for rescue, but assessing the landscape with a soldier's eye.  Yang placed a hand on Blake’s shoulder, a silent gesture of comfort and shared understanding. The weight of their shared experience pressed down on them, forging a bond stronger than words.
+They stood together, silhouetted against the backdrop of the wrecked skiff, the vast, hostile wasteland of Vacuo stretching out before them. The sky, once a boundless expanse of blue, now seemed to press down on them, heavy with unspoken dread. The desert, once merely empty, now looked hungry.
 
-They emerged from the wreckage, the blinding sun a stark contrast to the shadows they carried within.  The desert stretched before them, no longer empty, but teeming with unseen threats. The wind whipped across the sand, a prelude to the storm they knew was coming.
-
-
-**(Both Paths Converge)**
-
-The five of them stood before the wreckage, silhouetted against the endless expanse of Vacuo.  The desert, once a symbol of freedom, now felt like a prison. The sun beat down on them, merciless and unforgiving. They were no longer running; they were preparing.  The war had found them.
-
-The wind carried a single, desolate howl across the dunes, a chilling reminder that they were not alone.  They were home, and the fight for Remnant had just begun.
-
+The hunt had begun.
 
 **[End Section 1-E]**

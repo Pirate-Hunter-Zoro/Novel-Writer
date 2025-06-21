@@ -136,78 +136,129 @@ def main():
             print(f"Could not parse the 5-part prompt for Chapter {args.chapter_number}. Aborting!")
             return
 
-        # This is our canvas! It will hold the story as it grows.
-        cumulative_story_text = ""
-        final_chapter_file = os.path.join(chapter_output_dir, f'chapter_{args.chapter_number:02d}_complete.md')
-        all_parts_generated = True
+        # Lists to hold the paths to all our new little files! So organized!
+        generated_part_paths = []
+        prompt_part_paths = []
+        all_parts_succeeded = True
 
-        # This is the new auto-regressive feedback loop!
+        # The new "Divide and Conquer" loop!
         for i, micro_prompt in enumerate(five_part_prompts, 1):
             print(f"\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
             print(f"  GENERATING PART {i}/5 for Chapter {args.chapter_number}")
             print(f">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
 
-            # This is the magic! We combine the story so far with the next prompt!
-            # This fulfills the instructions from chapter_1.md!
-            current_full_prompt = core_directives + "\n\n" + cumulative_story_text + "\n\n" + micro_prompt
+            # We need to re-inject the core directives for each individual part.
+            # This ensures each generation task has the full set of rules.
+            finalized_prompt = core_directives + "\n\n" + micro_prompt
 
-            # Define the file paths for this specific step
-            prompt_step_file = os.path.join(chapter_output_dir, f'prompt_step_{i}_combined.md')
+            # Define unique file names for each part's prompt and generated text
+            prompt_part_file = os.path.join(chapter_output_dir, f'prompt_part_{i}.md')
+            chapter_part_file = os.path.join(chapter_output_dir, f'chapter_part_{i}.md')
+
+            print(f"Saving focused prompt for part {i} to {prompt_part_file}")
+            with open(prompt_part_file, 'w', encoding='utf-8') as f:
+                f.write(finalized_prompt)
+
+            # Call the Author bot to write just this one, focused piece!
+            author_command = ['python', os.path.join(PROJECT_ROOT, 'scripts', 'author.py'), '--prompt-file', prompt_part_file, '--output-file', chapter_part_file, '--api-key', api_key]
             
-            print(f"Saving combined prompt for step {i} to {prompt_step_file}")
-            with open(prompt_step_file, 'w', encoding='utf-8') as f:
-                f.write(current_full_prompt)
+            if run_script(author_command):
+                # The part was generated successfully! Let's save the paths.
+                generated_part_paths.append(chapter_part_file)
+                prompt_part_paths.append(prompt_part_file)
+            else:
+                # A part failed! We have to stop.
+                print(f"Author script failed on part {i}. Halting generation process.")
+                all_parts_succeeded = False
+                break
 
-            # Call the Author bot to continue writing the story!
-            author_command = ['python', os.path.join(PROJECT_ROOT, 'scripts', 'author.py'), '--prompt-file', prompt_step_file, '--output-file', final_chapter_file, '--api-key', api_key]
-            if not run_script(author_command):
-                print(f"Author script failed on part {i}. Halting process.")
-                all_parts_generated = False
-                break # Exit the loop if a part fails
-            
-            # This is the feedback loop! We read the new, longer story that the
-            # author just wrote and make it our new cumulative text for the next step!
-            print("Reading generated text to use as context for the next step...")
-            cumulative_story_text = load_file_content(final_chapter_file)
-
-        if all_parts_generated:
+        if all_parts_succeeded:
             print("\n**************************************")
-            print(f"  SUCCESS! All 5 parts of Chapter {args.chapter_number} generated and combined!")
-            print(f"  Final chapter saved to: {final_chapter_file}")
+            print(f"  SUCCESS! All 5 individual parts of Chapter {args.chapter_number} generated!")
+            print("  Next step: Parallel Critique.")
             print("**************************************")
             
-            # --- FINAL QUALITY ASSURANCE CHECK ---
-            print("\n--- Sending final chapter for critique... ---")
+            print("\n--- INITIATING PARALLEL CRITIQUE ---")
+            critique_part_paths = []
+            all_critiques_succeeded = True
 
-            # We need to save the original main prompt from the chapter_X.md file
-            # for the critic to use as a reference.
-            main_prompt_file = os.path.join(chapter_output_dir, f'prompt_chapter_{args.chapter_number:02d}_main.md')
-            print(f"Saving main reference prompt to: {main_prompt_file}")
-            with open(main_prompt_file, 'w', encoding='utf-8') as f:
-                # The 'all_prompts_text' variable holds the full original prompt text!
-                f.write(all_prompts_text)
+            # A new loop! It iterates through each part we generated.
+            for i, chapter_part_path in enumerate(generated_part_paths, 1):
+                print(f"\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
+                print(f"  CRITIQUING PART {i}/5 for Chapter {args.chapter_number}")
+                print(f">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
 
-            # Define the output file for our final critique
-            final_critique_file = os.path.join(chapter_output_dir, f'critique_chapter_{args.chapter_number:02d}_final.md')
+                # The prompt that CREATED this part.
+                prompt_part_path = prompt_part_paths[i-1] 
+                # The file where we'll save this part's critique.
+                critique_part_file = os.path.join(chapter_output_dir, f'critique_part_{i}.md')
 
-            # Call the Critic bot to analyze the completed chapter!
-            critic_command = [
-                'python', os.path.join(PROJECT_ROOT, 'scripts', 'critic.py'),
-                '--author-prompt-file', main_prompt_file,
-                '--generated-file', final_chapter_file,
-                '--output-file', final_critique_file,
-                '--api-key', api_key
-            ]
-            
-            if run_script(critic_command): #
-                print("--- Final critique complete! Check artifacts for results. ---")
-            else:
-                print("--- CRITIC SCRIPT FAILED. Please check logs. ---")
+                # Build the command to critique just this one part!
+                critic_command = [
+                    'python', os.path.join(PROJECT_ROOT, 'scripts', 'critic.py'),
+                    '--author-prompt-file', prompt_part_path,
+                    '--generated-file', chapter_part_path,
+                    '--output-file', critique_part_file,
+                    '--api-key', api_key
+                ]
+                
+                if run_script(critic_command):
+                    critique_part_paths.append(critique_part_file)
+                else:
+                    print(f"CRITIC FAILED on part {i}. Halting critique process.")
+                    all_critiques_succeeded = False
+                    break
+
+            if all_critiques_succeeded:
+                print("\n**************************************")
+                print(f"  SUCCESS! All 5 parts of Chapter {args.chapter_number} have been individually critiqued!")
+                print("**************************************")
+                
+                print("\n--- INITIATING FINAL REVIEW & ASSEMBLY ---")
+                all_parts_passed_critique = True
+                
+                # This loop reads every critique report!
+                for critique_path in critique_part_paths:
+                    print(f"Reading critique file: {critique_path}")
+                    critique_text = load_file_content(critique_path)
+                    # We're scanning for any sign of failure!
+                    if "FAIL" in critique_text.upper():
+                        print(f"FAILURE DETECTED in {critique_path}. Halting assembly.")
+                        all_parts_passed_critique = False
+                        break # No need to check the others if one failed!
+
+                # This is the final decision!
+                if all_parts_passed_critique:
+                    print("\n**************************************")
+                    print("  SUCCESS! All 5 parts passed individual critique!")
+                    print("  Beginning final chapter assembly...")
+                    print("**************************************")
+
+                    # --- THE FINAL STITCHING MECHANISM ---
+                    final_chapter_file = os.path.join(chapter_output_dir, f'chapter_{args.chapter_number:02d}_complete.md')
+                    full_chapter_text = ""
+
+                    for part_path in generated_part_paths:
+                        part_content = load_file_content(part_path)
+                        full_chapter_text += part_content + "\n\n---\n\n"
+
+                    print(f"Saving final, assembled chapter to: {final_chapter_file}")
+                    with open(final_chapter_file, 'w', encoding='utf-8') as f:
+                        f.write(full_chapter_text)
+                    
+                    print("\n--- V4 ENGINE RUN COMPLETE! VICTORY! ---")
+
+                else:
+                    print("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                    print("  FAILURE! One or more parts failed critique.")
+                    print("  Final chapter will NOT be assembled. Check individual critique files for details.")
+                    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                
         else:
             print("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             print(f"  FAILURE! Chapter generation did not complete all 5 parts.")
-            print(f"  Check the artifacts in: {chapter_output_dir}")
             print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
 
         print("\n--- narrative engine shutdown ---")
     
