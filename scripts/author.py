@@ -1,15 +1,6 @@
 import os
 import argparse
-import google.generativeai as genai
-
-def configure_api(api_key):
-    """Configures the generative AI API with the provided key."""
-    try:
-        genai.configure(api_key=api_key)
-        print("API configured successfully.")
-    except Exception as e:
-        print(f"Error configuring API: {e}")
-        raise
+import anthropic
 
 def load_prompt(prompt_file_path):
     """Loads the content of the prompt file."""
@@ -26,20 +17,31 @@ def load_prompt(prompt_file_path):
         print(f"An unexpected error occurred while reading the prompt file: {e}")
         raise
 
-def generate_chapter(prompt_text):
+def generate_chapter(prompt_text, api_key):
     """
-    Sends the prompt to the Gemini 1.5 Pro model and generates the chapter text.
-    This is where the magic happens! We're sending our instructions to the great
-    story-telling machine in the sky!
+    Sends the prompt to the Claude 3 Opus model and generates the chapter text.
+    This is where the NEW magic happens! We've swapped the core!
     """
-    print("Initializing Generative Model (Gemini 1.5 Pro)...")
+    print("Initializing Generative Model (Claude 3 Opus)...")
     try:
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
-        print("Model initialized. Generating content... This might take a moment!")
+        # We create the Anthropic client right here!
+        client = anthropic.Anthropic(api_key=api_key)
+        
+        print("Model client initialized. Generating content... This might take a moment!")
+        
         # We send the prompt and ask the model to generate the content!
-        response = model.generate_content(prompt_text)
+        # Note: Claude uses a 'messages' format.
+        response = client.messages.create(
+            model="claude-3-opus-20240229",
+            max_tokens=4096,  # We can tune this! It's like a power-limiter!
+            messages=[
+                {"role": "user", "content": prompt_text}
+            ]
+        )
+        
         print("Content generation complete!")
-        return response.text
+        # The response structure is different, so we grab the text this way.
+        return response.content[0].text
     except Exception as e:
         print(f"ERROR: Failed to generate content from API. Details: {e}")
         # This could be an API key issue, a connection problem, or something else!
@@ -73,17 +75,13 @@ def main():
 
     print("--- Starting Author Engine ---")
     try:
-        # Step 1: Configure the API. No power, no machines!
-        configure_api(args.api_key)
-
-        # Step 2: Load our brilliant instructions.
+        # Step 1: Load our brilliant instructions.
         prompt = load_prompt(args.prompt_file)
 
-        # Step 3: Generate the narrative! This is the big one!
-        generated_text = generate_chapter(prompt)
+        # Step 2: Generate the narrative! This is the big one!
+        generated_text = generate_chapter(prompt, args.api_key)
 
-        # Step 4: Save the glorious data!
-        #! THE FIX IS RIGHT HERE! Changed the hyphen to an underscore!
+        # Step 3: Save the glorious data!
         save_chapter(generated_text, args.output_file)
 
         print("--- Author Engine Shutdown Successful ---")
