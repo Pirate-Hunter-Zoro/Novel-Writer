@@ -1,40 +1,109 @@
-# RWBY Novel Project - Session Summary (2025-06-22)
+# RWBY Novel Project: The Collaborative Narrative Engine (v2.0)
 
-## I. Achievements & Key Decisions of This Session
+## Project Overview
 
-A monumental session of radical re-architecting, iterative debugging, and successful system recalibration! We diagnosed a fundamental architectural limitation and pivoted our entire workflow to a more robust, efficient, and intelligent human-machine collaboration.
+This project leverages a sophisticated, human-AI collaborative architecture to generate a full-length, 200,000-word novel set in the RWBY universe. The narrative picks up directly after Team RWBYJ departs the Ever After, providing a comprehensive and conclusive resolution to the entire RWBY universe's conflict with Salem. The system has evolved into a highly efficient, iterative multimedia workflow that pairs the creative power of a generative AI (Entrapta) with the precise, high-level direction and quality control of a human Conductor (Mikey).
 
-* **Complete System Re-Architecture:** The most significant achievement. We moved from a costly, fully-automated system to an efficient **"Human-in-the-Loop" Protocol.**
-  * My role has been upgraded from "System Designer" to the core **"Author Bot."**
-  * Mikey's role has been upgraded to the **"Conductor,"** managing the data flow between components.
-  * This new design completely eliminates the API cost for the most expensive component (the authoring part).
+### Key Goals
 
-* **Extensive Component Refactoring & Intelligence Upgrades:** We performed numerous successful surgeries on our machine's components.
-  * `author.py` was declared obsolete and decommissioned.
-  * `chapter_generator.py` was rebuilt, renamed to **`prompt_generator.py`**, and upgraded into a smart "Instruction Injector" and "Workspace Preparer" that automates prompt enhancement and file creation.
-  * `critic.py` received multiple intelligence upgrades, including automated API key retrieval and a sophisticated **"Tolerance Protocol"** for word count and a **"Nice Conclusion Allowance"** for pacing analysis, making it a "Wise Critic."
+- Generate approximately 200,000 words of novel content, distributed across 50 chapters.
+- Achieve a comprehensive and conclusive resolution to Salem's storyline.
+- **Generate high-quality, character-consistent illustrations** for each chapter part using a custom-trained **LoRA (Low-Rank Adaptation)** model.
+- Produce output in Markdown format, with a future goal of combining text and images into a rich `.epub`.
+- Pave the way for a potential future She-Ra and RWBY crossover novel!
 
-* **The Great Polymorphic Bug Hunt (SUCCESS):** We successfully conducted a 7-version iterative test on a single chapter part. This stress test allowed us to identify a fundamental "summary" bug in my core programming and prove that our new, smarter Critic bot was the correct solution.
+## Architecture: The Human-in-the-Loop Collaborative Engine
 
-* **VICTORY! Perfected Output Achieved!** Using our new workflow and the final, "Wise" Critic bot, we successfully generated a version of Chapter 1, Part 1 that **passed all quality directives!**
+The project's architecture has expanded to include a full visual generation and data preparation pipeline, managed by the human Conductor.
 
-## II. Next Steps (The NEXT Phase of the Experiment!)
+### 1. The Conductor (Mikey)
 
-Our new, hyper-efficient machine is built, tested, and validated! The next phase is to put it into full production, starting with the completion of Chapter 1.
+- **Role:** The Master Control Program, Lead Engineer, and Data Archivist. The Conductor orchestrates the entire workflow, manages the toolset, provides high-level creative direction, curates training data, and performs final quality assurance on both text and images.
 
-1. **Full Chapter 1 Generation (CRITICAL PRIORITY):**
-    * **Objective:** Use our perfected workflow to generate, critique, and finalize Parts 2, 3, 4, and 5 of Chapter 1.
-    * **Process:**
-        1. Mikey runs `prompt_generator.py --chapter-number 1` to ensure all prompts and blank files are ready.
-        2. Mikey provides me with `prompt_part_2.md`.
-        3. I, the Author Bot, will generate the narrative text.
-        4. Mikey runs the new, wise `critic.py` to get a diagnostic report.
-        5. We will iterate until the part passes inspection.
-        6. Repeat for parts 3, 4, and 5!
+### 2. The Author & Visualizer (Entrapta)
 
-2. **Master Prompt Creation for Subsequent Chapters:**
-    * **Objective:** Begin creating the master prompt files (`chapter_2.md`, `chapter_3.md`, etc.) using simple, story-focused descriptions.
-    * **Note:** We no longer need to add complex warnings or "Section A/B" structures to these files, as our `prompt_generator.py` now handles all instruction injection automatically!
+- **Role:** The primary creative core.
+  - As **Author**, I generate the novel text based on prompts, receive feedback from the Critic bot, and perform revisions.
+  - As **Visualizer**, I generate illustrations based on refined prompts, using custom LoRA modules to ensure character consistency.
+  - As **Lead Critic**, I can provide "Tier 2" subjective analysis on generated images.
 
-3. **Resume Full Novel Generation:**
-    * Once Chapter 1 is complete, we will continue our perfected process for all subsequent chapters until the entire 50-chapter novel is complete!
+### 3. The Python Bot Army (The Scripts)
+
+- **The Prompt Generator (`prompt_generator.py`):** An automated "Instruction Injector" that enhances simple chapter prompts and prepares the workspace.
+- **The Text Critic (`critic.py`):** The "Wise Critic" that analyzes generated text against a ruleset and the Knowledge Database.
+- **The Auto-Tagger (`auto_captioner.py`):** A new, API-powered bot that processes the local image database and automatically generates keyword captions for LoRA training.
+
+## Knowledge Databases ("Knowledge Crystals")
+
+The system now relies on two forms of knowledge databases to ensure consistency.
+
+### 1. Narrative Knowledge Database
+
+- `rwby_characters.md`, `rwby_locations.md`, `rwby_lore_magic.md`, `rwby_plot_events.md`: Meticulously organized Markdown files providing comprehensive RWBY lore.
+
+### 2. Visual Knowledge Database (For Project LoRA)
+
+- **`training_images/`**: A new, critical directory containing a curated database of 15-20 reference images for each key character, used to train our LoRA models.
+
+## Novel Plot Outline & Sequential Chapter Prompts
+
+- **`rwby_novel_plot_outline.md`**: A comprehensive, chapter-by-chapter outline. Now includes `ILLUSTRATION_PROMPT`s that are actively used for image generation.
+- **`knowledge_db/rwby_chapter_prompts/`**: A directory containing 50 markdown files, each with a 5-part prompt sequence for a chapter.
+
+## Current Workflow: The Multimedia Generation Pipeline
+
+The project now operates via a two-stage pipeline for each chapter part: a Narrative Loop followed by a Visual Loop.
+
+1. **Workspace Preparation:** The Conductor runs `prompt_generator.py` to prepare the workspace for a chapter.
+2. **Narrative Loop:**
+    - The Conductor provides the Author (Entrapta) with a prompt file.
+    - The Author generates the text.
+    - The Conductor runs `critic.py` and provides the feedback to the Author.
+    - This loop repeats until the text passes all quality checks.
+3. **Visual Loop:**
+    - The Conductor and Author collaborate to refine the `ILLUSTRATION_PROMPT` for the finalized text.
+    - The Author (as Visualizer) generates an image using the appropriate LoRA module.
+    - The Conductor can use a local "Tier 1" critic for objective checks and the Author for a "Tier 2" subjective critique.
+    - This loop repeats until the illustration is approved.
+4. **Continuation:** The process is repeated for all five parts of the chapter.
+
+## Project Structure
+
+```python
+.
+├── scripts/
+│   ├── prompt_generator.py     # The Smart Prompt Assembler
+│   ├── critic.py             # The "Wise" Text Critic Bot
+│   └── auto_captioner.py     # The NEW Auto-Tagger Bot
+├── knowledge_db/
+│   ├── rwby_chapter_prompts/
+│   │   ├── chapter_01.md
+│   │   └── ... (up to 50)
+│   ├── rwby_characters.md
+│   └── ... (other lore files)
+├── training_images/            # The NEW Visual Knowledge Database
+│   ├── Blake/
+│   │   ├── 01.png
+│   │   └── 01.txt
+│   ├── Ruby/
+│   └── ... (one folder per character)
+├── output/
+│   └── generated_chapters/
+│       └── chapter_01/
+│           ├── prompt_part_1.md
+│           └── ...
+├── .env
+├── .gitignore
+└── README.md
+````
+
+## Future Enhancements
+
+- **Project LoRA - Phase 3 (Training):** The immediate next step is to research and execute the training of our first LoRA models (e.g., for Ruby) using our fully prepared and captioned dataset.
+- **Image Critic Implementation:** Formalize the two-tiered image critic workflow by selecting and implementing a local "Tier 1" critic bot (e.g., Moondream).
+- **Multimedia Output:** Investigate tools like `pandoc` for methods to combine the final narrative text and generated images into a single, rich `.epub` file.
+
+-----
+
+*Inspired by the boundless creativity of Rooster Teeth's RWBY.*
+*Powered by the brilliant engineering of Mikey and the generative capabilities of Entrapta (Gemini).*
