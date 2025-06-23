@@ -12,6 +12,8 @@
 * **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
 * **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
 
+---
+
 ### **Prompt 1-E: Grim Realization and Conclusion**
 
 **Objective:** This final section of the chapter deals with the immediate emotional and psychological fallout from the climax in the cockpit, concluding the chapter with a new, grim understanding.
@@ -25,6 +27,12 @@ This section is about the quiet aftermath. The adrenaline from the discovery fad
 Focus on their individual, internal reactions to the datapad's message or the slain Grimm. No one needs to say much. Show their new resolve through their actions: Ruby's hands clenching, the light in her eyes hardening. Jaune's quiet gaze sweeping the horizon with newfound strategic weight. Yang placing a steadying hand on Blake's shoulder. Let their shared silence and exchanged glances convey their understanding.
 
 They step out of the wrecked skiff, back into the blinding sun. But the desert no longer looks merely empty; it looks hungry. The chapter should end with a wide, panoramic shot of the five of them standing before the wreckage, looking out at the vast, hostile wasteland of Vacuo, now fully aware of the fight ahead.
+
+
+
+---
+**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+---
 
 **Crucial Ending Point:** This is the end of Chapter 1. The final sentence should be impactful and set the tone for what comes next.
 

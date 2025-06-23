@@ -12,6 +12,8 @@
 * **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
 * **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
 
+---
+
 ### **Prompt 1-D: The Cockpit and the Climax**
 
 **Objective:** Continuing *immediately* from the end of the previous section, this part focuses on the tense investigation of the skiff's interior, leading to the chapter's central, chilling discovery.
@@ -26,6 +28,12 @@ This entire section builds to the chapter's mini-climax. After a few moments of 
 
 * **Path A (The Datapad):** Tucked under a seat or still clutched in a dislodged pilot's gauntlet, they find a datapad. Its screen is cracked but still functional. It displays a single, chilling, unfinished emergency transmission: "They're here... Sky is falling... Grimm are not... not like before... request immedi—" The message cuts out.
 * **Path B (The Grimm):** A noise from a shadowed corner of the cockpit reveals a single, grievously wounded Beowolf, trapped and dying from the crash. It is mangled and pathetic, but still dangerous. It langes one last time, forcing a swift, brutal, and personal execution that solidifies their return to war.
+
+
+
+---
+**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+---
 
 **Crucial Ending Point:** This section must end at the absolute peak of the climax: the moment they read the final word of the message and its implication sinks in, OR the moment the final deathblow is dealt to the wounded Grimm.
 

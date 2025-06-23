@@ -1,16 +1,15 @@
-# critic.py
-# The Sensor Array! This script analyzes a generated chapter against its
-# original prompt to identify failures and suggest improvements.
-# It is the analytical mind of our narrative engine.
+# critic.py (v5.0 - The Wise Sensor Array!)
+# FINAL VERSION: This critic understands the nuance of a concluding paragraph.
 
 import os
 import argparse
 import google.generativeai as genai
+from dotenv import load_dotenv
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-# <<< THIS IS THE UPGRADED BRAIN! >>>
+#! FINAL UPGRADE: The Critic's brain is now wise!
 CRITIC_SYSTEM_PROMPT_TEMPLATE = """
 **SYSTEM COMMAND: You are the Critic LLM, a rigorous, data-driven literary and lore analyst. Your function is to evaluate a generated text against its source prompt AND a knowledge base, providing specific, actionable feedback. You will be given three pieces of data: `[LORE_KNOWLEDGE_BASE]`, `[PROMPT_FOR_AUTHOR]`, and `[GENERATED_TEXT]`.**
 
@@ -26,15 +25,15 @@ CRITIC_SYSTEM_PROMPT_TEMPLATE = """
 
 2.  **Execute Critical Analysis based on the following NON-NEGOTIABLE directives:**
     * **Directive 1: Word Count.**
-        * **Parameter:** The prompt demanded a word count between 3,000 and 6,000 words.
-        * **Analysis:** Calculate the actual word count of the `[GENERATED_TEXT]`. Report the exact number and state clearly whether it passed or failed this directive.
+        * **Parameter:** The prompt will specify a target word count range.
+        * **Analysis:** Calculate the actual word count. If the count is within a reasonable tolerance (e.g., 5% over or under the specified range), you may list it as an **`ACCEPTABLE DEVIATION`**. Only report a hard **`FAIL`** if it significantly misses the target.
     * **Directive 2: `[EPIC_MOMENT_END]` Marker.**
         * **Parameter:** The prompt demanded the inclusion of the literal string `[EPIC_MOMENT_END]`.
         * **Analysis:** Scan the `[GENERATED_TEXT]` for the presence of this exact marker. Report if it is PRESENT or ABSENT.
+    #! MODIFIED DIRECTIVE: The final, smartest rule for pacing!
     * **Directive 3: Sustained Quality of Detail.**
-        * **Parameter:** The prompt demanded "MAXIMIZE Immersive Sensory Details" and "EXCRUCIATING Detail" *throughout* the chapter.
-        * **Analysis:** Compare the descriptive density of the initial section with the later "Central Mini-Event" section. Identify if the narrative shifts from deep internal monologue and sensory detail to a more summary-based, action-oriented plot description. Note this as a "Quality Pacing Failure."
-    * **<<< OUR NEW DIRECTIVE! >>>**
+        * **Parameter:** The prompt demands strong immersive detail.
+        * **Analysis:** The text should maintain strong sensory detail and internal monologue. A **brief, concluding summary paragraph** that reflects on the characters' collective state is **acceptable**, provided it does not introduce new plot points and directly follows the climax of the scene. A "Quality Pacing Failure" should only be noted if the summary begins too early or replaces significant chunks of detailed interaction.
     * **Directive 4: Lore Consistency.**
         * **Parameter:** The provided `[LORE_KNOWLEDGE_BASE]` contains the single source of truth for the entire novel.
         * **Analysis:** Meticulously scan the `[GENERATED_TEXT]` for any and all contradictions with the established lore from the knowledge base. This includes, but is not limited to, character voice, weapon abilities, Semblance rules, locations, and established plot events. If a contradiction is found, you must generate a specific "Failure Report" that clearly states the error and what the correct information should be, citing the source lore file if possible (e.g., "Inconsistency Detected: Jaune Arc used 'Polarity' Semblance. Semblance is 'Aura Amplification'. See `rwby_characters.md`.").
@@ -84,13 +83,8 @@ def load_file_content(file_path):
         raise
 
 def get_critique(author_prompt_text, generated_chapter_text, all_lore_text):
-    """
-    Constructs the final prompt for the critic and sends it to the API.
-    This is where we assemble our data packet and send it for analysis!
-    """
+    """Constructs the final prompt for the critic and sends it to the API."""
     print("Constructing master prompt for Critic LLM...")
-    # We slot the lore, the author's prompt, and the generated text into our template.
-    # It's like putting the test sample into the analysis machine!
     critic_master_prompt = CRITIC_SYSTEM_PROMPT_TEMPLATE.format(
         all_lore_text=all_lore_text,
         author_prompt=author_prompt_text,
@@ -122,45 +116,52 @@ def save_critique(critique_text, output_file_path):
 
 def main():
     """The main function that orchestrates the critique process."""
-    parser = argparse.ArgumentParser(description="The Critic Script: Analyzes a chapter.")
-    parser.add_argument('--author-prompt-file', required=True, help='Path to the prompt file used by the author.')
-    parser.add_argument('--generated-file', required=True, help='Path to the chapter file generated by the author.')
+    load_dotenv()
+
+    parser = argparse.ArgumentParser(description="The Critic Script (v5.0): The Wise Critic.")
+    parser.add_argument('--chapter-number', type=int, required=True, help='The chapter number to analyze.')
+    parser.add_argument('--part-number', type=int, required=True, help='The part number within the chapter to analyze.')
     parser.add_argument('--knowledge-base-files', nargs='+', help='Optional. A list of paths to the markdown knowledge base files.', default=[
         os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_characters.md'),
         os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_locations.md'),
         os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_lore_magic.md'),
         os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_plot_events.md')
     ])
-    parser.add_argument('--output-file', required=True, help='Path to save the generated critique file.')
-    parser.add_argument('--api-key', required=True, help='Your Google Generative AI API key.')
-
+    
     args = parser.parse_args()
 
-    print("--- Starting Critic Engine ---")
+    print("--- Starting Critic Engine v5.0 ---")
     try:
-        # Step 1: Power up the API.
-        configure_api(args.api_key)
+        api_key = os.getenv("GOOGLE_API_KEY")
+        if not api_key:
+            print("ERROR: GOOGLE_API_KEY not found in .env file! The machine has no power!")
+            return
+
+        configure_api(api_key)
+
+        print("Constructing file paths from chapter and part number...")
+        chapter_dir = os.path.join(PROJECT_ROOT, 'output', 'generated_chapters', f'chapter_{args.chapter_number:02d}')
+        prompt_file = os.path.join(chapter_dir, f'prompt_part_{args.part_number}.md')
+        generated_file = os.path.join(chapter_dir, f'chapter_part_{args.part_number}.md')
+        output_file = os.path.join(chapter_dir, f'critique_part_{args.part_number}.md')
+        print(f"  -> Prompt file: {prompt_file}")
+        print(f"  -> Generated file: {generated_file}")
+        print(f"  -> Output file: {output_file}")
         
-        print("Combining all knowledge base files into a single lore document...")
+        print("\nCombining all knowledge base files into a single lore document...")
         all_lore_text = ""
         for file_path in args.knowledge_base_files:
-            # We'll use our existing function to read the file! So efficient!
             lore_content = load_file_content(file_path)
-            # This next part is clever! We add a little header for each file
-            # so the Critic LLM knows which piece of lore came from where.
             all_lore_text += f"--- LORE FILE: {os.path.basename(file_path)} ---\n"
             all_lore_text += lore_content + "\n\n"
         print("All lore files have been successfully combined into one text block.")
 
-        # Step 2: Load the two data samples for comparison.
-        author_prompt = load_file_content(args.author_prompt_file)
-        generated_chapter = load_file_content(args.generated_file)
+        author_prompt = load_file_content(prompt_file)
+        generated_chapter = load_file_content(generated_file)
 
-        # Step 3: Run the analysis!
         critique = get_critique(author_prompt, generated_chapter, all_lore_text)
 
-        # Step 4: Save the precious, precious results!
-        save_critique(critique, args.output_file)
+        save_critique(critique, output_file)
 
         print("--- Critic Engine Shutdown Successful ---")
 

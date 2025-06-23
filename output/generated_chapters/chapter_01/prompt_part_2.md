@@ -12,6 +12,8 @@
 * **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
 * **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
 
+---
+
 ### **Prompt 1-B: The Discovery**
 
 **Objective:** Continuing *immediately* from the previous section, this part transitions the characters from static disorientation to active investigation, culminating in the discovery of the transport skiff.
@@ -28,6 +30,12 @@ The climax of this section is the discovery. It must not be obvious.
 
 * **Path A:** Blake's Faunus hearing, now keenly attuned after the sensory deprivation of the Ever After, picks up the faint, rhythmic groan of stressed metal carried on the wind—a sound that does not belong in nature.
 * **Path B:** Weiss, shielding her eyes and trying to analyze the terrain, spots a brief, unnatural glint of light through the shimmering air, a reflection off metal or glass where there should only be rock and sand.
+
+
+
+---
+**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+---
 
 **Crucial Ending Point:** The section must end at the exact moment of discovery and their shared reaction to it—a new, sudden focus in the vast emptiness. They have a target.
 

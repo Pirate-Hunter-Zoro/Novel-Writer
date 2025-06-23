@@ -12,6 +12,8 @@
 * **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
 * **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
 
+---
+
 ### **Prompt 1-C: The Wreckage**
 
 **Objective:** Continuing *immediately* from the discovery, this part covers their cautious approach to and detailed investigation of the *exterior* of the wrecked transport skiff.
@@ -27,6 +29,12 @@ This section is a deep, forensic investigation of the crash site. As they get cl
 * Show the deep scorch marks and massive, gouging claw gashes that are clearly from a Grimm attack.
 * Describe the scattered cargo—crates of Dust (some cracked and leaking), medical supplies trampled into the sand, and discarded personal effects.
 * Use the characters' skills: Weiss analyzes the damage, identifying the likely Grimm type. Blake examines the sand, trying to distinguish between human and Grimm tracks, looking for signs of survivors. Yang, meanwhile, acts as an aggressive sentinel, her eyes constantly scanning the horizon for returning threats.
+
+
+
+---
+**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+---
 
 **Crucial Ending Point:** The section ends as they stand before the breached cockpit door, having fully assessed the exterior damage. They have determined it was a Grimm attack, but they don't know the fate of the crew. The decision to look inside is made.
 
