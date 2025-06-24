@@ -1,0 +1,1 @@
+mercury_rwby_character,grey_hair,grey_eyes,black_clothing,grey_clothing,arm_guards,gloves,no_weapon_visible

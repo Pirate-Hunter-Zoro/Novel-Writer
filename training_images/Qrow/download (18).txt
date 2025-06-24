@@ -1,0 +1,1 @@
+qrow_rwby_character,black_hair,red_eyes,brown_vest,dark_pants,red_cape,scythe,long_sleeved_shirt

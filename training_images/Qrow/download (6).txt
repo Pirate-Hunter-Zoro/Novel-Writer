@@ -1,0 +1,1 @@
+qrow_rwby_character,black_hair,red_eyes,white_shirt,black_pants,brown_boots,red_cape,scythe,multiple_crows

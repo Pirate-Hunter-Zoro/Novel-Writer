@@ -1,0 +1,1 @@
+qrow_rwby_character,dark_hair,red_eyes,grey_jacket,dark_pants,red_scarf,sword,boots,fighting_pose

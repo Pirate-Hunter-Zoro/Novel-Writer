@@ -1,0 +1,1 @@
+cinder_rwby_character,long_dark_brown_hair,yellow_eyes,red_dress,gold_tribal_design,fire_magic,no_weapon_visible
