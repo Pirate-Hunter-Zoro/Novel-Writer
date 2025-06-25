@@ -13,11 +13,10 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 PROMPTS_DIR = os.path.join(PROJECT_ROOT, "knowledge_db", "rwby_chapter_prompts")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output", "generated_chapters")
 
-# Our centralized warning system! So smart!
 ANTI_SUMMARY_WARNING = """
 
 ---
-**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
 ---
 
 """

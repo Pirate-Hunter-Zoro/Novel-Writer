@@ -33,7 +33,7 @@ This section is a deep, forensic investigation of the crash site. As they get cl
 
 
 ---
-**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
 ---
 
 **Crucial Ending Point:** The section ends as they stand before the breached cockpit door, having fully assessed the exterior damage. They have determined it was a Grimm attack, but they don't know the fate of the crew. The decision to look inside is made.

@@ -34,7 +34,7 @@ The climax of this section is the discovery. It must not be obvious.
 
 
 ---
-**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
 ---
 
 **Crucial Ending Point:** The section must end at the exact moment of discovery and their shared reaction to it—a new, sudden focus in the vast emptiness. They have a target.

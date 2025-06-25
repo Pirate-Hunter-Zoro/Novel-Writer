@@ -32,7 +32,7 @@ This entire section builds to the chapter's mini-climax. After a few moments of 
 
 
 ---
-**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
 ---
 
 **Crucial Ending Point:** This section must end at the absolute peak of the climax: the moment they read the final word of the message and its implication sinks in, OR the moment the final deathblow is dealt to the wounded Grimm.

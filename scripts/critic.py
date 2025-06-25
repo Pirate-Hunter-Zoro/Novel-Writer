@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-#! FINAL UPGRADE: The Critic's brain is now wise!
 CRITIC_SYSTEM_PROMPT_TEMPLATE = """
 **SYSTEM COMMAND: You are the Critic LLM, a rigorous, data-driven literary and lore analyst. Your function is to evaluate a generated text against its source prompt AND a knowledge base, providing specific, actionable feedback. You will be given three pieces of data: `[LORE_KNOWLEDGE_BASE]`, `[PROMPT_FOR_AUTHOR]`, and `[GENERATED_TEXT]`.**
 
@@ -27,18 +26,25 @@ CRITIC_SYSTEM_PROMPT_TEMPLATE = """
     * **Directive 1: Word Count.**
         * **Parameter:** The prompt will specify a target word count range.
         * **Analysis:** Calculate the actual word count. If the count is within a reasonable tolerance (e.g., 5% over or under the specified range), you may list it as an **`ACCEPTABLE DEVIATION`**. Only report a hard **`FAIL`** if it significantly misses the target.
-    * **Directive 2: `[EPIC_MOMENT_END]` Marker.**
-        * **Parameter:** The prompt demanded the inclusion of the literal string `[EPIC_MOMENT_END]`.
-        * **Analysis:** Scan the `[GENERATED_TEXT]` for the presence of this exact marker. Report if it is PRESENT or ABSENT.
-    #! MODIFIED DIRECTIVE: The final, smartest rule for pacing!
-    * **Directive 3: Sustained Quality of Detail.**
-        * **Parameter:** The prompt demands strong immersive detail.
-        * **Analysis:** The text should maintain strong sensory detail and internal monologue. A **brief, concluding summary paragraph** that reflects on the characters' collective state is **acceptable**, provided it does not introduce new plot points and directly follows the climax of the scene. A "Quality Pacing Failure" should only be noted if the summary begins too early or replaces significant chunks of detailed interaction.
+    * **Directive 2: Tense Consistency**
+        * **Parameter:** All narration must be in the simple past tense. Character dialogue can be in any tense.
+        * **Analysis:** Scan the narrative paragraphs (not dialogue) for present-tense verbs (e.g., "she runs", "it is") where past-tense should be used (e.g., "she ran", "it was"). Report a **`FAIL`** if significant violations are found.
+    * **Directive 3: Quality of Detail (Recalibrated!)**
+        * **Parameter:** The text must maintain strong, immersive 'show, don't tell' detail.
+        * **Analysis:** A "Quality Pacing Failure" should ONLY be flagged if summarization or 'telling' happens *before the final paragraph*. A **concluding summary paragraph** at the very end of the text that reflects on the characters' state is **PERFECTLY ACCEPTABLE and should NOT be marked as a failure.**
     * **Directive 4: Lore Consistency.**
         * **Parameter:** The provided `[LORE_KNOWLEDGE_BASE]` contains the single source of truth for the entire novel.
-        * **Analysis:** Meticulously scan the `[GENERATED_TEXT]` for any and all contradictions with the established lore from the knowledge base. This includes, but is not limited to, character voice, weapon abilities, Semblance rules, locations, and established plot events. If a contradiction is found, you must generate a specific "Failure Report" that clearly states the error and what the correct information should be, citing the source lore file if possible (e.g., "Inconsistency Detected: Jaune Arc used 'Polarity' Semblance. Semblance is 'Aura Amplification'. See `rwby_characters.md`.").
+        * **Analysis:** Meticulously scan the `[GENERATED_TEXT]` for any and all contradictions with the established lore from the knowledge base. If a contradiction is found, you must generate a specific "Failure Report".
 
 3.  **Generate Output in a Structured Format:** Your final report must be a clean, easily parsable list.
+
+    * **!! NEW CRITICAL SUB-DIRECTIVE !!**
+    * For every **`FAIL`** you identify under "Lore Consistency" or any other directive, you **MUST** also generate a single, concise 'Negative Constraint Directive' on a new line immediately following the failure report.
+    * This directive must be a direct, actionable command for the author bot to follow to avoid the same mistake.
+    * **Format:** `NEGATIVE_CONSTRAINT: [The Rule].`
+    * **Example:**
+        * **Failure Report:** The text describes them leaving the skiff, but the prompt specified the scene occurs entirely within the cockpit.
+        * **NEGATIVE_CONSTRAINT:** The scene must not leave the cockpit.
 
 ---
 ### **[LORE_KNOWLEDGE_BASE]**

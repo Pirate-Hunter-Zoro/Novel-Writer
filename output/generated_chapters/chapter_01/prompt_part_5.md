@@ -31,7 +31,7 @@ They step out of the wrecked skiff, back into the blinding sun. But the desert n
 
 
 ---
-**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
 ---
 
 **Crucial Ending Point:** This is the end of Chapter 1. The final sentence should be impactful and set the tone for what comes next.

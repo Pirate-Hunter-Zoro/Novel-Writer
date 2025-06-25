@@ -27,7 +27,7 @@ This section must focus *exclusively* on the first few minutes of their return. 
 
 
 ---
-**WARNING: CRITICAL PACING DIRECTIVE IN EFFECT. MAINTAIN DEEP INTERNAL MONOLOGUE AND SENSORY DETAIL UNTIL THE VERY END. DO NOT CONCLUDE OR SUMMARIZE THE SCENE. SHOW, DO NOT TELL.**
+**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
 ---
 
 **Crucial Ending Point:** The section must end after they have taken their first roll call, confirmed they are all present and physically back on Remnant, but before they have decided on any course of action. They are a small, bewildered huddle in a vast, hostile world.
