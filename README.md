@@ -1,4 +1,4 @@
-# RWBY Novel Project: The Fully Automated Narrative Pipeline (v3.0)
+# RWBY Novel Project: The Fully Automated Narrative Pipeline (v4.0)
 
 ## Project Overview
 
@@ -29,10 +29,10 @@ The project's architecture is orchestrated by the human Conductor, who manages t
 
 ### 3. The Python Bot Army (The Scripts)
 
-- **The Conductor (`conductor.py`):** The new **Master Control Program!** This high-level script automates the entire narrative generation and critique loop for a full chapter.
+- **The Conductor (`conductor.py`):** The **Master Control Program (v3.1)**! This high-level script automates the entire narrative generation and critique loop. It now features a **Dynamic Guardrail Injector**, a self-correcting feedback circuit where it uses specific failure data from the Critic to build new, more restrictive prompts for the Author on each retry attempt.
 - **The Prompt Generator (`prompt_generator.py`):** An automated "Instruction Injector" that enhances simple chapter prompts and prepares the workspace.
-- **The Author (`author.py`):** The new **Automated Narrative Engine** that takes a prepared prompt and generates the creative text.
-- **The Text Critic (`critic.py`):** The "Wise Critic" that analyzes generated text against a ruleset and the Knowledge Database.
+- **The Author (`author.py`):** The **Automated Narrative Engine** that takes a prepared prompt and generates the creative text.
+- **The Text Critic (`critic.py`):** The "Wise Sensor Array" that analyzes generated text. It has been upgraded to generate specific, machine-readable **`NEGATIVE_CONSTRAINT`** directives for any lore or continuity failure it detects, which are then fed into the Conductor's feedback loop.
 - **The Auto-Tagger (`auto_captioner.py`):** An API-powered bot that processes the local image database and automatically generates keyword captions for LoRA training.
 
 ## Knowledge Databases ("Knowledge Crystals")
@@ -51,16 +51,17 @@ The system relies on two forms of knowledge databases to ensure consistency.
 
 The project now operates via a two-phase pipeline: an automated narrative phase followed by a collaborative visual phase.
 
-1.  **Phase 1: Automated Narrative Generation**
+1. **Phase 1: Automated Narrative Generation with the Dynamic Guardrail Injector**
     - The Conductor executes a single command: `python scripts/conductor.py --chapter-number X`.
     - The `conductor.py` script takes full control:
         - It first runs `prompt_generator.py` to prepare the workspace.
         - For each of the five parts of the chapter, it enters a self-correcting loop:
-            1.  It calls `author.py` to generate the text.
-            2.  It calls `critic.py` to analyze the text.
-            3.  If the critique passes, it moves to the next part. If it fails, it re-runs the loop with feedback until quality checks are passed or max retries are hit.
+            1. It calls `author.py` to generate the text.
+            2. It calls `critic.py` to analyze the text against the *original* prompt.
+            3. If the critique passes, it moves to the next part.
+            4. If the critique **fails**, the Conductor extracts the `NEGATIVE_CONSTRAINT` directives, builds a new, more restrictive prompt with these "guardrails," and re-runs the Author bot. This loop continues until quality checks are passed or max retries are hit.
 
-2.  **Phase 2: Collaborative Visual Loop**
+2. **Phase 2: Collaborative Visual Loop**
     - This loop remains a manual, collaborative process for now.
     - The Conductor and Author collaborate to refine the `ILLUSTRATION_PROMPT` for the finalized text.
     - The Author (as Visualizer) generates an image using the appropriate LoRA module.
@@ -100,11 +101,10 @@ The project now operates via a two-phase pipeline: an automated narrative phase 
 
 ## Future Enhancements
 
-- **IMMEDIATE NEXT STEP: Test & Debug the `conductor.py` Pipeline:**
-  - Execute the first full run of `conductor.py` on a test chapter.
-  - Identify and squash any bugs in the new scripts and their interactions.
-  - Refine the `FAILURE_KEYWORDS` in `conductor.py` for more accurate pass/fail detection.
-  - Potentially enhance the retry loop to pass the critique *back* to the author prompt for smarter revisions.
+- **IMMEDIATE NEXT STEP: Full System Validation Run:**
+  - Execute a full run of the newly upgraded `conductor.py` (v3.1) on a test chapter.
+  - Verify that the Dynamic Guardrail Injector correctly identifies failures, generates constraints, and successfully resolves complex, repeating errors without manual intervention.
+  - Confirm the "clean room" technique for the Critic prevents feedback paradoxes.
 - **Project LoRA - Phase 3 (Training):** Research and execute the training of our first LoRA models (e.g., for Ruby) using our fully prepared and captioned dataset.
 - **Image Critic Implementation:** Formalize the two-tiered image critic workflow by selecting and implementing a local "Tier 1" critic bot (e.g., Moondream).
 - **Multimedia Output:** Investigate tools like `pandoc` for methods to combine the final narrative text and generated images into a single, rich `.epub` file.
