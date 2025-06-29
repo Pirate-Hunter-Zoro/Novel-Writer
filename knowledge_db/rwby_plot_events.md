@@ -1,6 +1,7 @@
 # RWBY Novel Project - Knowledge Database: Plot Events
 
 ## Volume 1: Beacon Academy & Early Encounters
+
 * **Ruby's Arrival at Beacon:** Ruby Rose, a prodigious individual with Silver Eyes, is allowed to attend Beacon Academy two years early after a skirmish with Roman Torchwick, personally recruited by Headmaster Ozpin.
 * **Team Formation (RWBY & JNPR):** Students arrive at Beacon Academy for initiation. During the Emerald Forest initiation, Ruby Rose unwillingly partners with Weiss Schnee. They are later joined by Blake Belladonna and Yang Xiao Long, forming **Team RWBY** under Ruby's leadership. Simultaneously, Jaune Arc, Nora Valkyrie, Pyrrha Nikos, and Lie Ren form **Team JNPR**.
 * **Early Classroom & Combat Training:** Teams engage in various combat classes, learn about Aura and Semblances, and participate in practical training exercises.
@@ -12,6 +13,7 @@
 * **Cinder's Infiltration (Subtle):** While not fully revealed until later volumes, Cinder Fall, Mercury Black, and Emerald Sustrai are subtly introduced, beginning their infiltration of Beacon and Vale, laying groundwork for their larger plans.
 
 ## Volume 2: Growing Threats & Vytal Festival Preparations
+
 * **Increased Grimm Activity:** The presence and aggression of Grimm in and around Vale escalate significantly, indicating a coordinated effort rather than random attacks.
 * **The Train Heist & White Fang's Plans:** Team RWBY discovers a large-scale Dust robbery by Roman Torchwick and the White Fang involving a train. They uncover evidence of a larger plan to transport stolen Dust and Grimm for an unknown, sinister purpose.
 * **Cinder's Faction's Deeper Involvement:** Cinder Fall, Mercury Black, and Emerald Sustrai are shown working more directly with Roman Torchwick, coordinating the Grimm and stolen Dust. They are revealed to be Salem's agents, preparing for a major attack.
@@ -24,6 +26,7 @@
 * **Preparations for the Vytal Festival:** The festival itself, a symbol of unity, becomes the target of Cinder's faction. Security is tightened, but Cinder's infiltration allows her to begin installing viruses and backdoors into Atlas's systems and the CCT network.
 
 ## Volume 3: The Fall of Beacon & Devastation
+
 * **Vytal Festival Tournament Continues:** The inter-academy combat tournament progresses, showcasing high-stakes matches and continued manipulation by Cinder's faction. Penny Polendina participates, aiming to prove herself as a true Huntress.
 * **Pyrrha Nikos's Burden:** Pyrrha Nikos is formally approached by Ozpin, Glynda Goodwitch, and James Ironwood to receive the gravely injured Fall Maiden's power from Amber. She struggles intensely with this immense responsibility, fearing the loss of her identity.
 * **Cinder's Scheme Escalates:** Cinder Fall and her co-conspirators execute the final stages of their plan. Emerald Sustrai uses her Semblance to create hallucinations, manipulating Mercury Black's fight with Yang Xiao Long to make it appear Yang attacked Mercury unprovoked, leading to Yang's disqualification and widespread public outrage.
@@ -38,11 +41,12 @@
 * **Dispersal of Heroes:** The surviving students and Huntsmen scatter. Team RWBY is completely separated: Ruby departs with Jaune, Nora, and Ren (Team RNJR) towards Mistral; Weiss returns to Atlas; Blake flees to Menagerie; and Yang returns home to Patch to recover from her injuries and trauma. The immediate aftermath leaves Remnant in a state of chaos and uncertainty.
 
 ## Volume 4: Aftermath & New Paths
+
 * **Team RWBY Disperses:** Following the catastrophic Fall of Beacon, Team RWBY is separated, each member embarking on their own journey:
-    * **Ruby Rose's Journey (Team RNJR):** Ruby, along with Jaune Arc, Nora Valkyrie, and Lie Ren (forming **Team RNJR**), begins a long and arduous journey on foot across Anima towards Mistral. Their goal is to reach Haven Academy and warn Headmaster Leonardo Lionheart about Cinder Fall and Salem. They face numerous Grimm encounters and challenges on their trek.
-    * **Weiss Schnee's Return to Atlas:** Weiss returns home to Atlas and is immediately placed under strict surveillance and control by her authoritarian father, Jacques Schnee. She rebels against his attempts to force her into a restrictive life, including participating in a formal ball to secure a political marriage, which she uses as an opportunity to escape.
-    * **Blake Belladonna's Return to Menagerie:** Blake, consumed by guilt and fear after Adam Taurus's attack, flees to her homeland, Menagerie. She is reunited with her parents, **Ghira** and **Kali Belladonna**, the former High Leader of the White Fang. She attempts to escape her past but is drawn back into the struggle against the White Fang's radicalized faction.
-    * **Yang Xiao Long's Recovery on Patch:** Yang returns to Patch and struggles deeply with the physical and psychological trauma of losing her arm. She suffers from PTSD and depression but begins a difficult path to recovery with the support of her father, Taiyang Xiao Long, and eventually receives a new prosthetic arm. She also gains some clarity on her mother, Raven Branwen's, abandonment.
+  * **Ruby Rose's Journey (Team RNJR):** Ruby, along with Jaune Arc, Nora Valkyrie, and Lie Ren (forming **Team RNJR**), begins a long and arduous journey on foot across Anima towards Mistral. Their goal is to reach Haven Academy and warn Headmaster Leonardo Lionheart about Cinder Fall and Salem. They face numerous Grimm encounters and challenges on their trek.
+  * **Weiss Schnee's Return to Atlas:** Weiss returns home to Atlas and is immediately placed under strict surveillance and control by her authoritarian father, Jacques Schnee. She rebels against his attempts to force her into a restrictive life, including participating in a formal ball to secure a political marriage, which she uses as an opportunity to escape.
+  * **Blake Belladonna's Return to Menagerie:** Blake, consumed by guilt and fear after Adam Taurus's attack, flees to her homeland, Menagerie. She is reunited with her parents, **Ghira** and **Kali Belladonna**, the former High Leader of the White Fang. She attempts to escape her past but is drawn back into the struggle against the White Fang's radicalized faction.
+  * **Yang Xiao Long's Recovery on Patch:** Yang returns to Patch and struggles deeply with the physical and psychological trauma of losing her arm. She suffers from PTSD and depression but begins a difficult path to recovery with the support of her father, Taiyang Xiao Long, and eventually receives a new prosthetic arm. She also gains some clarity on her mother, Raven Branwen's, abandonment.
 * **Ozpin's Reincarnation Revealed:** It is revealed that Ozpin's soul is bound to a lineage of worthy individuals, reincarnating into a new host upon his death. **Oscar Pine**, a young farm boy, becomes Ozpin's latest host, beginning a reluctant merger of their personalities and memories.
 * **Salem's Council Assembled:** Salem's inner circle of powerful antagonists is fully introduced and assembled at her fortress in the Land of Darkness. This includes **Cinder Fall** (recovering from Ruby's Silver Eye blast), **Tyrian Callows**, **Hazel Rainart**, and **Arthur Watts**. Salem assigns them specific missions to further her goals.
 * **Tyrian Callows's Hunt for Ruby:** Salem dispatches Tyrian Callows, a sadistic scorpion Faunus and assassin, to capture Ruby Rose due to her Silver Eyes ability.
@@ -51,6 +55,7 @@
 * **Grimm Evolution:** New, more dangerous types of Grimm, such as the Nuckelavee, are encountered, indicating that Grimm are evolving and becoming more formidable under Salem's influence.
 
 ## Volume 5: Reunions & The Battle of Haven
+
 * **Team RNJR's Arrival in Mistral:** Ruby Rose, Jaune Arc, Nora Valkyrie, and Lie Ren (Team RNJR) finally arrive in Mistral after their long journey. They are directed to Haven Academy, but quickly discover something is amiss with Headmaster Leonardo Lionheart.
 * **Ozpin's Secrets Revealed:** Through Oscar Pine, Ozpin begins to reveal more of his centuries-long struggle against Salem, including her immortality and his own endless reincarnation cycle. This causes significant tension and distrust within the group, particularly with Jaune.
 * **Cinder's Return & Preparations:** Cinder Fall, having recovered from Ruby's Silver Eye blast, returns to Salem's service, more ruthless and power-hungry. She works with Watts, Tyrian, and Hazel to consolidate their forces and ensure Leonardo Lionheart's cooperation for the attack on Haven.
@@ -65,14 +70,15 @@
 * **Aftermath and Decision to Go to Atlas:** With Haven defended and the Relic secured, the united group decides their next course of action is to travel to Atlas, where another Relic is located, and seek the aid of General Ironwood.
 
 ## Volume 6: Discoveries, Betrayals & The Race to Atlas
+
 * **Journey to Atlas Begins:** Following the Battle of Haven, Team RWBY, Team JNPR, Qrow Branwen, Oscar Pine (with Ozpin merged), and Maria Calavera embark on a journey towards Atlas aboard an airship. Their goal is to seek refuge and allies, and to secure the Relic of Creation.
 * **The Relic of Knowledge and Jinn:** The group carries the **Relic of Knowledge** (the Lamp) from Haven. During a perilous journey, they are forced to use the Lamp, summoning **Jinn**, the all-knowing spirit within. Jinn can answer three questions every one hundred years.
 * **Ozpin's Secrets Revealed:** Ruby asks Jinn, "What is Salem's plan to defeat Ozpin?" Jinn then reveals Ozpin's full, long history, including:
-    * His original identity as **Ozma** and his tragic romance with **Salem**.
-    * The intervention of the **Brother Gods** (Light and Darkness) and their destruction of the first humanity due to Ozma and Salem's failures.
-    * Salem's curse of **immortality** and Ozma's curse of **reincarnation** until humanity is united.
-    * Ozpin's long succession of lives, his attempts to unite humanity, and his repeated failures.
-    * His past failures and secrets, including his inability to defeat Salem and his reluctance to share the full truth, severely erode the trust of his allies, particularly Yang and Blake.
+  * His original identity as **Ozma** and his tragic romance with **Salem**.
+  * The intervention of the **Brother Gods** (Light and Darkness) and their destruction of the first humanity due to Ozma and Salem's failures.
+  * Salem's curse of **immortality** and Ozma's curse of **reincarnation** until humanity is united.
+  * Ozpin's long succession of lives, his attempts to unite humanity, and his repeated failures.
+  * His past failures and secrets, including his inability to defeat Salem and his reluctance to share the full truth, severely erode the trust of his allies, particularly Yang and Blake.
 * **Grimm Ambush & Maria's Past:** The group's airship is attacked by a giant Grimm (the Leviathan) drawn by negative emotions. Maria Calavera reveals her past as "The Grim Reaper" and her Silver Eyes abilities, assisting Ruby in controlling her own powers to defeat the Grimm.
 * **Meeting the Ace Operatives:** Upon arriving near Atlas, they are intercepted by General Ironwood's elite Huntsman team, the **Ace Operatives** (Clover Ebi, Elm Ederne, Vine Zeki, Harriet Bree, Marrow Amin), and Winter Schnee.
 * **Ironwood's Initial Trust:** General Ironwood initially welcomes Team RWBY and their allies, believing them to be valuable assets in the fight against Salem. He explains his plans to protect Atlas by raising the city into the clouds.
@@ -80,6 +86,7 @@
 * **Arrival in Atlas:** The group successfully reaches the city of Atlas, with the Relic of Knowledge now in Ironwood's custody. The political and social tensions between the floating city of Atlas and the ground city of Mantle begin to become apparent.
 
 ## Volume 7: Atlas Divided & Escalating Crisis
+
 * **Arrival in Atlas & Initial Welcome:** Team RWBY, JNPR, Qrow, Oscar/Ozpin, and Maria Calavera arrive in Atlas. They are initially welcomed by General James Ironwood, who is convinced by Ozpin (via Oscar) to trust them with the truth about Salem. They agree to help secure the Relic of Creation and protect the Winter Maiden.
 * **Mantle's Plight & Political Tensions:** The heroes quickly become aware of the severe disparity between the floating city of Atlas and the struggling, neglected populace of Mantle below. **Robyn Hill**, a popular politician and leader of the **Happy Huntresses**, becomes a key figure advocating for Mantle, often clashing with Ironwood's policies.
 * **Ironwood's Growing Paranoia & Secrecy:** Despite his initial cooperation, Ironwood's immense stress and his **Semblance: Mettle** (which hardens his resolve and makes him impervious to doubt) begin to manifest as increased paranoia. He makes secretive, unilateral decisions, such as closing Mantle's Dust mines and enacting curfews, leading to unrest.
@@ -94,10 +101,11 @@
 * **Qrow and Clover's Conflict:** Qrow Branwen is framed by Tyrian for Clover Ebi's death (due to Tyrian's interference), leading to Qrow's arrest and further destabilizing Ironwood's trust.
 
 ## Volume 8: The Fall of Atlas & Descent into the Ever After
+
 * **Salem's Full Assault:** Salem launches her direct, full-scale attack on Atlas and Mantle. She commands a colossal army of Grimm, including the massive whale-Grimm, **Monstra**, which acts as a mobile command center and Grimm deployment vessel.
 * **Divided Heroes & Rescue Efforts:** Team RWBY and their allies are split between multiple objectives:
-    * **Evacuation of Mantle:** Prioritizing the lives of civilians, a large portion of the heroes (including Yang, Blake, Ren, Nora, Oscar/Ozpin, and the Happy Huntresses) focus on evacuating Mantle's populace to a prepared portal to Vacuo.
-    * **Fighting Ironwood:** Ruby, Weiss, and Jaune initially confront General Ironwood directly, attempting to reason with him or stop his tyrannical actions, but he remains unyielding in his belief that Atlas must be sacrificed for the "greater good."
+  * **Evacuation of Mantle:** Prioritizing the lives of civilians, a large portion of the heroes (including Yang, Blake, Ren, Nora, Oscar/Ozpin, and the Happy Huntresses) focus on evacuating Mantle's populace to a prepared portal to Vacuo.
+  * **Fighting Ironwood:** Ruby, Weiss, and Jaune initially confront General Ironwood directly, attempting to reason with him or stop his tyrannical actions, but he remains unyielding in his belief that Atlas must be sacrificed for the "greater good."
 * **Penny's Final Sacrifice & Maiden Transfer:** Penny Polendina, now the Winter Maiden, is relentlessly pursued by Cinder Fall. In a devastating confrontation, Cinder severely wounds Penny. To prevent Cinder from acquiring the Winter Maiden's power, Penny asks Jaune Arc to deliver a fatal blow, causing her power to transfer to **Winter Schnee**, as was initially intended by Ironwood and Fria. Penny dies for the final time.
 * **Hazel Rainart's Redemption & Sacrifice:** Hazel Rainart, witnessing Salem's nihilism and the depths of her cruelty (especially after Watts's death), becomes disillusioned. He confronts Salem directly, absorbing massive amounts of Dust to amplify his strength, buying critical time for the heroes to evacuate Mantle. He ultimately sacrifices himself in a massive explosion to hold back Salem, giving his life for the cause he once opposed.
 * **Arthur Watts's Demise:** Arthur Watts is cornered by Cinder Fall, who, under Salem's orders, abandons him to his fate. He attempts to fight back but is ultimately defeated and consumed by fire in a collapsing area of Atlas.
@@ -107,18 +115,19 @@
 * **Descent into the Ever After:** During the chaotic collapse and amidst Salem's overwhelming forces, Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long, Jaune Arc, and Neopolitan are all pulled into a shimmering, mysterious, tree-like portal, transporting them to the Ever After. Oscar Pine, Nora Valkyrie, and Lie Ren remain on Remnant, implied to have safely made it through the Vacuo portal with the refugees.
 
 ## Volume 9: The Ever After Arc & Return
+
 * **Descent into the Ever After:** Following the catastrophic Fall of Atlas, Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long, Jaune Arc, and Neopolitan are all pulled into a mysterious, sentient tree-like portal, landing separately in the surreal, fairytale-inspired dimension known as the Ever After.
 * **Initial Separation and Reunions:**
-    * Ruby finds herself alone and meets a small, talking mouse named Little, who becomes her constant companion and emotional support.
-    * Weiss and Blake are separated from the others but eventually reunite.
-    * Yang is initially disarmed and searches for her prosthetic arm, encountering various inhabitants.
-    * Jaune is discovered much later by Team RWBY, having been stranded in the Ever After for decades (though time passes differently there), becoming the "Rusted Knight" and developing a jaded, older persona.
+  * Ruby finds herself alone and meets a small, talking mouse named Little, who becomes her constant companion and emotional support.
+  * Weiss and Blake are separated from the others but eventually reunite.
+  * Yang is initially disarmed and searches for her prosthetic arm, encountering various inhabitants.
+  * Jaune is discovered much later by Team RWBY, having been stranded in the Ever After for decades (though time passes differently there), becoming the "Rusted Knight" and developing a jaded, older persona.
 * **The Ever After's Nature:** The Ever After is revealed to be a realm where reality and logic are highly mutable, influenced by emotion, and concepts like life, death, and identity are fluid. Its inhabitants, "Afterians," often embody fairytale archetypes. The "tree" at its center is the creator of the Brother Gods.
 * **Personal Trials and Growth:** The characters face their deepest insecurities and traumas, forcing significant personal development:
-    * **Ruby Rose:** Struggles intensely with the weight of leadership, past failures (e.g., Penny's death, Fall of Atlas), and the pressure of being a hero. She experiences a profound emotional breakdown, lashing out at her team and Jaune. This culminates in her drinking a mysterious "tea" (known as Ascension tea) from the "Herbalist," causing her to undergo a metaphorical "Ascension" and emerge with a renewed sense of purpose, confidence, and clarity, accepting who she is.
-    * **Weiss Schnee:** Confronts her insecurities about her family legacy and her place in the world. She accepts her past and embraces her chosen family.
-    * **Blake Belladonna & Yang Xiao Long:** Their relationship deepens significantly as they openly acknowledge their romantic feelings for each other. They confront their individual fears and trauma together.
-    * **Jaune Arc:** Grapples with his extended isolation, perceived failures, and the consequences of his actions (like killing Penny). He eventually accepts the need for change and growth, his youthful appearance is restored, though he retains his memories and a streak of grey hair.
+  * **Ruby Rose:** Struggles intensely with the weight of leadership, past failures (e.g., Penny's death, Fall of Atlas), and the pressure of being a hero. She experiences a profound emotional breakdown, lashing out at her team and Jaune. This culminates in her drinking a mysterious "tea" (known as Ascension tea) from the "Herbalist," causing her to undergo a metaphorical "Ascension" and emerge with a renewed sense of purpose, confidence, and clarity, accepting who she is.
+  * **Weiss Schnee:** Confronts her insecurities about her family legacy and her place in the world. She accepts her past and embraces her chosen family.
+  * **Blake Belladonna & Yang Xiao Long:** Their relationship deepens significantly as they openly acknowledge their romantic feelings for each other. They confront their individual fears and trauma together.
+  * **Jaune Arc:** Grapples with his extended isolation, perceived failures, and the consequences of his actions (like killing Penny). He eventually accepts the need for change and growth, his youthful appearance is restored, though he retains his memories and a streak of grey hair.
 * **The Curious Cat:** A manipulative, shapeshifting entity that acts as a primary antagonist within the Ever After, seeking to consume the identities of Afterians and manipulate the protagonists.
 * **Neo's Vengeance & Fate:** Neopolitan, driven by her single-minded quest for revenge against Ruby, pursues Team RWBY through the Ever After. She attempts to force Ruby to break emotionally. In a climactic confrontation, Neo ultimately defeats and *consumes* the Curious Cat, absorbing its abilities and taking its place as a new, powerful entity. Neo remains in the Ever After, having achieved her twisted form of "Ascension" by consuming the Cat.
 * **Revelations about Summer Rose:** Ruby gains some partial insight into her mother Summer Rose's past, including a vision of Summer meeting Raven to go after Salem, and learns more about the Brother Gods and the Tree.

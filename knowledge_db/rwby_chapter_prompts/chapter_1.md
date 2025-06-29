@@ -39,7 +39,7 @@ This section must focus *exclusively* on the first few minutes of their return. 
 
 **Crucial Ending Point:** The section must end after they have taken their first roll call, confirmed they are all present and physically back on Remnant, but before they have decided on any course of action. They are a small, bewildered huddle in a vast, hostile world.
 
-**(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)**
+#### Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above
 
 **ILLUSTRATION_PROMPT:** A tight, disorienting shot focusing on Ruby's face. Her silver eyes are wide with shock, reflecting a blindingly white sun. The background is a blur of swirling sand and shimmering heat haze, conveying a sense of overwhelming sensory input.
 
@@ -53,7 +53,7 @@ This section must focus *exclusively* on the first few minutes of their return. 
 
 **[Begin Section 1-B]**
 
-**(Use the full text from Section 1-A as the preceding context.)**
+> Use the full text from Section 1-A as the preceding context.
 
 With the initial shock wearing off and the reality of their situation setting in, the group begins to assess their surroundings more methodically. The immediate goal is survival and information. Jaune and Ruby should naturally begin to take the lead, directing the others to scan the horizon.
 
@@ -65,8 +65,7 @@ The climax of this section is the discovery. It must not be obvious.
 * **Path B:** Weiss, shielding her eyes and trying to analyze the terrain, spots a brief, unnatural glint of light through the shimmering air, a reflection off metal or glass where there should only be rock and sand.
 
 **Crucial Ending Point:** The section must end at the exact moment of discovery and their shared reaction to it—a new, sudden focus in the vast emptiness. They have a target.
-
-**(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)**
+(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)
 
 **ILLUSTRATION_PROMPT:** A shot from behind the team as they begin to spread out, scanning the horizon. Jaune is pointing into the distance. The focus is on the vast, empty desert before them, with Blake in the mid-ground, head tilted as if listening intently to something only she can hear.
 
@@ -80,7 +79,7 @@ The climax of this section is the discovery. It must not be obvious.
 
 **[Begin Section 1-C]**
 
-**(Use the full text from Sections 1-A and 1-B as the preceding context.)**
+#### Use the full text from Sections 1-A and 1-B as the preceding context
 
 With a shared target now identified, the team begins a cautious, tactical approach across the dunes toward the source of the sound or glint. Describe their movement as a team, falling back into old, familiar formations.
 
@@ -91,8 +90,7 @@ This section is a deep, forensic investigation of the crash site. As they get cl
 * Use the characters' skills: Weiss analyzes the damage, identifying the likely Grimm type. Blake examines the sand, trying to distinguish between human and Grimm tracks, looking for signs of survivors. Yang, meanwhile, acts as an aggressive sentinel, her eyes constantly scanning the horizon for returning threats.
 
 **Crucial Ending Point:** The section ends as they stand before the breached cockpit door, having fully assessed the exterior damage. They have determined it was a Grimm attack, but they don't know the fate of the crew. The decision to look inside is made.
-
-**(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)**
+(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)
 
 **ILLUSTRATION_PROMPT:** A medium shot showing the team investigating the exterior of the half-buried skiff. Weiss is touching a large Grimm-claw gash on the hull with an analytical expression, while Blake is crouched nearby, examining tracks in the sand. Yang stands guard in the background, alert and watching their backs.
 
@@ -106,7 +104,7 @@ This section is a deep, forensic investigation of the crash site. As they get cl
 
 **[Begin Section 1-D]**
 
-**(Use the full text from Sections 1-A, 1-B, and 1-C as the preceding context.)**
+(Use the full text from Sections 1-A, 1-B, and 1-C as the preceding context.)
 
 The team breaches the cockpit. The atmosphere inside should be tense and claustrophobic, a stark contrast to the open desert. Describe the signs of a desperate, final struggle within the confined space—dents in the console, a discarded weapon, maybe a tear in a seat.
 
@@ -117,7 +115,7 @@ This entire section builds to the chapter's mini-climax. After a few moments of 
 
 **Crucial Ending Point:** This section must end at the absolute peak of the climax: the moment they read the final word of the message and its implication sinks in, OR the moment the final deathblow is dealt to the wounded Grimm.
 
-**(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)**
+(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)
 
 **ILLUSTRATION_PROMPT:** A tight, claustrophobic shot from inside the dark cockpit. The only light comes from a cracked datapad screen held by Jaune, illuminating his and Ruby's horrified faces as they read the ominous, unfinished message.
 
@@ -131,7 +129,7 @@ This entire section builds to the chapter's mini-climax. After a few moments of 
 
 **[Begin Section 1-E]**
 
-**(Use the full text from Sections 1-A, 1-B, 1-C, and 1-D as the preceding context.)**
+(Use the full text from Sections 1-A, 1-B, 1-C, and 1-D as the preceding context.)
 
 This section is about the quiet aftermath. The adrenaline from the discovery fades, replaced by a cold, hard certainty. They are no longer just survivors of the Ever After; they are soldiers returned to a losing war.
 
@@ -141,7 +139,7 @@ They step out of the wrecked skiff, back into the blinding sun. But the desert n
 
 **Crucial Ending Point:** This is the end of Chapter 1. The final sentence should be impactful and set the tone for what comes next.
 
-**(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)**
+(Remember to adhere to all CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY listed above.)
 
 **ILLUSTRATION_PROMPT:** A wide shot of Team RWBY and Jaune standing before the wreckage of a sand-swept transport skiff. The mood is grim and determined, with the vast Vacuan desert stretching out before them under a harsh sun.
 

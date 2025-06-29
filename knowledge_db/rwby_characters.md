@@ -1,6 +1,7 @@
 # RWBY Novel Project - Knowledge Database: Characters
 
 ## Ruby Rose
+
 * **Appearance:** Distinctive black hair with red tips, often wears a red-hooded cloak.
 * **Weapon:** Crescent Rose - a high-caliber sniper-scythe (HCSS), capable of transforming between scythe, rifle, and collapsed forms.
 * **Semblance:** Petal Burst - allows her to move at incredible speeds, leaving a trail of rose petals. She can also use it to carry others or generate powerful gusts of wind.
@@ -11,14 +12,15 @@
 * **Brief Arc Summary (up to Ever After):** Discovered her Silver Eyes abilities, became a leader, struggled with the weight of leadership and losses, sacrificed herself into the Ever After to save her friends, and emerged with a renewed sense of self and purpose.
 
 ## Weiss Schnee
+
 * **Appearance:** Long white hair, usually tied in a ponytail, often wears elegant combat skirts and high heels.
 * **Weapon:** Myrtenaster - a multi-action Dust rapier. It has a revolving chamber with vials of different types of powdered Dust, allowing her to imbue her attacks with elemental properties.
 * **Semblance:** Glyphs - inherited from the Schnee family, allowing her to create various magical symbols with different effects:
-    * **Summoning:** Her most advanced use, allowing her to summon spectral forms of defeated enemies (e.g., a Boarbatusk, a Queen Lancer, a Giant Armor, a Knight).
-    * **Gravity:** Can create platforms or increase/decrease gravity.
-    * **Speed/Acceleration:** Can boost her own or others' speed.
-    * **Elemental:** Can channel Dust effects (ice, fire, lightning, etc.).
-    * **Dust Glyphs:** Can manipulate raw Dust into various constructs or attacks.
+  * **Summoning:** Her most advanced use, allowing her to summon spectral forms of defeated enemies (e.g., a Boarbatusk, a Queen Lancer, a Giant Armor, a Knight).
+  * **Gravity:** Can create platforms or increase/decrease gravity.
+  * **Speed/Acceleration:** Can boost her own or others' speed.
+  * **Elemental:** Can channel Dust effects (ice, fire, lightning, etc.).
+  * **Dust Glyphs:** Can manipulate raw Dust into various constructs or attacks.
 * **Abilities:** High proficiency in Dust manipulation and fencing.
 * **Personality:** Initially cold, arrogant, and privileged due to her upbringing as the heiress to the Schnee Dust Company. Matures into a more compassionate, loyal, and independent individual.
 * **Quirks/Mannerisms:** Tends to be particular about manners and etiquette, can be easily flustered or exasperated by silliness, sometimes uses exasperated sighs.
@@ -26,6 +28,7 @@
 * **Brief Arc Summary (up to Ever After):** Struggled against her father's control, left Atlas to fight alongside her friends, took on more leadership responsibility, faced the fall of Atlas, and learned to rely on others.
 
 ## Blake Belladonna
+
 * **Appearance:** Long black hair, often wears a black bow (initially to hide her Faunus ears), later openly displays her black cat ears.
 * **Weapon:** Gambol Shroud - a Variant Ballistic Chain Scythe (VBCS), capable of transforming between a compact cleaver, a sharpened pistol, and a bladed kusarigama attached to a ribbon.
 * **Semblance:** Shadow - allows her to create a shadowy clone of herself. This clone can be used as a decoy, a shield, or an additional platform for movement. She can imbue the clones with Dust for elemental effects (e.g., ice clones, fire clones).
@@ -36,6 +39,7 @@
 * **Brief Arc Summary (up to Ever After):** Left the White Fang after disillusionment, struggled with her Faunus identity, returned home to fight Adam, faced her fears and took on a leadership role, and strengthened her bond with Yang.
 
 ## Yang Xiao Long
+
 * **Appearance:** Long blonde hair that ignites when her Semblance is active, often wears an orange scarf and gauntlets.
 * **Weapon:** Ember Celica - a pair of shotgun gauntlets. They fire kinetic blasts and can launch her forward with explosive force.
 * **Semblance:** Burn - allows her to absorb kinetic energy from attacks and redirect it back as explosive force, increasing her strength. Her hair ignites when her power builds.
@@ -46,6 +50,7 @@
 * **Brief Arc Summary (up to Ever After):** Suffered significant trauma including losing her arm, struggled with PTSD and depression, recovered and found renewed purpose, deepened her bond with Blake, and faced difficult truths about her family.
 
 ## Jaune Arc
+
 * **Appearance:** Blonde hair, often wears a hoodie and chest plate.
 * **Weapon:** Crocea Mors - a sword and shield that can collapse into a sheath. The shield can also expand.
 * **Semblance:** Aura Amplification - allows him to amplify the Aura of himself or others, greatly enhancing healing, durability, or even the effectiveness of other Semblances.
@@ -56,6 +61,7 @@
 * **Brief Arc Summary (up to Ever After):** Grew significantly after Pyrrha's death, learned to use his Semblance, became a vital support member for Team RWBY, and grappled with loss and responsibility in the Ever After.
 
 ## Nora Valkyrie
+
 * **Appearance:** Orange hair, often wears a short skirt and her symbol is a hammer.
 * **Weapon:** Magnhild - a war hammer that transforms into a grenade launcher.
 * **Semblance:** Overload - allows her to absorb electrical energy and convert it into increased physical strength. The more electricity she absorbs, the stronger she becomes.
@@ -66,6 +72,7 @@
 * **Brief Arc Summary (up to Ever After):** Always by Ren's side, revealed her backstory with Ren, struggled with her reliance on her Semblance, and faced the challenges of Atlas and the Ever After with resilience.
 
 ## Lie Ren
+
 * **Appearance:** Long black hair with a green streak, often wears traditional-inspired clothing.
 * **Weapon:** StormFlower - a pair of pistol-blades, capable of both melee and ranged combat.
 * **Semblance:** Aura of Tranquility - allows him to mask his, and others', emotions, making them undetectable to Grimm. He can also sense emotions.
@@ -76,6 +83,7 @@
 * **Brief Arc Summary (up to Ever After):** His past with Nora was revealed, struggled with his own suppressed emotions, had a notable confrontation about his perspective with Nora, and adapted to new threats in Atlas and the Ever After.
 
 ## Pyrrha Nikos (Deceased)
+
 * **Appearance:** Long red hair, often tied in a ponytail, wears distinct green and gold armor.
 * **Weapon:** Miló and Akoúo̱ - a spear that transforms into a rifle, and a shield.
 * **Semblance:** Polarity - allows her to manipulate magnetism. She can control metallic objects, deflect projectiles, and manipulate her own weapons.
@@ -86,6 +94,7 @@
 * **Brief Arc Summary (up to Ever After):** Was chosen as the next Fall Maiden candidate, accepted the responsibility, confessed her feelings to Jaune, and heroically sacrificed herself fighting Cinder Fall during the Fall of Beacon. Her death had a profound impact on Jaune and the rest of Team JNPR.
 
 ## Salem
+
 * **Appearance:** Pale, gaunt, corrupted appearance, with glowing red eyes and Grimm-like features.
 * **Abilities:** Immortality (cursed by the Gods of Light and Darkness), powerful Grimm manipulation, advanced Dust and elemental magic, immense strategic intellect, seemingly limitless knowledge of magic.
 * **Personality:** Ruthless, cold, patient, utterly nihilistic, driven by a desire to destroy humanity and existence itself as revenge against the Gods.
@@ -94,6 +103,7 @@
 * **Brief Arc Summary (up to Ever After):** Revealed as the overarching villain, her tragic backstory and curse were explained, sought to gather the Relics to summon the Gods and end existence, orchestrated countless conflicts across Remnant, her ultimate goal and motivations remain the central conflict of the series.
 
 ## Cinder Fall
+
 * **Appearance:** Dark hair, often wears elegant but practical combat attire. Has a corrupted arm due to her partial Maiden powers and a missing eye.
 * **Weapon:** Can conjure weapons from glass, uses Dust-infused clothing. Relies heavily on her Maiden powers.
 * **Semblance:** Scorching Garnet (or similar name) - allows her to superheat objects and create explosive dust formations.
@@ -104,6 +114,7 @@
 * **Brief Arc Summary (up to Ever After):** Acquired partial Fall Maiden powers, orchestrated the Fall of Beacon, became Salem's most devoted subordinate, pursued the Maidens' powers and the Relics, frequently clashed with Team RWBY, particularly Ruby.
 
 ## Qrow Branwen
+
 * **Appearance:** Spiky black hair, often wears a dark cloak, known for his scythe/sword weapon.
 * **Weapon:** Harbinger - a sword that transforms into a high-powered scythe and also a shotgun.
 * **Semblance:** Misfortune - an active passive Semblance that causes bad luck to occur around him. This can range from minor annoyances to significant mishaps for both allies and enemies.
@@ -114,6 +125,7 @@
 * **Brief Arc Summary (up to Ever After):** Acted as a mentor and protector to Team RWBY, revealed crucial information about Salem and Ozpin, struggled with his alcoholism and Semblance, fought alongside his allies in various major battles.
 
 ## Ozpin / Oscar Pine
+
 * **Appearance (Ozpin):** Silver hair, wears glasses, often seen with a green scarf and cane.
 * **Appearance (Oscar Pine):** Brown hair, often seen in more casual attire.
 * **Weapon (Ozpin):** Long Memory - a cane that functions as a powerful melee weapon and conduit for his magic.
@@ -128,6 +140,7 @@
 * **Brief Arc Summary (up to Ever After):** Ozpin's true nature and curse were revealed, his failures and secrets caused friction with allies, Oscar became his latest host, and they struggled with their merging identity and the weight of their destiny, being pulled into the Ever After and returning with Team RWBY.
 
 ## Arthur Watts (Deceased)
+
 * **Appearance:** Balding, wears spectacles, often seen in formal wear.
 * **Weapon:** A cane that contains a dust dispenser and a retractable rapier. Also uses various technological gadgets and drones.
 * **Semblance:** Unknown, as he primarily relies on technology and intellect.
@@ -138,6 +151,7 @@
 * **Brief Arc Summary (up to Ever After):** A former Atlesian scientist, betrayed Atlas to join Salem, primarily served as her tech expert, manipulated communications and defenses, and was ultimately defeated and killed by Cinder Fall during the battle in Atlas.
 
 ## Tyrian Callows
+
 * **Appearance:** Dark skin, short black hair often styled in dreadlocks, wears a tail as a Faunus, distinctive purple eyes, often has a wide, unsettling grin. Later has a scorpion-like prosthetic tail.
 * **Weapon:** Wrist blades (Scorpion Stingers) that house poison, and his natural scorpion Faunus tail which is also venomous.
 * **Semblance:** Aura Amp - allows him to increase the power of his Aura, making his attacks stronger and his defenses more potent.
@@ -148,6 +162,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as one of Salem's most dangerous agents, pursued Ruby Rose for her Silver Eyes, clashed with Qrow Branwen (leading to Qrow's poisoning and the loss of Tyrian's tail), later received a prosthetic tail and continued his fanatical service to Salem, participating in the attack on Atlas.
 
 ## Hazel Rainart
+
 * **Appearance:** Large, muscular build, often shirtless, has scars from Dust injections, has a stern and often angry expression.
 * **Weapon:** Primarily uses his enhanced physical strength, but also carries Dust vials which he injects directly into his body to enhance his attacks.
 * **Semblance:** Pain Nullification - allows him to suppress pain, making him incredibly resilient in combat, even when severely injured.
@@ -158,6 +173,7 @@
 * **Brief Arc Summary (up to Ever After):** Joined Salem after his sister died at Beacon, believing Ozpin was responsible. Engaged in brutal battles with Ozpin/Oscar, Nora, and Ren. Eventually sided with Oscar and his allies after learning the truth about Salem's curse, and sacrificed himself to allow others to escape during the Fall of Atlas.
 
 ## Winter Schnee
+
 * **Appearance:** Long white hair, often tied in a bun, wears an Atlesian military uniform.
 * **Weapon:** Petalstorm - a military saber that contains several smaller blades and can transform into a rifle.
 * **Semblance:** Glyphs - similar to Weiss, she can create various magical symbols, with a particular proficiency in summoning. Her summons are more refined and powerful than Weiss's early attempts (e.g., controlling multiple minor summons simultaneously, a single large Manticore).
@@ -168,6 +184,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as an Atlesian Specialist, often conflicted between duty and her personal beliefs. Became a mentor figure to Weiss regarding Glyphs. Inherited the Winter Maiden powers, fought against Cinder, and worked to protect Mantle and Atlas during its fall, eventually aiding in the evacuation efforts.
 
 ## Penny Polendina (Deceased - Original & Rebuilt/Maiden)
+
 * **Appearance:** Bright orange hair, green eyes, often seen in a green and white outfit. Later versions are more human-like.
 * **Weapon:** Floating Array - a system of large, metallic swords/blades that she controls telekinetically, capable of firing laser beams and forming defensive barriers.
 * **Semblance:** None (as a robot). Her abilities are technologically derived.
@@ -178,6 +195,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as the first synthetic human with an Aura and Semblance (though her "Semblance" was later clarified as her abilities). Died at the Fall of Beacon. Rebuilt as Penny 2.0 with the intention of becoming the Winter Maiden. Successfully became the Winter Maiden during the Fall of Atlas, but was forced to sacrifice herself (at her own request, by Jaune) to transfer the Maiden powers to Winter Schnee, ensuring Cinder could not obtain them.
 
 ## General James Ironwood (Deceased)
+
 * **Appearance:** Tall, imposing, dark hair, often in an Atlesian military uniform. Has robotic prosthetic limbs.
 * **Weapon:** Handguns, but primarily relies on his strategic command and direct combat skills.
 * **Semblance:** Mettle - allows him to focus his resolve and become impervious to outside influence or doubt, making him incredibly determined but also rigid in his decisions.
@@ -188,6 +206,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as an ally against Salem. Faced immense pressure and paranoia during the events in Atlas, leading him to make increasingly extreme decisions, including sacrificing Mantle and attempting to abandon the world. Ultimately became an antagonist, clashing violently with Team RWBY and dying at the hands of Winter Schnee.
 
 ## Roman Torchwick (Deceased)
+
 * **Appearance:** Red hair and bowler hat, often wears a white suit, always carries a cane.
 * **Weapon:** Melodic Cudgel - a cane that functions as a club and also a powerful flare gun.
 * **Semblance:** None confirmed (relied on cunning and combat skills).
@@ -198,6 +217,7 @@
 * **Brief Arc Summary (up to Ever After):** A prominent criminal involved in Dust robberies and Grimm attacks, acting as a key subordinate for Cinder Fall in the early volumes. Delivered a memorable cynical speech before being devoured by a Griffon Grimm during the Fall of Beacon.
 
 ## Neopolitan (Neo Politan)
+
 * **Appearance:** Petite, often wears a distinct brown, pink, and white outfit. Has heterochromatic eyes (pink and brown).
 * **Weapon:** Hush - a parasol with a hidden blade, capable of blocking attacks, firing projectiles, and containing her illusions.
 * **Semblance:** Overactive Imagination - allows her to create highly realistic and often elaborate illusions that can fool multiple senses. Her illusions can break upon contact or sufficient force.
@@ -208,6 +228,7 @@
 * **Brief Arc Summary (up to Ever After):** Roman's silent and deadly partner. Sought revenge on Cinder and Ruby after Roman's death. Temporarily allied with Cinder to fulfill her vengeance, but ultimately betrayed Cinder and was last seen trapped in the Ever After (though returned by the end of V9).
 
 ## Mercury Black
+
 * **Appearance:** Spiky gray hair, wears dark, agile clothing, has prosthetic legs.
 * **Weapon:** Talaria - mechanical boots with built-in firearms and thrusters, allowing for powerful kicks and mobility.
 * **Semblance:** None confirmed (as his legs were removed by his father and replaced with prosthetics before he could manifest one). He relies solely on skill.
@@ -218,6 +239,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as Cinder's subordinate, often partnered with Emerald. Falsely implicated Yang in an attack during the Vytal Festival. Participated in the Fall of Beacon and the assault on Haven and Atlas, remaining with Cinder even as Emerald defected.
 
 ## Emerald Sustrai
+
 * **Appearance:** Green hair, wears a distinctive green and white outfit.
 * **Weapon:** Thief's Respite - a pair of revolver-kama (sickle-like blades with firearms).
 * **Semblance:** Hallucinations - allows her to create realistic, multi-sensory illusions for a single target, or less detailed ones for multiple targets. She can make people see, hear, or feel things that aren't there.
@@ -228,6 +250,7 @@
 * **Brief Arc Summary (up to Ever After):** Joined Cinder and Mercury, participated in their schemes from Beacon to Atlas. Her loyalty to Cinder began to waver, especially after Cinder's increasing cruelty and the revelation of Salem's full power. Ultimately defected to Team RWBY and their allies during the Fall of Atlas, seeking redemption.
 
 ## Taiyang Xiao Long
+
 * **Appearance:** Blonde hair, muscular build, often wears a casual shirt and jeans.
 * **Weapon:** Unknown, but implied to be skilled due to his past as a Huntsman. He uses a pair of gauntlets in training.
 * **Semblance:** Unknown / Not revealed.
@@ -238,6 +261,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as Ruby and Yang's father, providing a safe haven for them on Patch. Offered emotional support and combat training to Yang during her recovery from losing her arm. Remained a stable, grounding presence for his daughters.
 
 ## Ilia Amitola
+
 * **Appearance:** Chameleon Faunus, initially seen in a White Fang uniform, later more casual. Her skin changes color with her emotions.
 * **Weapon:** Wilt and Blush - a whip-like weapon with blades that can also deploy Dust-infused projectiles.
 * **Semblance:** Thermal Dust Absorption (unofficial name) - allows her to change the color and pattern of her skin based on her emotional state, acting as camouflage.
@@ -248,6 +272,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as a loyal, extremist member of the White Fang under Adam Taurus. She was a childhood friend of Blake. After a confrontation with Blake and seeing Adam's true cruelty, she defected and fought alongside Blake and her parents to protect Menagerie.
 
 ## Ghira Belladonna
+
 * **Appearance:** Large, muscular black-haired Faunus with lion ears.
 * **Weapon:** Claws and immense physical strength.
 * **Semblance:** Unknown / Not revealed.
@@ -258,6 +283,7 @@
 * **Brief Arc Summary (up to Ever After):** Resigned as the White Fang leader due to its extremist turn. Provided a safe home for Blake on Menagerie. Re-entered the fight to protect his family and his people from Adam Taurus, rallying the Menagerie militia.
 
 ## Kali Belladonna
+
 * **Appearance:** Long black hair with golden eyes, cat Faunus ears, often wears elegant traditional attire.
 * **Weapon:** Primarily relies on her culinary skills for defense (e.g., throwing a tea tray).
 * **Semblance:** Unknown / Not revealed.
@@ -268,6 +294,7 @@
 * **Brief Arc Summary (up to Ever After):** Supported Blake during her return to Menagerie. Played a crucial role in rallying support for the defense against the White Fang extremists alongside her husband.
 
 ## Maria Calavera
+
 * **Appearance:** Elderly, with white hair, distinct goggles (to protect her sensitive Silver Eyes), and often wears a dark, somewhat tattered cloak.
 * **Weapon:** Life and Death - a pair of specialized scythe-like gauntlets that can extend and detach from her arms, using Dust.
 * **Semblance:** Unknown / Not revealed, as she rarely uses it publicly. (Her "Grim Reaper" persona largely stemmed from her combat prowess and Silver Eyes).
@@ -278,6 +305,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as a mysterious elderly woman on the Argus Limited. Revealed to be a legendary Huntress known as "The Grim Reaper" whose Silver Eyes were severely damaged. Became a reluctant mentor to Ruby, helping her understand and control her own Silver Eyes. Traveled with Team RWBY to Atlas and helped in the fight against Salem's forces, including guiding them in the Ever After.
 
 ## Glynda Goodwitch
+
 * **Appearance:** Blonde hair tied in a bun, wears glasses, often seen in a professional, authoritative outfit.
 * **Weapon:** Riding crop that acts as a conduit for her magic.
 * **Semblance:** Telekinesis - allows her to move and manipulate objects with her mind, rebuild structures, and use fragmented objects as projectiles.
@@ -288,6 +316,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as a formidable combat instructor at Beacon. Played a key role in defending Beacon during its fall and managing the aftermath. Remained in Vale to help rebuild and protect the kingdom.
 
 ## Leonardo Lionheart (Deceased)
+
 * **Appearance:** Lion Faunus, wears spectacles and formal attire.
 * **Weapon:** Staff.
 * **Semblance:** Cowardice (unofficial name) - allows him to increase his speed and agility in response to fear, but also makes him incredibly susceptible to manipulation.
@@ -298,6 +327,7 @@
 * **Brief Arc Summary (up to Ever After):** Revealed as Salem's mole within Ozpin's inner circle. Betrayed his allies at Haven and died during the battle when he was consumed by Grimm after Salem abandoned him.
 
 ## Fria (Deceased)
+
 * **Appearance:** Elderly woman, frail.
 * **Weapon:** None (relied on Maiden powers).
 * **Semblance:** Unknown / Not revealed.
@@ -308,6 +338,7 @@
 * **Brief Arc Summary (up to Ever After):** The previous Winter Maiden, kept in a secure facility in Atlas. Her powers were sought by Cinder. She eventually transferred her powers to Penny Polendina during the chaos of the Atlas invasion, just before her death.
 
 ## Robyn Hill
+
 * **Appearance:** Red hair, often seen in a green jacket, distinct mechanical right arm.
 * **Weapon:** Arrow Fall - a mechanical crossbow that can fire various Dust-infused projectiles.
 * **Semblance:** Truth - allows her to detect when someone is lying.
@@ -318,6 +349,7 @@
 * **Brief Arc Summary (up to Ever After):** Leader of the Happy Huntresses, a political rival to James Ironwood in Mantle. Became a key figure in the resistance against Ironwood's increasingly tyrannical rule, eventually helping to evacuate the citizens of Mantle.
 
 ## Flynt Coal
+
 * **Appearance:** Dark skin, light blue hair, often wears a fedora and suit.
 * **Weapon:** Killer Quartet - a set of four Dust-powered trumpets that generate powerful sound waves.
 * **Semblance:** Mic Check - allows him to generate multiple clones of himself that can amplify his sound attacks.
@@ -328,6 +360,7 @@
 * **Brief Arc Summary (up to Ever After):** A student from Atlas Academy, member of Team FNKI. Fought against Weiss Schnee in the Vytal Festival tournament. Later participated in the defense of Atlas during Salem's attack.
 
 ## Neon Katt
+
 * **Appearance:** Cat Faunus, rainbow-colored hair, wears a vibrant, neon-themed outfit.
 * **Weapon:** Rollerblades with Dust-powered boosters and glow sticks.
 * **Semblance:** Unknown (but implied to be related to speed or light).
@@ -337,37 +370,8 @@
 * **Key Relationships:** Flynt Coal (teammate), Team FNKI.
 * **Brief Arc Summary (up to Ever After):** A student from Atlas Academy, member of Team FNKI. Fought against Yang Xiao Long and Weiss Schnee in the Vytal Festival tournament. Later participated in the defense of Atlas.
 
-## Whitley Schnee
-* **Appearance:** Pale white hair, often seen in formal, high-collared attire.
-* **Weapon:** None (not a fighter).
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Intelligent, cunning, manipulative, skilled in business and social maneuvering.
-* **Personality:** Initially appears polite and charming, but is manipulative, condescending, and eager to gain control of the Schnee Dust Company. Resents his sisters.
-* **Quirks/Mannerisms:** Often has a faint, superior smirk, speaks in a smooth, calculated manner, keeps his hands clasped or behind his back.
-* **Key Relationships:** Jacques Schnee (father), Weiss Schnee (older sister), Winter Schnee (older sister).
-* **Brief Arc Summary (up to Ever After):** Introduced as the youngest Schnee sibling, who quickly tried to usurp control of the company from Weiss. Remained in Atlas during its fall, and was last seen trying to survive amidst the chaos.
-
-## Jacques Schnee (Deceased)
-* **Appearance:** Balding, wears formal attire, often has a grim or arrogant expression.
-* **Weapon:** None (not a fighter).
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Ruthless businessman, master manipulator, driven by greed and control.
-* **Personality:** Arrogant, tyrannical, greedy, and abusive. Values profit and power above all else, including his own family.
-* **Quirks/Mannerisms:** Tends to posture and emphasize his authority, often dismissive or sneering, uses his wealth and influence as leverage.
-* **Key Relationships:** Weiss Schnee (daughter), Winter Schnee (daughter), Whitley Schnee (son).
-* **Brief Arc Summary (up to Ever After):** Head of the Schnee Dust Company, whose oppressive and unethical practices drove a wedge in his family. Consistently tried to control his daughters. Was ultimately arrested and later killed by Arthur Watts during the attack on Atlas.
-
-## Sienna Khan (Deceased)
-* **Appearance:** Tiger Faunus, orange and black striped fur, often wears regal, traditional attire with a prominent headdress.
-* **Weapon:** A whip-like blade (unnamed).
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Former High Leader of the White Fang, strong combatant, charismatic and authoritative leader.
-* **Personality:** Fierce, proud, and uncompromising in her pursuit of Faunus equality, but preferred strategic action over Adam's radical violence.
-* **Quirks/Mannerisms:** Carries herself with regal authority, speaks with calm conviction, her tiger tail often sways to reflect her mood.
-* **Key Relationships:** Adam Taurus (former lieutenant).
-* **Brief Arc Summary (up to Ever After):** The High Leader of the White Fang after Ghira Belladonna. Was assassinated by Adam Taurus when he betrayed her to take control of the organization, deeming her methods too moderate.
-
 ## Adam Taurus (Deceased)
+
 * **Appearance:** Bull Faunus, black hair, often wears a black and red suit with a distinctive mask to hide a brand mark.
 * **Weapon:** Wilt and Blush - a katana and a rifle sheath, capable of absorbing kinetic energy.
 * **Semblance:** Moonslice - allows him to absorb the kinetic energy of attacks into his weapon and then release it in powerful, crimson-colored energy slashes.
@@ -378,6 +382,7 @@
 * **Brief Arc Summary (up to Ever After):** Blake's former mentor and partner in the White Fang. Became increasingly radical and violent, assassinating Sienna Khan to take control. His obsessive pursuit of Blake and desire for revenge against humanity led him to attack Haven and ultimately be defeated and killed by Blake and Yang.
 
 ## Sun Wukong
+
 * **Appearance:** Blonde hair, blue eyes, monkey tail, often wears a white open jacket and cargo pants.
 * **Weapon:** Ruyi Bang and Jingu Bang - a staff that can separate into two nunchaku and also transform into a shotgun.
 * **Semblance:** Via Sun - allows him to create up to four bright, golden clones of himself that can take damage and interact with the environment.
@@ -388,6 +393,7 @@
 * **Brief Arc Summary (up to Ever After):** Met Blake in Vale, became a key ally in her fight against Adam Taurus and the White Fang, journeyed with her to Menagerie, and participated in the Battle of Haven. Continued to be a supportive friend to Blake.
 
 ## Neptune Vasilias
+
 * **Appearance:** Blue hair, wears a pair of goggles often pushed up onto his head.
 * **Weapon:** Tri-Hard - a trident that can transform into a gun and also a guandao-like staff.
 * **Semblance:** Unknown / Not shown (though theorized to be related to electricity based on a prior dust use, but no explicit Semblance was ever revealed).
@@ -398,6 +404,7 @@
 * **Brief Arc Summary (up to Ever After):** Partnered with Sun, assisted Team RWBY and JNPR during the Vale and Haven conflicts, showcasing his combat skills and unique fear.
 
 ## Coco Adel
+
 * **Appearance:** Dark skin, short brown hair, often wears a beret and fashionable military-inspired attire.
 * **Weapon:** Gianduja - a large, designer handbag that transforms into a powerful minigun.
 * **Semblance:** Hype - allows her to increase the destructive power and force of her attacks, particularly effective with projectile weapons.
@@ -408,6 +415,7 @@
 * **Brief Arc Summary (up to Ever After):** Leader of Team CFVY. Participated in the Vytal Festival and defended Beacon during its fall. Later journeyed with her team to Vacuo and became key figures in the ongoing fight against Grimm.
 
 ## Velvet Scarlatina
+
 * **Appearance:** Brown hair, rabbit Faunus ears, often wears a beret and a modest uniform.
 * **Weapon:** Animate Weaponry - a camera (Anesidora) that can replicate weapons she has previously photographed with perfect detail and function, allowing her to use a diverse arsenal.
 * **Semblance:** Unidentified - related to her photographic weapon ability. (Sometimes referred to as "Photographic Memory" or "Weapon Replication").
@@ -418,6 +426,7 @@
 * **Brief Arc Summary (up to Ever After):** Was initially bullied for being a Faunus. Showcased her incredible weapon ability during the Fall of Beacon. Continued to fight alongside Team CFVY after the fall, adapting to the changing world.
 
 ## Raven Branwen
+
 * **Appearance:** Long black hair with red streaks, striking red eyes, often wears a tribal-inspired outfit and a bird mask.
 * **Weapon:** Omen - a nodachi (long sword) that can transform into a sheathed shotgun and is linked to her portals.
 * **Semblance:** Kindred Link - allows her to create portals to people she has forged strong bonds with, regardless of distance.
@@ -428,6 +437,7 @@
 * **Brief Arc Summary (up to Ever After):** Revealed as Yang's mother and the Spring Maiden. Led the Branwen Tribe. Initially sought to avoid conflict and protect herself, but ultimately decided to use her Spring Maiden powers to help her daughter and her allies in Haven, clashing with Cinder and Salem's forces before disappearing.
 
 ## Professor Bartholomew Oobleck
+
 * **Appearance:** Tall, gaunt, wears a brown tweed suit, carries a thermos, and is constantly jittery and energetic.
 * **Weapon:** Thermos that doubles as a flamethrower and a melee weapon.
 * **Semblance:** Super Speed (unofficial name) - allows him to move and speak at incredibly high speeds, appearing as a blur.
@@ -438,6 +448,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as a history professor at Beacon Academy. Accompanied Team RWBY on a mission to investigate Grimm activity, providing valuable insight and combat support. Helped defend Beacon during its fall.
 
 ## Professor Peter Port
+
 * **Appearance:** Large, rotund man with a bushy mustache, often wears a hunting jacket and hat.
 * **Weapon:** Blunderbuss that doubles as an axe.
 * **Semblance:** Unknown / Not revealed.
@@ -448,6 +459,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as a combat professor at Beacon Academy. Often provides colorful (and lengthy) anecdotes. Helped defend Beacon during its fall.
 
 ## Whitley Schnee
+
 * **Appearance:** Pale white hair, often seen in formal, high-collared attire.
 * **Weapon:** None (not a fighter).
 * **Semblance:** Unknown / Not revealed.
@@ -458,6 +470,7 @@
 * **Brief Arc Summary (up to Ever After):** Introduced as the youngest Schnee sibling, who quickly tried to usurp control of the company from Weiss. Remained in Atlas during its fall, and was last seen trying to survive amidst the chaos.
 
 ## Jacques Schnee (Deceased)
+
 * **Appearance:** Balding, wears formal attire, often has a grim or arrogant expression.
 * **Weapon:** None (not a fighter).
 * **Semblance:** Unknown / Not revealed.
@@ -468,6 +481,7 @@
 * **Brief Arc Summary (up to Ever After):** Head of the Schnee Dust Company, whose oppressive and unethical practices drove a wedge in his family. Consistently tried to control his daughters. Was ultimately arrested and later killed by Arthur Watts during the attack on Atlas.
 
 ## Sienna Khan (Deceased)
+
 * **Appearance:** Tiger Faunus, orange and black striped fur, often wears regal, traditional attire with a prominent headdress.
 * **Weapon:** A whip-like blade (unnamed).
 * **Semblance:** Unknown / Not revealed.
@@ -477,17 +491,8 @@
 * **Key Relationships:** Adam Taurus (former lieutenant).
 * **Brief Arc Summary (up to Ever After):** The High Leader of the White Fang after Ghira Belladonna. Was assassinated by Adam Taurus when he betrayed her to take control of the organization, deeming her methods too moderate.
 
-## Adam Taurus (Deceased)
-* **Appearance:** Bull Faunus, black hair, often wears a black and red suit with a distinctive mask to hide a brand mark.
-* **Weapon:** Wilt and Blush - a katana and a rifle sheath, capable of absorbing kinetic energy.
-* **Semblance:** Moonslice - allows him to absorb the kinetic energy of attacks into his weapon and then release it in powerful, crimson-colored energy slashes.
-* **Abilities:** Highly skilled swordsman, incredibly strong, charismatic but ruthless leader, vengeful.
-* **Personality:** Vengeful, abusive, obsessed with power and retribution against humanity. His idealism twisted into violent extremism and megalomania.
-* **Quirks/Mannerisms:** Speaks in a low, menacing growl when angry, obsessed with "justice" and his twisted ideology, often uses his mask as an intimidating prop, prone to fits of rage.
-* **Key Relationships:** Blake Belladonna (former partner), Sienna Khan (former leader), White Fang (former organization).
-* **Brief Arc Summary (up to Ever After):** Blake's former mentor and partner in the White Fang. Became increasingly radical and violent, assassinating Sienna Khan to take control. His obsessive pursuit of Blake and desire for revenge against humanity led him to attack Haven and ultimately be defeated and killed by Blake and Yang.
-
 ## Scarlet David
+
 * **Appearance:** Red hair, often seen in a piratical outfit.
 * **Weapon:** Cutlass and flintlock pistol.
 * **Semblance:** Unknown / Not revealed.
@@ -498,6 +503,7 @@
 * **Brief Arc Summary (up to Ever After):** Member of Team SSSN. Participated in the Vytal Festival tournament and the defense of Beacon.
 
 ## Sage Ayana
+
 * **Appearance:** Green hair, large build.
 * **Weapon:** Greatsword.
 * **Semblance:** Unknown / Not revealed.
@@ -508,6 +514,7 @@
 * **Brief Arc Summary (up to Ever After):** Member of Team SSSN. Participated in the Vytal Festival tournament and the defense of Beacon.
 
 ## Yatsuhashi Daichi
+
 * **Appearance:** Tall, muscular, dark skin, dreadlocks.
 * **Weapon:** Fulcrum - a large, blunt cleaver-like blade that vibrates with kinetic energy.
 * **Semblance:** Memory Wipe - can temporarily erase memories of a target, though he dislikes using it.
@@ -518,6 +525,7 @@
 * **Brief Arc Summary (up to Ever After):** Member of Team CFVY. Participated in the Vytal Festival and the defense of Beacon. Continued fighting Grimm alongside his team.
 
 ## Fox Alistair
+
 * **Appearance:** Orange hair, blind, has distinct scars over his eyes.
 * **Weapon:** Sharp Gauntlets (unnamed) - a pair of bladed gauntlets.
 * **Semblance:** Telepathy - can communicate directly into others' minds.
@@ -528,6 +536,7 @@
 * **Brief Arc Summary (up to Ever After):** Member of Team CFVY. Participated in the Vytal Festival and the defense of Beacon. Continued fighting Grimm alongside his team.
 
 ## Lisa Lavender
+
 * **Appearance:** Dark skin, short dark hair, wears professional news anchor attire.
 * **Weapon:** None (civilian).
 * **Semblance:** Unknown / Not revealed.
@@ -538,6 +547,7 @@
 * **Brief Arc Summary (up to Ever After):** A recurring background character who serves as the primary news anchor for VBC News, often providing exposition on major global events and conflicts, from the aftermath of Beacon to the situation in Atlas.
 
 ## Councilman Sleet (Deceased)
+
 * **Appearance:** Older man, wears formal Atlesian councilor attire.
 * **Weapon:** None (civilian).
 * **Semblance:** Unknown / Not revealed.
@@ -548,6 +558,7 @@
 * **Brief Arc Summary (up to Ever After):** A member of the Atlas Council who opposed Ironwood's increasing authoritarianism. Was eventually killed during the chaos of Salem's attack on Atlas.
 
 ## Councilwoman Camilla
+
 * **Appearance:** Middle-aged woman, wears formal Atlesian councilor attire.
 * **Weapon:** None (civilian).
 * **Semblance:** Unknown / Not revealed.
@@ -556,23 +567,3 @@
 * **Quirks/Mannerisms:** Carries herself with political composure, often makes careful, diplomatic statements.
 * **Key Relationships:** Councilman Sleet.
 * **Brief Arc Summary (up to Ever After):** A member of the Atlas Council who initially supported Ironwood but became concerned by his extreme measures during the crisis. Her fate after the Fall of Atlas is not explicitly shown, but implied to be among the evacuees.
-
-## Lyssa Calavera (Deceased)
-* **Appearance:** Young woman, wears armor.
-* **Weapon:** A rapier and shield.
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Skilled Huntress.
-* **Personality:** Brave, loyal.
-* **Quirks/Mannerisms:** Not enough information to define distinct quirks due to limited screen time.
-* **Key Relationships:** Maria Calavera (teammate), other teammates.
-* **Brief Arc Summary (up to Ever After):** Part of Maria Calavera's original team. Was killed by the Grimm Reaper (Tyrian's predecessor) during a mission.
-
-## Elise (Deceased)
-* **Appearance:** Young woman, wears armor.
-* **Weapon:** Dual daggers.
-* **Semblance:** Unknown / Not revealed.
-* **Abilities:** Agile combatant.
-* **Personality:** Brave, loyal.
-* **Quirks/Mannerisms:** Not enough information to define distinct quirks due to limited screen time.
-* **Key Relationships:** Maria Calavera (teammate), other teammates.
-* **Brief Arc Summary (up to Ever After):** Part of Maria Calavera's original team. Was killed by the Grimm Reaper (Tyrian's predecessor) during a mission.
