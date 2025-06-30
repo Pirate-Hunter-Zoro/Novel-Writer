@@ -1,0 +1,1 @@
+elm_rwby_character,brown hair,brown eyes,brown skin,white jacket,dark sleeveless shirt,no visible weapon

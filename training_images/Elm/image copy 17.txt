@@ -1,0 +1,1 @@
+elm_rwby_character,brown hair,brown eyes,white pants,white jacket,gray forearm guards,red belt,muscular build
