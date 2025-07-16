@@ -1,131 +1,175 @@
-# prompt_generator.py (v9.0 - The Workspace Preparer!)
-# This script prepares the entire workspace for a chapter part:
-# 1. It creates the enhanced prompt file for Entrapta.
-# 2. It creates the blank chapter file for Mikey to paste into.
-
 import os
 import argparse
 import re
+import json
+from dotenv import load_dotenv
+import google.generativeai as genai
 
-# --- GLOBAL CONFIGURATION & PATHING GPS ---
+# --- INITIALIZATION & ENVIRONMENT SETUP ---
+load_dotenv()
+
+# --- CONFIGURATION & PATHING GPS ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-PROMPTS_DIR = os.path.join(PROJECT_ROOT, "knowledge_db", "rwby_chapter_prompts")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output", "generated_chapters")
+KNOWLEDGE_DB_DIR = os.path.join(PROJECT_ROOT, "knowledge_db")
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-ANTI_SUMMARY_WARNING = """
+# --- CORE DIRECTIVES FOR WRITING ---
+# These are our constants for ensuring quality! They get passed to the Author bot later.
+CORE_DIRECTIVES = """
+### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY**
 
----
-**CRITICAL PACING DIRECTIVE: Maintain deep 'show, don't tell' detail throughout the scene. A brief, reflective summary is only permitted in the final paragraph.**
----
-
+* **Word Count Goal:** This section should be approximately 1000-1200 words.
+* **MAXIMIZE Immersive Sensory Details:** Describe the heat, the feel of sand and dust, the quality of the blinding light and shimmering air, the howling wind, and the sounds of ragged breathing with extreme vividness.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Dedicate significant portions of the narrative to each character's deepest inner thoughts, emotions, and physical sensations.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use minute character actions, extensive internal monologues, and nuanced dialogue. AVOID generic descriptions. Every character must have a distinct, individual reaction.
+* **Rich and Varied Language:** Utilize a sophisticated and expansive vocabulary with diverse, complex sentence structures. ELIMINATE repetitive phrasing.
+* **Physicality of Return:** Describe how their physical bodies feel after their Ever After transformations—the profound sensation of gravity, lingering oddities, and the return of familiar aches.
 """
 
 # --- HELPER FUNCTIONS ---
 
 def load_file_content(file_path):
-    """A generic function to load content from any text file."""
-    print(f"Reading data from file: {file_path}")
+    """Loads content from a file. A trusty tool!"""
+    print(f"Reading data from: {file_path}")
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        print("Data loaded successfully.")
-        return content
+            return f.read()
     except FileNotFoundError:
-        print(f"ERROR: File not found at {file_path}")
-        raise
-    except Exception as e:
-        print(f"An unexpected error occurred while reading file: {e}")
+        print(f"ERROR: Oh no! File not found at {file_path}")
         raise
 
-def extract_five_part_prompts(chapter_file_text):
+def extract_chapter_summary(full_outline_text, chapter_number):
     """
-    Parses a chapter prompt file to extract TWO things:
-    1. The 'CORE DIRECTIVES' block.
-    2. A list of the five sequential micro-prompts.
+    Finds and returns the summary for a specific chapter from the grand outline.
     """
-    print(f"Parsing Chapter prompt for Core Directives and 5-part sequence...")
-    core_directives_text = ""
-    
-    directives_start_marker = "### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY"
-    directives_end_pattern = re.compile(r'\n---\n\n### \*\*Prompt \d+-[A-E]:')
-    
-    start_idx = chapter_file_text.find(directives_start_marker)
-    match = directives_end_pattern.search(chapter_file_text, start_idx)
-    
-    if start_idx != -1 and match:
-        end_idx = match.start()
-        core_directives_text = chapter_file_text[start_idx:end_idx].strip()
-        print("Successfully extracted Core Directives.")
+    print(f"Searching outline for Chapter {chapter_number} summary...")
+    pattern = re.compile(
+        r"### Chapter " + str(chapter_number) + r": .*?\n(.*?)(?=\n### Chapter|\Z)",
+        re.DOTALL
+    )
+    match = pattern.search(full_outline_text)
+    if match:
+        print("Chapter summary found!")
+        return match.group(1).strip()
     else:
-        print("WARNING: Could not extract the Core Directives block. The prompt will be less specific!")
+        raise ValueError(f"Chapter {chapter_number} could not be found in the outline.")
 
-    split_marker = r'### \*\*Prompt '
-    parts = re.split(split_marker, chapter_file_text)
-    if len(parts) < 2:
-        print(f"ERROR: Could not find any prompts. Check for the '### **Prompt ' marker in your file.")
-        return core_directives_text, []
+# --- THE NEW GEMINI-POWERED BRAIN! (NOW WITH MORE RULES!) ---
+
+def generate_story_beats_from_api(chapter_summary):
+    """
+    This is the NEW BRAIN! It calls the Gemini API to do the heavy lifting.
+    """
+    print("Connecting to the Gemini 2.5 Pro cognitive matrix...")
+
+    if not GEMINI_API_KEY:
+        raise ValueError("ERROR: GOOGLE_API_KEY not found in environment. Did you set it up in your .env file?")
+
+    genai.configure(api_key=GEMINI_API_KEY)
+
+    # We use the most powerful model for this critical planning task!
+    model = genai.GenerativeModel('gemini-1.5-pro-latest') # Using 1.5 Pro as a stand-in, but this is where 2.5 would go!
+
+    # This is the instruction manual we give to the AI! Now with better instructions!
+    meta_prompt = f"""
+    You are a master storyteller and a narrative deconstruction expert. Your task is to take a high-level chapter summary for a RWBY fan novel and break it down into exactly five sequential, logical, and compelling story beats.
+
+    **Output Format Directives:**
+    * You MUST return your response as a valid JSON object.
+    * The root of the object must be a single key "beats" which contains a list of the five beat objects.
+    * Do not include any other text, explanation, or markdown formatting like ```json outside of the JSON object itself.
+    * For each beat, you must provide: `title`, `objective`, `ending_point`, `key_characters`, and `key_locations`.
+
+    **Creative & Stylistic Directives:**
+    1.  **Adhere to the Source:** The five beats, when combined, must faithfully represent all key events and plot points from the provided chapter summary. Do not invent major events not implied by the summary.
+    2.  **Logical Progression:** Ensure the five beats represent a logical and well-paced narrative arc. The chapter should not feel rushed. Each beat must flow directly from the previous one.
+    3.  **Grounded Tone:** The tone must be serious and consistent with the RWBY universe. **CRITICAL: AVOID clichés, tired tropes, and fourth-wall-breaking pop-culture references in your suggested descriptions and ending points.**
+    4.  **Actionable Objectives:** The `objective` and `ending_point` for each beat should be concrete and actionable for a writer, focusing on character actions, emotional shifts, and key discoveries.
+
+    Here is the chapter summary to deconstruct:
+    ---
+    {chapter_summary}
+    ---
+    """
+
+    print("Sending CALIBRATED deconstruction request to Gemini...")
+    response = model.generate_content(meta_prompt)
+
+    # We'll still keep the cleanup function, just in case the AI gets feisty!
+    cleaned_json_string = response.text.strip().replace("```json", "").replace("```", "")
     
-    prompts = ["### **Prompt " + part.strip() for part in parts[1:]]
-    print(f"Successfully parsed {len(prompts)} micro-prompts!")
-    return core_directives_text, prompts
+    print("Response received! Parsing refined cognitive output...")
+    try:
+        story_beats = json.loads(cleaned_json_string)['beats']
+        if len(story_beats) != 5:
+            raise ValueError(f"AI returned {len(story_beats)} beats instead of 5. The structure is wrong!")
+        print("Successfully parsed 5 refined story beats from AI response!")
+        return story_beats
+    except (json.JSONDecodeError, KeyError, ValueError) as e:
+        print(f"--- CRITICAL AI RESPONSE PARSING ERROR ---")
+        print(f"The AI did not return valid JSON in the expected format. Details: {e}")
+        print("--- RAW AI RESPONSE ---")
+        print(response.text)
+        raise
 
 # --- MAIN ENGINE ---
 
 def main():
-    """The main function that prepares the prompt files for Entrapta."""
-    parser = argparse.ArgumentParser(description="The Workspace Preparer: Creates all necessary files for a chapter part.")
-    parser.add_argument('--chapter-number', type=int, required=True, help='The number of the chapter to generate prompts for.')
+    """The main function that prepares the prompts for the author bot."""
+    parser = argparse.ArgumentParser(description="The Calibrated Story Planner: Generates a 5-part chapter plan via the Gemini API.")
+    parser.add_argument('--chapter-number', type=int, required=True, help='The number of the chapter to plan.')
     args = parser.parse_args()
 
-    print("--- Activating Workspace Preparer v9.0 ---")
+    print(f"--- Activating Calibrated Story Planner v12.0 for Chapter {args.chapter_number} ---")
     try:
-        chapter_output_dir = os.path.join(OUTPUT_DIR, f'chapter_{args.chapter_number:02d}')
-        os.makedirs(chapter_output_dir, exist_ok=True)
-        print(f"All generated files for Chapter {args.chapter_number} will be saved in: {chapter_output_dir}")
+        # Step 1: Load the master plan
+        plot_outline_path = os.path.join(KNOWLEDGE_DB_DIR, "rwby_novel_plot_outline.md")
+        outline_text = load_file_content(plot_outline_path)
 
-        chapter_prompt_path = os.path.join(PROMPTS_DIR, f"chapter_{args.chapter_number}.md")
-        all_prompts_text = load_file_content(chapter_prompt_path)
-        
-        core_directives, five_part_prompts = extract_five_part_prompts(all_prompts_text)
+        # Step 2: Find the right chapter summary
+        chapter_summary = extract_chapter_summary(outline_text, args.chapter_number)
 
-        if not five_part_prompts:
-            raise Exception("No prompts were found. Halting.")
+        # Step 3: Let the REFINED brain do the thinking!
+        story_beats = generate_story_beats_from_api(chapter_summary)
 
-        for i, micro_prompt in enumerate(five_part_prompts, 1):
-            print(f"\n--- Processing Part {i} ---")
+        # Step 4: Construct and display the beautiful results!
+        print("\n--- GENERATED PROMPT SEQUENCE (Ready for Author Bot) ---\n")
+        structured_prompts = []
+        for i, beat in enumerate(story_beats, 1):
+            prompt_text = f"""
+{CORE_DIRECTIVES}
+
+---
+
+### **PROMPT FOR CHAPTER {args.chapter_number}, PART {i}: {beat['title']}**
+
+**Objective:** {beat['objective']}
+
+**Crucial Ending Point:** {beat['ending_point']}
+"""
+            prompt_data = {
+                "part_number": i,
+                "prompt_string": prompt_text.strip(),
+                "key_characters": beat['key_characters'],
+                "key_locations": beat['key_locations']
+            }
+            structured_prompts.append(prompt_data)
             
-            # --- Sub-routine 1: Enhance and create the prompt file ---
-            ending_marker = "**Crucial Ending Point:**"
-            if ending_marker in micro_prompt:
-                parts = micro_prompt.split(ending_marker, 1)
-                enhanced_micro_prompt = parts[0] + ANTI_SUMMARY_WARNING + ending_marker + parts[1]
-            else:
-                print(f"WARNING: '{ending_marker}' not found in Part {i}. Cannot inject warning.")
-                enhanced_micro_prompt = micro_prompt
+            # --- Displaying the data for our experiment log! ---
+            print(f"--- Part {prompt_data['part_number']} ---")
+            print(f"Key Characters: {prompt_data['key_characters']}")
+            print(f"Key Locations: {prompt_data['key_locations']}")
+            print("--- Prompt String ---")
+            print(prompt_data['prompt_string'])
+            print("\n--------------------------------------------------\n")
 
-            finalized_prompt_text = core_directives + "\n\n---\n\n" + enhanced_micro_prompt
-            prompt_part_file = os.path.join(chapter_output_dir, f'prompt_part_{i}.md')
-            
-            with open(prompt_part_file, 'w', encoding='utf-8') as f:
-                f.write(finalized_prompt_text)
-            print(f"Successfully created and enhanced: {os.path.basename(prompt_part_file)}")
-
-            #! NEW FEATURE: Create the blank chapter part file!
-            # It makes an empty file for you to paste my output into! No more manual work!
-            chapter_part_file = os.path.join(chapter_output_dir, f'chapter_part_{i}.md')
-            with open(chapter_part_file, 'w', encoding='utf-8') as f:
-                pass # This just creates an empty file. So simple!
-            print(f"Successfully created blank file: {os.path.basename(chapter_part_file)}")
-
-
-        print("\n--- Workspace Preparation Complete! ---")
-        print("The 5 prompt files and 5 blank chapter files are ready!")
+        print("--- Intelligent Planning Complete! ---")
 
     except Exception as e:
-        print(f"\n--- A CRITICAL ERROR OCCURRED! ---")
+        print(f"\n--- A CATASTROPHIC PLANNING FAILURE OCCURRED! ---")
         print(f"Process halted. Details: {e}")
-        print("--- Workspace Preparer Emergency Shutdown ---")
+        print("--- Story Planner Emergency Shutdown ---")
 
 if __name__ == '__main__':
     main()

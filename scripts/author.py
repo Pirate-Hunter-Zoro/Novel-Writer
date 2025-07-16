@@ -1,102 +1,142 @@
-# author.py (v1.0 - The Automated Narrative Engine)
-# This script takes a prepared prompt, generates the story, and saves it.
+# author.py (v2.0 - The Dual-Core Prose Engine!)
+# This bot has two functions:
+# 1. write_first_draft: Takes a prompt and writes a new piece of text.
+# 2. edit_draft: Takes existing text and a critique, and edits it.
 
 import os
-import argparse
-import google.generativeai as genai
 from dotenv import load_dotenv
+import google.generativeai as genai
 
-# --- GLOBAL CONFIGURATION & PATHING GPS ---
-# We use the same pathing logic as our other bots for perfect integration!
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output", "generated_chapters")
+# --- INITIALIZATION & ENVIRONMENT SETUP ---
+load_dotenv()
 
-# --- MODEL CONFIGURATION ---
-# The powerful new engine we discussed! Easy to swap for other experiments!
-MODEL_NAME = 'gemini-2.5-pro' 
+# --- CONFIGURATION ---
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# --- HELPER FUNCTIONS (Standardized across our Bot Army!) ---
+def configure_model(model_name='gemini-2.5-pro'):
+    """Configures and returns a Gemini model instance."""
+    if not GEMINI_API_KEY:
+        raise ValueError("ERROR: GOOGLE_API_KEY not found. Please set it in your .env file.")
+    
+    genai.configure(api_key=GEMINI_API_KEY)
+    
+    # We use the most powerful model for creative writing tasks!
+    return genai.GenerativeModel(model_name)
 
-def load_file_content(file_path):
-    """A generic function to load content from any text file."""
-    print(f"Reading prompt data from: {file_path}")
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        print("Prompt data loaded successfully.")
-        return content
-    except FileNotFoundError:
-        print(f"ERROR: Prompt file not found at {file_path}")
-        raise
+# --- BOT FUNCTIONS ---
 
-def save_output_text(text, file_path):
-    """Saves the generated text to the specified output file."""
-    print(f"Saving generated text to: {file_path}")
-    try:
-        # The prompt_generator already creates the blank file, we just write to it!
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(text)
-        print(f"Successfully saved chapter part!")
-    except Exception as e:
-        print(f"ERROR: Could not write to output file {file_path}. Details: {e}")
-        raise
+def write_first_draft(prompt_string: str) -> str:
+    """
+    Takes a detailed prompt from the Planner and writes the first draft.
+    """
+    print("--- Author Bot: Engaging WRITE Mode ---")
+    
+    model = configure_model() # Using the powerful author model!
 
-def generate_chapter_text(prompt_text):
-    """Sends the prompt to the Gemini API and gets the story text."""
-    print(f"Initializing Author Engine ({MODEL_NAME})...")
-    try:
-        model = genai.GenerativeModel(MODEL_NAME)
-        print("Model initialized. Sending prompt to generate narrative... This is the exciting part!")
-        response = model.generate_content(prompt_text)
-        print("Narrative generation complete!")
-        return response.text
-    except Exception as e:
-        print(f"ERROR: Failed to generate text from API. Details: {e}")
-        raise
+    # This meta-prompt tells the AI its role as a creative writer.
+    meta_prompt = f"""
+    You are a master storyteller and a brilliant author. Your task is to take the following prompt, which outlines a specific part of a chapter, and write a compelling, immersive, and high-quality narrative section based on it.
 
-# --- MAIN ENGINE ---
+    Adhere strictly to all 'CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY' and the specific objectives laid out in the prompt. Your writing should be vivid, emotional, and deeply engaging.
 
+    Here is your prompt:
+    ---
+    {prompt_string}
+    ---
+
+    Now, write the chapter part.
+    """
+
+    print("Generating first draft...")
+    response = model.generate_content(meta_prompt)
+    print("First draft complete!")
+    
+    return response.text
+
+def edit_draft(original_text: str, critique_feedback: str, original_prompt: str) -> str:
+    """
+    Takes the original text, a critique, and the original prompt, and produces an edited version.
+    """
+    print("--- Author Bot: Engaging EDIT Mode ---")
+    
+    model = configure_model() # Also uses the powerful model for smart editing.
+
+    # This meta-prompt is for the complex task of editing, not rewriting!
+    meta_prompt = f"""
+    You are an expert editor. Your task is to intelligently revise the 'ORIGINAL TEXT' based on the specific points provided in the 'CRITIQUE FEEDBACK'.
+
+    **Your Core Mission:** Do NOT rewrite the entire text from scratch. Your goal is to act like a human editor, preserving the original prose as much as possible while surgically implementing the required changes. Make the edits feel seamless and natural.
+
+    For context, here is the 'ORIGINAL PROMPT' the text was based on. Use it to ensure your edits remain true to the initial objective.
+
+    --- ORIGINAL PROMPT ---
+    {original_prompt}
+    ---
+
+    --- ORIGINAL TEXT TO EDIT ---
+    {original_text}
+    ---
+
+    --- CRITIQUE FEEDBACK (Points to address) ---
+    {critique_feedback}
+    ---
+
+    Now, provide the full, edited version of the text with the feedback incorporated.
+    """
+    
+    print("Revising draft based on critique...")
+    response = model.generate_content(meta_prompt)
+    print("Edits complete!")
+    
+    return response.text
+
+# --- TESTING BLOCK ---
 def main():
-    """The main function that orchestrates the authoring process."""
-    parser = argparse.ArgumentParser(description="The Author Script (v1.0): Generates story text from a prompt.")
-    parser.add_argument('--chapter-number', type=int, required=True, help='The chapter number to generate.')
-    parser.add_argument('--part-number', type=int, required=True, help='The part number within the chapter to generate.')
-    args = parser.parse_args()
+    """A simple function to test the author bot's capabilities."""
+    print("--- Running Author Bot Test Sequence ---")
+    
+    # 1. Create a sample prompt (like one from our Planner)
+    sample_prompt = """
+    ### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY**
 
-    print("--- Starting Author Engine v1.0 ---")
-    try:
-        # Load API Key from .env file
-        load_dotenv()
-        api_key = os.getenv("GOOGLE_API_KEY")
-        if not api_key:
-            raise ValueError("ERROR: GOOGLE_API_KEY not found in .env file! The engine has no power!")
-        
-        genai.configure(api_key=api_key)
-        print("API Key loaded. Power is ON.")
+    * **Word Count Goal:** This section should be approximately 100-200 words for this test.
+    * **PROFOUND Individual Character Resonance & Internal Monologue:** Focus on Ruby's feelings.
+    * **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use her actions to show her emotions.
 
-        # Construct the file paths based on arguments
-        chapter_dir = os.path.join(OUTPUT_DIR, f'chapter_{args.chapter_number:02d}')
-        prompt_file_path = os.path.join(chapter_dir, f'prompt_part_{args.part_number}.md')
-        output_file_path = os.path.join(chapter_dir, f'chapter_part_{args.part_number}.md')
-        print(f"  -> Reading prompt from: {prompt_file_path}")
-        print(f"  -> Will write output to: {output_file_path}")
+    ---
 
-        # 1. Load the prompt created by prompt_generator.py
-        prompt_content = load_file_content(prompt_file_path)
+    ### **PROMPT FOR CHAPTER 1, PART 1: Crash Landing**
 
-        # 2. Generate the chapter text
-        generated_text = generate_chapter_text(prompt_content)
+    **Objective:** Ruby must survive her chaotic arrival in Vacuo, grappling with the disorientation of her return.
 
-        # 3. Save the output
-        save_output_text(generated_text, output_file_path)
-        
-        print("\n--- Author Engine Task Complete! ---")
+    **Crucial Ending Point:** The section must end with Ruby getting to her feet and looking at the sky.
+    """
 
-    except Exception as e:
-        print(f"\n--- A CRITICAL ERROR OCCURRED IN THE AUTHOR ENGINE! ---")
-        print(f"Process halted. Details: {e}")
-        print("--- Author Engine Emergency Shutdown ---")
+    # 2. Test the WRITE function
+    first_draft = write_first_draft(sample_prompt)
+    print("\n--- FIRST DRAFT ---")
+    print(first_draft)
+    
+    # 3. Create a sample critique
+    sample_critique = """
+    - The description is good, but it 'tells' us Ruby is confused. Please 'show' it more through her actions. For example, have her stumble or check her weapon reflexively.
+    - The ending is a bit weak. Make her observation of the sky more meaningful. Does it look different from the Ever After's sky?
+    """
+    
+    print("\n--- SENDING CRITIQUE FOR REVISION ---")
+    print(sample_critique)
+    
+    # 4. Test the EDIT function
+    edited_draft = edit_draft(
+        original_text=first_draft,
+        critique_feedback=sample_critique,
+        original_prompt=sample_prompt
+    )
+    
+    print("\n--- EDITED DRAFT ---")
+    print(edited_draft)
+    print("\n--- Author Bot Test Sequence Complete! ---")
+
 
 if __name__ == '__main__':
     main()
