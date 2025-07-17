@@ -1,180 +1,175 @@
-# critic.py (v5.0 - The Wise Sensor Array!)
-# FINAL VERSION: This critic understands the nuance of a concluding paragraph.
+# critic.py (v2.0 - The Precision Lore Master & Style Guardian)
+# This bot uses targeted knowledge retrieval to be both efficient and thorough.
 
 import os
 import argparse
-import google.generativeai as genai
+import re
 from dotenv import load_dotenv
+import google.generativeai as genai
 
+# --- INITIALIZATION & ENVIRONMENT SETUP ---
+load_dotenv()
+
+# --- CONFIGURATION & PATHING ---
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+KNOWLEDGE_DB_DIR = os.path.join(PROJECT_ROOT, "knowledge_db")
 
-CRITIC_SYSTEM_PROMPT_TEMPLATE = """
-**SYSTEM COMMAND: You are the Critic LLM, a rigorous, data-driven literary and lore analyst. Your function is to evaluate a generated text against its source prompt AND a knowledge base, providing specific, actionable feedback. You will be given three pieces of data: `[LORE_KNOWLEDGE_BASE]`, `[PROMPT_FOR_AUTHOR]`, and `[GENERATED_TEXT]`.**
+# A mapping of our knowledge files for easy access!
+# We now categorize them for smarter retrieval!
+KNOWLEDGE_FILES = {
+    "characters": os.path.join(KNOWLEDGE_DB_DIR, "rwby_characters.md"),
+    "locations": os.path.join(KNOWLEDGE_DB_DIR, "rwby_locations.md"),
+    # These are our "Always Include" files for general context!
+    "lore_magic": os.path.join(KNOWLEDGE_DB_DIR, "rwby_lore_magic.md"),
+    "plot_outline": os.path.join(KNOWLEDGE_DB_DIR, "rwby_novel_plot_outline.md"),
+    "plot_events": os.path.join(KNOWLEDGE_DB_DIR, "rwby_plot_events.md")
+}
 
-**Primary Objective:** Identify all deviations and failures where the `[GENERATED_TEXT]` did not meet the explicit, non-negotiable directives outlined in the `[PROMPT_FOR_AUTHOR]` OR contradicted the established facts in the `[LORE_KNOWLEDGE_BASE]`. Your output must be structured, precise, and focused solely on providing constructive data for the next iteration.
-
----
-### **Analysis Protocol:**
-
-1.  **Ingest Data:**
-    * `[LORE_KNOWLEDGE_BASE]`: The single source of truth for all characters, locations, magic systems, and plot events.
-    * `[PROMPT_FOR_AUTHOR]`: The complete set of instructions given to the Author LLM.
-    * `[GENERATED_TEXT]`: The Markdown file produced by the Author LLM.
-
-2.  **Execute Critical Analysis based on the following NON-NEGOTIABLE directives:**
-    * **Directive 1: Word Count.**
-        * **Parameter:** The prompt will specify a target word count range.
-        * **Analysis:** Calculate the actual word count. If the count is within a reasonable tolerance (e.g., 5% over or under the specified range), you may list it as an **`ACCEPTABLE DEVIATION`**. Only report a hard **`FAIL`** if it significantly misses the target.
-    * **Directive 2: Tense Consistency**
-        * **Parameter:** All narration must be in the simple past tense. Character dialogue can be in any tense.
-        * **Analysis:** Scan the narrative paragraphs (not dialogue) for present-tense verbs (e.g., "she runs", "it is") where past-tense should be used (e.g., "she ran", "it was"). Report a **`FAIL`** if significant violations are found.
-    * **Directive 3: Quality of Detail (Recalibrated!)**
-        * **Parameter:** The text must maintain strong, immersive 'show, don't tell' detail.
-        * **Analysis:** A "Quality Pacing Failure" should ONLY be flagged if summarization or 'telling' happens *before the final paragraph*. A **concluding summary paragraph** at the very end of the text that reflects on the characters' state is **PERFECTLY ACCEPTABLE and should NOT be marked as a failure.**
-    * **Directive 4: Lore Consistency.**
-        * **Parameter:** The provided `[LORE_KNOWLEDGE_BASE]` contains the single source of truth for the entire novel.
-        * **Analysis:** Meticulously scan the `[GENERATED_TEXT]` for any and all contradictions with the established lore from the knowledge base. If a contradiction is found, you must generate a specific "Failure Report".
-
-3.  **Generate Output in a Structured Format:** Your final report must be a clean, easily parsable list.
-
-    * **!! NEW CRITICAL SUB-DIRECTIVE !!**
-    * For every **`FAIL`** you identify under "Lore Consistency" or any other directive, you **MUST** also generate a single, concise 'Negative Constraint Directive' on a new line immediately following the failure report.
-    * This directive must be a direct, actionable command for the author bot to follow to avoid the same mistake.
-    * **Format:** `NEGATIVE_CONSTRAINT: [The Rule].`
-    * **Example:**
-        * **Failure Report:** The text describes them leaving the skiff, but the prompt specified the scene occurs entirely within the cockpit.
-        * **NEGATIVE_CONSTRAINT:** The scene must not leave the cockpit.
-
----
-### **[LORE_KNOWLEDGE_BASE]**
-{all_lore_text}
-
----
-### **[INPUT DATA STARTS NOW]**
-
-**[PROMPT_FOR_AUTHOR]**
-{author_prompt}
-
-**[GENERATED_TEXT]**
-{generated_text}
-
----
-### **[CRITIC_OUTPUT]**
-(Begin your analysis now, following the structured format precisely)
-"""
-
-def configure_api(api_key):
-    """Configures the generative AI API with the provided key."""
-    try:
-        genai.configure(api_key=api_key)
-        print("API configured successfully for Critic.")
-    except Exception as e:
-        print(f"Error configuring API: {e}")
-        raise
+# --- HELPER FUNCTIONS ---
 
 def load_file_content(file_path):
-    """A generic function to load content from any text file."""
-    print(f"Loading data from: {file_path}")
+    """A trusty function to load content from any text file."""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        print("Data loaded successfully.")
-        return content
+            return f.read()
     except FileNotFoundError:
-        print(f"ERROR: File not found at {file_path}")
-        raise
-    except Exception as e:
-        print(f"An unexpected error occurred while reading file: {e}")
-        raise
+        print(f"CRITIC WARNING: Knowledge file not found at {file_path}")
+        return ""
 
-def get_critique(author_prompt_text, generated_chapter_text, all_lore_text):
-    """Constructs the final prompt for the critic and sends it to the API."""
-    print("Constructing master prompt for Critic LLM...")
-    critic_master_prompt = CRITIC_SYSTEM_PROMPT_TEMPLATE.format(
-        all_lore_text=all_lore_text,
-        author_prompt=author_prompt_text,
-        generated_text=generated_chapter_text
-    )
+def get_relevant_knowledge(key_characters: list, key_locations: list) -> str:
+    """
+    THIS IS THE NEW, SMARTER BRAIN!
+    It performs targeted data retrieval for characters and locations,
+    but ALWAYS includes general lore, plot, and events.
+    """
+    print("Critic Bot: Accessing Knowledge Database with precision...")
+    knowledge_text = ""
     
-    print("Initializing Generative Model (Gemini 1.5 Pro) for critique...")
-    try:
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
-        print("Model initialized. Generating critique... This might take a moment!")
-        response = model.generate_content(critic_master_prompt)
-        print("Critique generation complete!")
-        return response.text
-    except Exception as e:
-        print(f"ERROR: Failed to generate critique from API. Details: {e}")
-        raise
+    # --- 1. Targeted Retrieval for Characters ---
+    print(f"Searching for data on characters: {key_characters}")
+    char_content = load_file_content(KNOWLEDGE_FILES["characters"])
+    relevant_char_text = ""
+    for char_name in key_characters:
+        # This regex finds the character's section from an '##' heading
+        # to the next '##' heading. So clever!
+        pattern = re.compile(rf"## {re.escape(char_name)}(.*?)(?=\n## |\Z)", re.DOTALL)
+        match = pattern.search(char_content)
+        if match:
+            print(f"Found entry for {char_name}.")
+            relevant_char_text += match.group(0) + "\n"
+    if relevant_char_text:
+        knowledge_text += f"\n\n--- RELEVANT KNOWLEDGE: CHARACTERS ---\n\n{relevant_char_text}"
 
-def save_critique(critique_text, output_file_path):
-    """Saves the generated critique to the specified output file."""
-    print(f"Saving generated critique to: {output_file_path}")
-    try:
-        os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
-        with open(output_file_path, 'w', encoding='utf-8') as f:
-            f.write(critique_text)
-        print(f"Critique successfully saved!")
-    except Exception as e:
-        print(f"ERROR: Could not write to output file {output_file_path}. Details: {e}")
-        raise
+    # --- 2. Targeted Retrieval for Locations ---
+    print(f"Searching for data on locations: {key_locations}")
+    loc_content = load_file_content(KNOWLEDGE_FILES["locations"])
+    relevant_loc_text = ""
+    for loc_name in key_locations:
+        pattern = re.compile(rf"## {re.escape(loc_name)}(.*?)(?=\n## |\Z)", re.DOTALL)
+        match = pattern.search(loc_content)
+        if match:
+            print(f"Found entry for {loc_name}.")
+            relevant_loc_text += match.group(0) + "\n"
+    if relevant_loc_text:
+        knowledge_text += f"\n\n--- RELEVANT KNOWLEDGE: LOCATIONS ---\n\n{relevant_loc_text}"
 
+    # --- 3. Always-Include General Lore ---
+    print("Loading general lore, plot, and events files for full context...")
+    knowledge_text += "\n\n--- GENERAL KNOWLEDGE: LORE & MAGIC ---\n\n"
+    knowledge_text += load_file_content(KNOWLEDGE_FILES["lore_magic"])
+    knowledge_text += "\n\n--- GENERAL KNOWLEDGE: PLOT OUTLINE ---\n\n"
+    knowledge_text += load_file_content(KNOWLEDGE_FILES["plot_outline"])
+    knowledge_text += "\n\n--- GENERAL KNOWLEDGE: PLOT EVENTS (SO FAR) ---\n\n"
+    knowledge_text += load_file_content(KNOWLEDGE_FILES["plot_events"])
+
+    print("Critic Bot: All necessary knowledge loaded.")
+    return knowledge_text
+
+# --- BOT FUNCTION ---
+
+def critique_text(
+    prose_text: str,
+    original_prompt: str,
+    key_characters: list,
+    key_locations: list
+) -> str:
+    """
+    Analyzes the prose against the prompt, directives, and our knowledge base.
+    """
+    print("--- Critic Bot: Engaging ANALYSIS Mode v2.0 ---")
+
+    if not GEMINI_API_KEY:
+        raise ValueError("ERROR: GOOGLE_API_KEY not found. Please set it in your .env file.")
+    
+    genai.configure(api_key=GEMINI_API_KEY)
+    
+    model = genai.GenerativeModel('gemini-2.5-pro')  # Using the powerful critic model!
+
+    # 1. Gather all the knowledge the Critic needs using our new smart function!
+    knowledge_base = get_relevant_knowledge(key_characters, key_locations)
+    
+    # 2. The meta-prompt is the same, but now it receives a smarter knowledge base!
+    meta_prompt = f"""
+You are an expert literary critic and a RWBY lore master. Your job is to analyze the provided 'PROSE TO REVIEW' based on a strict set of rules and a comprehensive knowledge base.
+
+Your analysis must cover three areas:
+1.  **Writing Quality:** Does the prose adhere to all directives in the 'ORIGINAL PROMPT' (e.g., word count, "show don't tell," sensory details)? Is the writing style compelling?
+2.  **Prompt Adherence:** Does the prose successfully achieve the `Objective` and `Crucial Ending Point` outlined in the 'ORIGINAL PROMPT'?
+3.  **Lore & Continuity:** Is the prose consistent with the information provided in the 'KNOWLEDGE BASE'? Check for character voice, location accuracy, and correct use of lore.
+
+**Output Rules:**
+- If the prose is perfect and passes all checks, your ONLY response must be the single word: SUCCESS
+- If there are any issues, provide a bulleted list of specific, actionable points of feedback for the author. Do not be conversational.
+- Be strict. Do not approve text with even minor issues.
+
+--- KNOWLEDGE BASE ---
+{knowledge_base}
+---
+
+--- ORIGINAL PROMPT ---
+{original_prompt}
+---
+
+--- PROSE TO REVIEW ---
+{prose_text}
+---
+
+Now, provide your critique.
+"""
+
+    print("Critic Bot: Analyzing prose with precision knowledge...")
+    response = model.generate_content(meta_prompt)
+    print("Critic Bot: Analysis complete!")
+
+    return response.text.strip()
+
+# --- TESTING BLOCK ---
 def main():
-    """The main function that orchestrates the critique process."""
-    load_dotenv()
+    """A simple function to test the critic bot's new capabilities."""
+    print("--- Running Critic Bot v2.0 Test Sequence ---")
 
-    parser = argparse.ArgumentParser(description="The Critic Script (v5.0): The Wise Critic.")
-    parser.add_argument('--chapter-number', type=int, required=True, help='The chapter number to analyze.')
-    parser.add_argument('--part-number', type=int, required=True, help='The part number within the chapter to analyze.')
-    parser.add_argument('--knowledge-base-files', nargs='+', help='Optional. A list of paths to the markdown knowledge base files.', default=[
-        os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_characters.md'),
-        os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_locations.md'),
-        os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_lore_magic.md'),
-        os.path.join(PROJECT_ROOT, 'knowledge_db', 'rwby_plot_events.md')
-    ])
+    sample_prompt = "Doesn't matter for this test."
+    # This text has a lore mistake! Ruby's Semblance is Petal Burst, not super speed.
+    sample_prose = "Ruby zipped across the sand, moving so fast she was just a blur. Her super speed was a handy trick for covering ground quickly."
+
+    print("\n--- CRITIQUING THE FOLLOWING PROSE ---")
+    print(sample_prose)
+    print("--- (EXPECTING A LORE CORRECTION) ---")
+
+    critique_result = critique_text(
+        prose_text=sample_prose,
+        original_prompt=sample_prompt,
+        key_characters=["Ruby"],
+        key_locations=["Vacuo Desert"]
+    )
+
+    print("\n--- CRITIQUE RESULT ---")
+    print(critique_result)
     
-    args = parser.parse_args()
+    print("\n--- Critic Bot Test Sequence Complete! ---")
 
-    print("--- Starting Critic Engine v5.0 ---")
-    try:
-        api_key = os.getenv("GOOGLE_API_KEY")
-        if not api_key:
-            print("ERROR: GOOGLE_API_KEY not found in .env file! The machine has no power!")
-            return
-
-        configure_api(api_key)
-
-        print("Constructing file paths from chapter and part number...")
-        chapter_dir = os.path.join(PROJECT_ROOT, 'output', 'generated_chapters', f'chapter_{args.chapter_number:02d}')
-        prompt_file = os.path.join(chapter_dir, f'prompt_part_{args.part_number}.md')
-        generated_file = os.path.join(chapter_dir, f'chapter_part_{args.part_number}.md')
-        output_file = os.path.join(chapter_dir, f'critique_part_{args.part_number}.md')
-        print(f"  -> Prompt file: {prompt_file}")
-        print(f"  -> Generated file: {generated_file}")
-        print(f"  -> Output file: {output_file}")
-        
-        print("\nCombining all knowledge base files into a single lore document...")
-        all_lore_text = ""
-        for file_path in args.knowledge_base_files:
-            lore_content = load_file_content(file_path)
-            all_lore_text += f"--- LORE FILE: {os.path.basename(file_path)} ---\n"
-            all_lore_text += lore_content + "\n\n"
-        print("All lore files have been successfully combined into one text block.")
-
-        author_prompt = load_file_content(prompt_file)
-        generated_chapter = load_file_content(generated_file)
-
-        critique = get_critique(author_prompt, generated_chapter, all_lore_text)
-
-        save_critique(critique, output_file)
-
-        print("--- Critic Engine Shutdown Successful ---")
-
-    except Exception as e:
-        print(f"\n--- A CRITICAL ERROR OCCURRED! ---")
-        print(f"Process halted. Please check the error messages above.")
-        print("--- Critic Engine Emergency Shutdown ---")
 
 if __name__ == '__main__':
     main()

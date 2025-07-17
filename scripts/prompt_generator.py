@@ -73,25 +73,25 @@ def generate_story_beats_from_api(chapter_summary):
 
     # This is the instruction manual we give to the AI! Now with better instructions!
     meta_prompt = f"""
-    You are a master storyteller and a narrative deconstruction expert. Your task is to take a high-level chapter summary for a RWBY fan novel and break it down into exactly five sequential, logical, and compelling story beats.
+You are a master storyteller and a narrative deconstruction expert. Your task is to take a high-level chapter summary for a RWBY fan novel and break it down into exactly five sequential, logical, and compelling story beats.
 
-    **Output Format Directives:**
-    * You MUST return your response as a valid JSON object.
-    * The root of the object must be a single key "beats" which contains a list of the five beat objects.
-    * Do not include any other text, explanation, or markdown formatting like ```json outside of the JSON object itself.
-    * For each beat, you must provide: `title`, `objective`, `ending_point`, `key_characters`, and `key_locations`.
+**Output Format Directives:**
+* You MUST return your response as a valid JSON object.
+* The root of the object must be a single key "beats" which contains a list of the five beat objects.
+* Do not include any other text, explanation, or markdown formatting like ```json outside of the JSON object itself.
+* For each beat, you must provide: `title`, `objective`, `ending_point`, `key_characters`, and `key_locations`.
 
-    **Creative & Stylistic Directives:**
-    1.  **Adhere to the Source:** The five beats, when combined, must faithfully represent all key events and plot points from the provided chapter summary. Do not invent major events not implied by the summary.
-    2.  **Logical Progression:** Ensure the five beats represent a logical and well-paced narrative arc. The chapter should not feel rushed. Each beat must flow directly from the previous one.
-    3.  **Grounded Tone:** The tone must be serious and consistent with the RWBY universe. **CRITICAL: AVOID clichés, tired tropes, and fourth-wall-breaking pop-culture references in your suggested descriptions and ending points.**
-    4.  **Actionable Objectives:** The `objective` and `ending_point` for each beat should be concrete and actionable for a writer, focusing on character actions, emotional shifts, and key discoveries.
+**Creative & Stylistic Directives:**
+1.  **Adhere to the Source:** The five beats, when combined, must faithfully represent all key events and plot points from the provided chapter summary. Do not invent major events not implied by the summary.
+2.  **Logical Progression:** Ensure the five beats represent a logical and well-paced narrative arc. The chapter should not feel rushed. Each beat must flow directly from the previous one.
+3.  **Grounded Tone:** The tone must be serious and consistent with the RWBY universe. **CRITICAL: AVOID clichés, tired tropes, and fourth-wall-breaking pop-culture references in your suggested descriptions and ending points.**
+4.  **Actionable Objectives:** The `objective` and `ending_point` for each beat should be concrete and actionable for a writer, focusing on character actions, emotional shifts, and key discoveries.
 
-    Here is the chapter summary to deconstruct:
-    ---
-    {chapter_summary}
-    ---
-    """
+Here is the chapter summary to deconstruct:
+---
+{chapter_summary}
+---
+"""
 
     print("Sending CALIBRATED deconstruction request to Gemini...")
     response = model.generate_content(meta_prompt)

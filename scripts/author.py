@@ -35,17 +35,17 @@ def write_first_draft(prompt_string: str) -> str:
 
     # This meta-prompt tells the AI its role as a creative writer.
     meta_prompt = f"""
-    You are a master storyteller and a brilliant author. Your task is to take the following prompt, which outlines a specific part of a chapter, and write a compelling, immersive, and high-quality narrative section based on it.
+You are a master storyteller and a brilliant author. Your task is to take the following prompt, which outlines a specific part of a chapter, and write a compelling, immersive, and high-quality narrative section based on it.
 
-    Adhere strictly to all 'CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY' and the specific objectives laid out in the prompt. Your writing should be vivid, emotional, and deeply engaging.
+Adhere strictly to all 'CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY' and the specific objectives laid out in the prompt. Your writing should be vivid, emotional, and deeply engaging.
 
-    Here is your prompt:
-    ---
-    {prompt_string}
-    ---
+Here is your prompt:
+---
+{prompt_string}
+---
 
-    Now, write the chapter part.
-    """
+Now, write the chapter part.
+"""
 
     print("Generating first draft...")
     response = model.generate_content(meta_prompt)
@@ -63,26 +63,26 @@ def edit_draft(original_text: str, critique_feedback: str, original_prompt: str)
 
     # This meta-prompt is for the complex task of editing, not rewriting!
     meta_prompt = f"""
-    You are an expert editor. Your task is to intelligently revise the 'ORIGINAL TEXT' based on the specific points provided in the 'CRITIQUE FEEDBACK'.
+You are an expert editor. Your task is to intelligently revise the 'ORIGINAL TEXT' based on the specific points provided in the 'CRITIQUE FEEDBACK'.
 
-    **Your Core Mission:** Do NOT rewrite the entire text from scratch. Your goal is to act like a human editor, preserving the original prose as much as possible while surgically implementing the required changes. Make the edits feel seamless and natural.
+**Your Core Mission:** Do NOT rewrite the entire text from scratch. Your goal is to act like a human editor, preserving the original prose as much as possible while surgically implementing the required changes. Make the edits feel seamless and natural.
 
-    For context, here is the 'ORIGINAL PROMPT' the text was based on. Use it to ensure your edits remain true to the initial objective.
+For context, here is the 'ORIGINAL PROMPT' the text was based on. Use it to ensure your edits remain true to the initial objective.
 
-    --- ORIGINAL PROMPT ---
-    {original_prompt}
-    ---
+--- ORIGINAL PROMPT ---
+{original_prompt}
+---
 
-    --- ORIGINAL TEXT TO EDIT ---
-    {original_text}
-    ---
+--- ORIGINAL TEXT TO EDIT ---
+{original_text}
+---
 
-    --- CRITIQUE FEEDBACK (Points to address) ---
-    {critique_feedback}
-    ---
+--- CRITIQUE FEEDBACK (Points to address) ---
+{critique_feedback}
+---
 
-    Now, provide the full, edited version of the text with the feedback incorporated.
-    """
+Now, provide the full, edited version of the text with the feedback incorporated.
+"""
     
     print("Revising draft based on critique...")
     response = model.generate_content(meta_prompt)
@@ -97,20 +97,20 @@ def main():
     
     # 1. Create a sample prompt (like one from our Planner)
     sample_prompt = """
-    ### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY**
+### **CORE DIRECTIVES FOR SUPERIOR WRITING QUALITY**
 
-    * **Word Count Goal:** This section should be approximately 100-200 words for this test.
-    * **PROFOUND Individual Character Resonance & Internal Monologue:** Focus on Ruby's feelings.
-    * **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use her actions to show her emotions.
+* **Word Count Goal:** This section should be approximately 100-200 words for this test.
+* **PROFOUND Individual Character Resonance & Internal Monologue:** Focus on Ruby's feelings.
+* **"Show, Don't Tell" - In EXCRUCIATING Detail:** Use her actions to show her emotions.
 
-    ---
+---
 
-    ### **PROMPT FOR CHAPTER 1, PART 1: Crash Landing**
+### **PROMPT FOR CHAPTER 1, PART 1: Crash Landing**
 
-    **Objective:** Ruby must survive her chaotic arrival in Vacuo, grappling with the disorientation of her return.
+**Objective:** Ruby must survive her chaotic arrival in Vacuo, grappling with the disorientation of her return.
 
-    **Crucial Ending Point:** The section must end with Ruby getting to her feet and looking at the sky.
-    """
+**Crucial Ending Point:** The section must end with Ruby getting to her feet and looking at the sky.
+"""
 
     # 2. Test the WRITE function
     first_draft = write_first_draft(sample_prompt)
@@ -119,9 +119,9 @@ def main():
     
     # 3. Create a sample critique
     sample_critique = """
-    - The description is good, but it 'tells' us Ruby is confused. Please 'show' it more through her actions. For example, have her stumble or check her weapon reflexively.
-    - The ending is a bit weak. Make her observation of the sky more meaningful. Does it look different from the Ever After's sky?
-    """
+- The description is good, but it 'tells' us Ruby is confused. Please 'show' it more through her actions. For example, have her stumble or check her weapon reflexively.
+- The ending is a bit weak. Make her observation of the sky more meaningful. Does it look different from the Ever After's sky?
+"""
     
     print("\n--- SENDING CRITIQUE FOR REVISION ---")
     print(sample_critique)
