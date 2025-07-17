@@ -1,4 +1,68 @@
-# Ignore Python bytecode files
+# .gitignore
+
+# User-specific files
+# -------------------
+# Keep the super-secret environment file out of the repository!
+.env
+
+
+# Byte-compiled / optimized / C Python files
+# ------------------------------------------
+# This is the classic Python cruft we want to ignore.
 __pycache__/
 *.py[cod]
-.env
+*$py.class
+
+
+# Python Virtual Environments
+# ---------------------------
+# Never, ever commit your virtual environment folder! It's huge and specific
+# to your machine. The name of this folder can vary, so I've included
+# the most common ones.
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+novel_writer_env/
+
+
+# OS-specific files
+# -----------------
+# This is the stuff your operating system creates that has no place in our lab!
+# The .DS_Store you mentioned is the big one for macOS.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# IDE / Editor directories
+# ------------------------
+# This will ignore the settings folders for popular code editors like
+# VSCode, Sublime Text, and the JetBrains IDEs (like PyCharm).
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+# Build & Distribution artifacts
+# ------------------------------
+# If we ever decide to package our project, this will ignore the folders
+# that get created during that process.
+/dist/
+/build/
+*.egg-info/
+*.egg
+
+
+# Log and database files
+# ----------------------
+# It's good practice to ignore log files and local databases.
+*.log
+*.sql
+*.sqlite3
