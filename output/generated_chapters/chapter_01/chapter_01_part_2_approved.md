@@ -1,0 +1,43 @@
+Here is the narrative section, written according to your prompt and directives.
+
+***
+
+The sun over Vacuo was not a benevolent star; it was a malignant eye in a bleached, unforgiving sky. Its glare hammered down, turning the air into a shimmering, liquid distortion that warped the endless dunes into a rippling, ochre sea. The world was two colors: the searing white of the sky and the burnt orange of the sand. There was no third.
+
+For Ruby Rose, the return to her own body was a brutal reunion. Gravity, an abstract concept in the whimsical physics of the Ever After, was now a physical chain. Each step was a conscious effort, her boots sinking into the granular torment of the sand with a soft, soul-sucking sigh. Crescent Rose, slung across her back, felt less like an extension of herself and more like a slab of penance, its familiar weight now an alien burden. She remembered being small, a creature of wood and cloth, and a phantom memory of that weightlessness made the current reality a thousand times heavier.
+
+*One foot. Then the other,* she told herself, the thought a frayed rope in the maelstrom of her mind. *Just like before. Simple.* But it wasn’t simple. The air she dragged into her lungs was not air; it was a furnace breath, thick with a fine, silicate silt that coated her tongue and scoured her throat raw. Every exhalation was a gasp, a plume of dust and desperation. She could feel the sun baking the metal of her weapon through her cloak, a persistent, warning heat against her spine. The world smelled of baked rock and nothingness. This was real. The ache in her arches, the sting of sweat in her eyes, the burn in her muscles—this was the price of reality, and it was excruciatingly high.
+
+A few paces to her left, Weiss Schnee moved like a ghost haunting her own body. In the Ever After, she had been remade, almost porcelain. Now, that memory made her feel breakable. Her immaculate white coat was a ruin of dust and sweat, clinging to her with a damp, suffocating intimacy. She could feel the grit inside her boots, a constant, abrasive presence that was rubbing her ankles raw. Worse was the grit between her teeth, a fine grinding she couldn't escape.
+
+*This is… undignified,* a part of her mind, the part that was still a Schnee heiress, hissed with venomous futility. *This is barbarism.* But the thought was hollow, swallowed by the sheer, overwhelming misery of her physical state. Her body, once an instrument of precise, elegant power, now felt like borrowed, ill-fitting clay. Every joint screamed a silent protest against the oppressive heat and the monotonous, yielding terrain. She lifted a hand to shield her eyes, the motion lethargic, her skin filmed with a grimy sheen. The light was a physical assault, so absolute and shadowless that it stole all depth from the landscape, making it impossible to judge distance. Was that mountain a day’s walk away, or a week’s? The thought spiraled into a dizzying eddy of despair. She was no longer a Huntress, a master of Glyphs and Dust. She was just a collection of aches, held together by a fraying will.
+
+Blake Belladonna endured. Of the four, she was the most accustomed to the quiet hardship of the wild, but even this tested the limits of her stoicism. The wind, a constant, howling presence, was the worst for her. It was a physical entity, a sand-fanged maw that scoured and scraped at every exposed surface, and it carried the desert’s dolorous song directly into her sensitive ears. Where once they would have twitched at the whisper of a footstep from a hundred yards, they now felt clogged, overwhelmed by the ceaseless, abrasive roar.
+
+She walked with a steady, energy-conserving gait, her eyes narrowed to slits against the particulate haze. Her return to physicality was a strange paradox. A phantom lightness still clung to her limbs, a memory of pouncing on paws of felt and thread, of a purr that was not just a sound but an all-encompassing vibration. Now, her human form felt dense, clumsy. The sun beat down on her dark hair, and she could feel the heat radiating through her skull, a dull, pounding headache that was the metronome to their miserable march. She focused on the rhythm of her breathing, trying to filter the dust, trying to find a center in the vast, hostile emptiness.
+
+“See anything?” Yang Xiao Long’s voice was a hoarse crackle, the words scraped from a parched throat. She walked beside Blake, a bulwark of simmering frustration against the elements.
+
+Blake shook her head, not trusting her own voice. “Nothing but more of this.”
+
+For Yang, the heat was a personal affront. It leeched her strength, a constant drain that her Semblance, which thrived on damage, could do nothing to combat. This wasn't a blow she could absorb and return. It was an insidious, relentless siege. Her prosthetic arm was a particular torture. The metal, normally cool to the touch, now felt less like a part of her and more like a branding iron had been fused to her shoulder. She could feel the heat seeping through the internal mechanisms, a deep, pervasive warmth that promised a burn if it got any worse. She had taken to wrapping it in a spare strip of cloth, a flimsy defense that was already saturated with sweat.
+
+Her gaze, a startling lilac in the monochrome world, was fixed on Ruby’s back. Every time her sister stumbled, a spike of cold, sharp fear lanced through Yang’s exhaustion. She saw not the capable leader of Team RWBY, but the fragile, shattered girl who had chosen to drink the tea. The memory was a fresh wound, and this desert was salt in it. *Keep her moving. Keep her safe.* The mantra was all she had left. Every muscle fiber in her body hummed with a low, desperate thrum—the need to hit something, to fight, to unleash the fury that this helplessness was breeding within her. But there was nothing to punch but the shimmering air.
+
+It was Blake who stopped first. She froze mid-stride, her head tilted, her dust-caked cat ears finally catching something other than the wind’s lament. It was a faint, rhythmic sound, almost lost in the gale—a mournful, metallic clang.
+
+“Wait,” she rasped, her voice thin but sharp.
+
+Yang immediately came to a halt, her hand instinctively going to the hilt of her gauntlet. Weiss stumbled to a stop behind her, breathing heavily. Ruby turned slowly, her silver eyes clouded with fatigue, but now sharpened with a flicker of alarm. “What is it?”
+
+“Listen,” Blake commanded, her own eyes scanning the horizon, trying to pierce the blinding light.
+
+They all fell silent, straining to hear. And then they caught it—a hollow, intermittent *clang… clang… clang…* Carried on the wind. It was the sound of something metal striking metal, moved not by a hand, but by the indifferent gusts of wind.
+
+“That way,” Blake pointed towards a high, sweeping dune to their right.
+
+With a renewed, if grim, sense of purpose, they altered their course. The climb was agonizing. The loose sand gave way under their feet, stealing two steps for every three they took. Their lungs burned with the effort, the world narrowing to the next foothold, the next ragged breath.
+
+Ruby was the first to crest the summit. She dropped to one knee, panting, and then her breath caught in her throat. Below them, nestled in a shallow basin, lay the corpse of a settlement. It wasn’t ancient ruins; the skeletons of the buildings were raw, the wounds fresh. Scorched timber reached for the sky like skeletal fingers. The hollow eyes of shattered windows stared out into the wasteland. What might have been a marketplace was a field of debris and charred carts. The source of the sound became clear: a metal sign, half-torn from its post, swinging in the wind and striking the metal pole with a desolate, rhythmic chime. It was the town’s death knell.
+
+But it was the road leading away from the destruction that solidified the horror. It was littered with the detritus of a panicked exodus: a child’s toy, a dropped canteen, a tattered piece of Vacuan fabric snagged on a thorn-brush. There were no bodies, but the absence was somehow worse. This was not just a place that had been destroyed. This was a place that had been *emptied*. This was the consequence of Salem, of Atlas, of everything. It wasn't a story or a distant report. It was here, scarring the land in front of them, real and absolute. The heat, the thirst, the aching muscles—they were nothing. This was the true Vacuo. This was the despair.

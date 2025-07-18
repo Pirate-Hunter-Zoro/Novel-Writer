@@ -81,6 +81,8 @@ A utility script for the visual side of the project. It uses Gemini to analyze i
 - Python 3.10+
 - `python-dotenv`
 - `google-generativeai`
+- `google-cloud-aiplatform` *(for the Art Department\!)*
+- `Pillow` *(for handling image data\!)*
 
 **Install:**
 
@@ -88,10 +90,11 @@ A utility script for the visual side of the project. It uses Gemini to analyze i
 pip install -r requirements.txt
 ```
 
-You'll also need a `.env` file in the root directory with your API key:
+You'll also need a `.env` file in the root directory with your API key and Project ID:
 
 ```text
 GOOGLE_API_KEY=your_api_key_here
+GCP_PROJECT_ID=your-gcp-project-id-here
 ```
 
 ---
@@ -114,9 +117,9 @@ The old multi-step manual process is obsolete\! The new workflow is beautifully 
 
 ## 🗂️ Status
 
-✅ **All Core Bots Online:** Planner, Author, Critic, and Archivist are built and tested.  
-✅ **Fully Automated Pipeline:** The Conductor is operational and integrates all bots.  
-✅ **Intelligent Systems:** Bots use targeted data retrieval and AI-driven planning.  
+✅ **All Core Bots Online:** Planner, Author, Critic, and Archivist are built and tested.
+✅ **Fully Automated Pipeline:** The Conductor is operational and integrates all bots.
+✅ **Intelligent Systems:** Bots use targeted data retrieval and AI-driven planning.
 🟡 **Ready for First Full Chapter Generation\!**
 
 ---
