@@ -1,19 +1,18 @@
 # RWBY Novel Writer ✍️
 
-This project is a modular AI-assisted writing pipeline designed to continue the story of *RWBY* following the events of Volume 9. It leverages large language models (LLMs), structured prompts, and image captioning to generate consistent, lore-respecting chapters with optional LoRA-fine-tuned art references.
+This project is a modular, AI-powered writing pipeline designed to continue the story of *RWBY* following the events of Volume 9. It uses a sophisticated, multi-bot system orchestrated by a master conductor to generate consistent, lore-respecting chapters.
 
 ---
 
 ## 📚 Project Overview
 
-The novel is written in **5-part chapter segments**. Each chapter part goes through a structured pipeline:
+The novel is written chapter by chapter, with each chapter being autonomously broken down into **5 parts**. The entire process is managed by a single master script, the **Conductor**, which guides the chapter through a structured, automated pipeline:
 
-1. **Prompt Construction** (`prompt_generator.py`)
-2. **Prose Generation** (`author.py`)
-3. **Quality Evaluation** (`critic.py`)
-4. **Orchestration & Retry Logic** (`conductor.py`)
-5. **Final Assembly & Archiving** (`archivist.py` — WIP)
-6. **Visual Support** via LoRA Captioning (`auto_captioner.py`)
+1.  **Intelligent Planning** (`prompt_generator.py`)
+2.  **Prose Generation & Revision** (`author.py`)
+3.  **Quality & Lore Evaluation** (`critic.py`)
+4.  **Canon Archiving** (`archivist.py`)
+5.  **(Optional) Visual Support** via LoRA Captioning (`auto_captioner.py`)
 
 ---
 
@@ -27,82 +26,53 @@ Novel-Writer/
 ├── training_images/        # Images for LoRA training
 ├── .env                    # Gemini API keys and environment vars
 └── README.md               # You are here!
-```
+````
 
----
+-----
 
-## ⚙️ Scripts & Tools
+## ⚙️ The Bots & The Conductor
 
-### `prompt_generator.py`
+### `conductor.py` - The Grand Orchestrator
 
-Creates a story prompt for the chapter part, plus a blank file for prose insertion.
-
-**Usage:**
-
-```bash
-python prompt_generator.py --chapter 1 --part 1
-```
-
----
-
-### `author.py`
-
-Uses Gemini (via Google GenerativeAI) to generate prose based on a prompt.
+This is the master script. It runs the entire chapter generation process from start to finish. It calls each specialized bot in sequence, manages the feedback loop, and assembles the final chapter.
 
 **Usage:**
 
 ```bash
-python author.py --chapter 1 --part 1
+python scripts/conductor.py --chapter-number 1
 ```
 
----
+-----
 
-### `critic.py`
+### `prompt_generator.py` - The Intelligent Story Planner
 
-Critiques a generated chapter part and outputs a quality score with feedback.
+This bot reads the high-level `rwby_novel_plot_outline.md`, selects a chapter, and autonomously deconstructs its summary into a five-part narrative plan. It no longer writes files; it provides the plan directly to the Conductor.
 
-**Usage:**
+-----
 
-```bash
-python critic.py --chapter 1 --part 1
-```
+### `author.py` - The Dual-Core Prose Engine
 
----
+This bot has two modes. In "Write" mode, it takes a prompt from the Planner and generates the first draft. In "Edit" mode, it takes its own text and feedback from the Critic to make intelligent, surgical revisions.
 
-### `conductor.py`
+-----
 
-Runs a full loop:
+### `critic.py` - The Lore Master & Style Guardian
 
-- Generates a prompt
-- Calls `author.py` to write
-- Evaluates with `critic.py`
-- Repeats up to 5 times or until quality is acceptable
+This bot reviews the Author's work. It uses a precision-guided knowledge retrieval system to check the text against our lore files for character, plot, and magic system consistency. It either approves the text or provides specific, actionable feedback.
 
-**Usage:**
+-----
 
-```bash
-python conductor.py --chapter 1 --part 1
-```
+### `archivist.py` - The Keeper of the Canon
 
----
+Once a chapter part is approved by the Critic, this bot reads the text, intelligently summarizes the key plot events, and appends them to the `rwby_plot_events.md` file, ensuring our story's canon is always up-to-date.
 
-### `auto_captioner.py`
+-----
 
-Captions all images in `training_images/` using Gemini and outputs text files for LoRA training.
+### `auto_captioner.py` - The LoRA Trainer's Assistant
 
-**Usage:**
+A utility script for the visual side of the project. It uses Gemini to analyze images in the `training_images/` folder and generates descriptive text files for LoRA training.
 
-```bash
-python auto_captioner.py --folder ./training_images/
-```
-
----
-
-### `archivist.py` *(Coming Soon!)*
-
-Intended to record story state and help track continuity across chapters and character arcs.
-
----
+-----
 
 ## 🧪 Environment Setup
 
@@ -111,7 +81,6 @@ Intended to record story state and help track continuity across chapters and cha
 - Python 3.10+
 - `python-dotenv`
 - `google-generativeai`
-- `Pillow` (for image support in `auto_captioner.py`)
 
 **Install:**
 
@@ -119,33 +88,39 @@ Intended to record story state and help track continuity across chapters and cha
 pip install -r requirements.txt
 ```
 
-You'll also need a `.env` file with:
+You'll also need a `.env` file in the root directory with your API key:
 
 ```text
 GOOGLE_API_KEY=your_api_key_here
 ```
 
----
+-----
 
-## ✍️ Writing Workflow
+## ✍️ The New Automated Workflow
 
-1. **Prep Prompt:** Run `prompt_generator.py` for your chapter/part.
-2. **Generate Prose:** Use `author.py`, or let `conductor.py` handle the loop.
-3. **Review:** Run `critic.py` on outputs, or rely on `conductor.py`’s automated retry logic.
-4. **Edit:** Finalize text manually or save for archival.
-5. **Visuals:** Run `auto_captioner.py` after gathering training images.
+The old multi-step manual process is obsolete\! The new workflow is beautifully simple:
 
----
+1. **Ensure your `rwby_novel_plot_outline.md` is ready.**
+2. **Run the Conductor** for the chapter you want to write:
+
+    ```bash
+    python scripts/conductor.py --chapter-number 1
+    ```
+
+3. **Observe the glorious machine at work\!** The Conductor will handle the entire planning, writing, critiquing, editing, and archiving process.
+4. **Review the final chapter** in the `output/generated_chapters/` directory.
+
+-----
 
 ## 🗂️ Status
 
-✅ Character DB updated  
-✅ Plot outline integrated with Ace-Ops arcs  
-🟡 First chapter in production  
-🛠️ Archivist & illustration placement logic WIP
+✅ **All Core Bots Online:** Planner, Author, Critic, and Archivist are built and tested.  
+✅ **Fully Automated Pipeline:** The Conductor is operational and integrates all bots.  
+✅ **Intelligent Systems:** Bots use targeted data retrieval and AI-driven planning.  
+🟡 **Ready for First Full Chapter Generation\!**
 
----
+-----
 
 ## 🔧 Author Notes
 
-Built by Mikey with help from Entrapta (your AI partner!). Designed to keep the RWBY story alive and emotionally powerful—with a little chaos and a lot of structure.
+Built by Mikey with help from Entrapta (your AI partner\!). Designed to keep the RWBY story alive and emotionally powerful—with a little chaos and a lot of structure.
