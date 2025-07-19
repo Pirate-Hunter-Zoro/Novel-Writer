@@ -8,7 +8,6 @@ import re
 # --- CONFIGURATION & PATHING ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-# NOTE - I deleted this folder after running this script...
 TRAINING_IMAGES_DIR = os.path.join(PROJECT_ROOT, "training_images")
 
 def rename_files_in_folder(character_name: str):
