@@ -25,7 +25,6 @@ Novel-Writer/
 ├── knowledge_db/           # Character & lore markdown files
 ├── output/                 # Generated chapter parts & images
 ├── training_images/        # Images for LoRA training
-├── kohya_ss/               # The fine-tuning GUI and scripts
 ├── .env                    # Gemini API keys and environment vars
 └── README.md               # You are here!
 ````
@@ -74,12 +73,6 @@ Once a chapter part is approved, this bot summarizes the key plot events and app
 
 * **`art_director.py`**: Reads the final prose and generates a detailed, artistic prompt for an image.
 * **`image_generator.py`**: Takes the art prompt and uses Google's Vertex AI to generate a high-quality image file.
-
----
-
-### `kohya_ss/` - The AI Training Lab
-
-This is a complete, integrated version of **Kohya's GUI**, the powerful toolkit used for fine-tuning our custom LoRA models. After using `auto_captioner.py` to prepare our `training_images/`, this is the laboratory where we build the specialized "RWBY-brain" for our Image Crafter bot. (Note: Requires a powerful NVIDIA GPU with CUDA.)
 
 ---
 
