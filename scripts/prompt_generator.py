@@ -69,7 +69,7 @@ def generate_story_beats_from_api(chapter_summary):
     genai.configure(api_key=GEMINI_API_KEY)
 
     # We use the most powerful model for this critical planning task!
-    model = genai.GenerativeModel('gemini-1.5-pro-latest') # Using 1.5 Pro as a stand-in, but this is where 2.5 would go!
+    model = genai.GenerativeModel('gemini-2.5-pro') # Using 1.5 Pro as a stand-in, but this is where 2.5 would go!
 
     # This is the instruction manual we give to the AI! Now with better instructions!
     meta_prompt = f"""

@@ -31,7 +31,7 @@ def summarize_events_from_text(prose_text: str, chapter_part_info: str) -> str:
     genai.configure(api_key=GEMINI_API_KEY)
     
     # A cost-effective model is perfect for this summarization task.
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-pro')
 
     meta_prompt = f"""
 You are a meticulous archivist. Your task is to read the following text from a novel and summarize the key, canon plot events that occurred within it.
