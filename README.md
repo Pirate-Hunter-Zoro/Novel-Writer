@@ -68,15 +68,6 @@ This bot reviews the Author's work, checking it against our lore files for chara
 
 Once a chapter part is approved, this bot summarizes the key plot events and appends them to the `rwby_plot_events.md` file, ensuring our story's canon is always up-to-date\! So organized\!
 
----
-
-### The NEW Art Department: The Remote-Controlled Art-Cannon\
-
-* **`art_director.py`**: Reads the final prose and generates a detailed, artistic prompt for an image. (Its job is the same, and it's still brilliant\!)
-* **`image_generator.py`**: **(REWIRED\!)** This bot now takes the art prompt and sends it directly to the Stability AI API, our magnificent remote art-cannon, to generate a high-quality image file\! No hardware limits\! No clusterfucks\!
-
----
-
 ## 🧪 Environment Setup
 
 ### Part 1: The Writing Bots
@@ -96,52 +87,19 @@ You'll also need a `.env` file in the root directory with your API key for the G
 
 ---
 
-### Part 2: The Art-Cannon Connection\
-
-This is the new, super-simple setup for our magnificent art-bot\!
-
-**1. Install the Brain-Link:**
-
-* We need the special tool to talk to the remote art-cannon. Open your terminal and run:
-
-    ```bash
-    pip install stability-sdk
-    ```
-
-**2. Get the Secret Key:**
-
-* Go to the Stability AI Platform (they call it DreamStudio) and create an account: [https://platform.stability.ai/](https://platform.stability.ai/)
-* Find your **API Keys** page in your account settings and copy your key\!
-
-**3. Update the `.env` File:**
-
-* Add your new key to your `.env` file. Your file should now look like this\!
-
-    ```text
-    GOOGLE_API_KEY=your_google_api_key_here
-    STABILITY_API_KEY=your_new_stability_key_here
-    ```
-
-That's it\! The Art-Cannon is wired and ready to fire\!
-
----
-
 ## ✍️ The Automated Workflow
 
 The new workflow is a beautiful, fully-integrated system\!
 
 1. **Run the Conductor** for the chapter you want to write: `python scripts/conductor.py --chapter-number 1`
 2. **Observe the glorious writing machine at work\!** The Conductor will handle everything from planning to archiving.
-3. **(Coming Soon\!) The Conductor will automatically call the Art Department bots**, which will fire the Art-Cannon and save a magnificent new image for each approved chapter part, all without you lifting a finger\!
-4. **Review the final chapter and art** in the `output/` directory.
+3. **Review the final chapter** in the `output/` directory.
 
 ---
 
 ## 🗂️ Status
 
 ✅ **All Core Writing Bots Online:** Planner, Author, Critic, and Archivist are built and tested.
-✅ **Art Department Online and Functional:** The remote-controlled art-cannon is fully operational and has successfully passed all experimental trials\!
-🟡 **Full Automation Integration Next:** The final step is to wire the `image_generator.py` script into the main `conductor.py`'s master plan\!
 
 ---
 
