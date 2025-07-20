@@ -1,1 +1,1 @@
-velvet_rwby_character,long_brown_hair,red_eyes,brown_jacket,yellow_accents,bunny_ears,faunus,holding_camera,smiling
+velvet_rwby_character,brown hair,red eyes,bunny ears,faunus,long hair,brown jacket,yellow accents,camera,smiling

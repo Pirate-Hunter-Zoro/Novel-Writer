@@ -1,1 +1,1 @@
-neptune_rwby_character,blue hair,light skin,brown eyes,red jacket,black collar,white shirt,tie,goggles
+neptune_rwby_character,blue hair,light skin,brown eyes,red jacket,black collar,white shirt,black tie,goggles

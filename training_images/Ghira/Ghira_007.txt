@@ -1,1 +1,1 @@
-ghira_rwby_character,black_hair,brown_eyes,dark_purple_robe,fur_trimmed_robe,muscular_build,faunus_cat_like_ears
+ghira_rwby_character,black_hair,brown_eyes,dark_purple_robe,fur_trimmed_robe,muscular_build,beard,faunus_cat_like_features

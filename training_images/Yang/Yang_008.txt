@@ -1,1 +1,1 @@
-yang_rwby_character,blonde hair,purple eyes,tan skin,cropped jacket,brown pants,gauntlets,boots,purple bandana,fire,combat pose
+yang_rwby_character,blonde_hair,purple_eyes,tan_skin,cropped_jacket,tan_pants,boots,gauntlets,fire_effects,belt,short_hair

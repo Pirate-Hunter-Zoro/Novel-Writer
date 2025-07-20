@@ -1,1 +1,1 @@
-ren_rwby_character,black hair,brown eyes,green jacket,black pants,white pants,pink accents,dual pistols,curved blades,green blades
+ren_rwby_character,black hair,brown eyes,green jacket,black pants,white pants,pink accents,twin pistols,curved blades,green weapons

@@ -1,1 +1,1 @@
-marrow_rwby_character,dark-skin,dark-green hair,brown eyes,white coat,red cravat,blue accents,gloves,large weapon,cross-body weapon
+marrow_rwby_character,dark-brown skin,dark-green hair,brown eyes,white coat,red cravat,blue gloves,blue accents,military-style belt,large drill weapon

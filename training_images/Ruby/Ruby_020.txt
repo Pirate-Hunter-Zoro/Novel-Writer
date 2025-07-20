@@ -1,1 +1,1 @@
-ruby_rwby_character,red hair,red eyes,black dress,red cape,red scythe,high boots,snow,night scene,full body
+ruby_rwby_character,red hair,red eyes,black dress,red cape,scythe weapon,boots,snow background,moonlight

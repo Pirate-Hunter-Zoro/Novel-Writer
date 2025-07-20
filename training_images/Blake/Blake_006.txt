@@ -1,1 +1,1 @@
-blake_rwby_character,black_hair,purple_eyes,cat_ears,faunus,black_clothing,white_clothing,long_sleeves,thigh_high_boots,katanas,weapon,dynamic_pose
+blake_rwby_character,black_hair,brown_eyes,cat_ears,faunus,black_clothing,white_clothing,purple_clothing,long_sleeved_top,short_shorts,thigh_high_boots,katana,weapon

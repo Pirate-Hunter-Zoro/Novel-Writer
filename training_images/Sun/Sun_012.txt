@@ -1,1 +1,1 @@
-sun_rwby_character,blond hair,brown eyes,tan skin,muscular physique,open white shirt,red arm guards,blue jeans,chain belt,cat tail,yellow shoes
+sun_rwby_character,blond hair,brown eyes,tan skin,muscular,open white shirt,red arm guards,blue jeans,chain belt,cat tail,yellow shoes

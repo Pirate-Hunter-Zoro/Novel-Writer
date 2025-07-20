@@ -1,1 +1,1 @@
-mercury_rwby_character,gray hair,silver hair,dark eyes,black clothing,gray jacket,black pants,leg prosthetic,combat boots,low-leg prosthetic
+mercury_rwby_character,grey_hair,grey_eyes,black_clothing,grey_jacket,black_pants,boots,leg_prosthetics,combat_pose

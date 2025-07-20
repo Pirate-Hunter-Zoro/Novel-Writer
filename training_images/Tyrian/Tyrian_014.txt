@@ -1,1 +1,1 @@
-tyrian_rwby_character,brown hair,yellow eyes,brown coat,dark brown shirt,belt,no visible weapon
+tyrian_rwby_character,dark brown hair,yellow eyes,brown coat,dark brown belt,no visible weapon,faunus scorpion tail

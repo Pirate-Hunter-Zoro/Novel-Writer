@@ -1,1 +1,1 @@
-blake_rwby_character,black hair,gold eyes,cat ears,white jacket,black clothing,katanas,weapon
+blake_rwby_character,black hair,gold eyes,cat ears,white jacket,black top,katana-like weapon

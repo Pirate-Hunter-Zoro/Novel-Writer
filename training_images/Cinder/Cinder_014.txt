@@ -1,1 +1,1 @@
-cinder_rwby_character,black hair,yellow eyes,black cape,dark clothing,gold accents,short hair,arm prosthetic,no weapon visible
+cinder_rwby_character,black hair,red eyes,black clothing,gold accents,cape,short shorts,arm gauntlets,mechanical arm,no weapon visible

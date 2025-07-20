@@ -1,1 +1,1 @@
-weiss_rwby_character,white hair,blue eyes,white and blue dress,bow,short dress,long hair,anime style,girl
+weiss_rwby_character,white_hair,blue_eyes,white_and_purple_dress,bow,short_dress,high_ponytail,elegant_dress

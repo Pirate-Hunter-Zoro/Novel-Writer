@@ -1,1 +1,1 @@
-glynda_rwby_character,blonde hair,purple eyes,black dress,white blouse,black boots,riding crop,long sleeves,glasses
+glynda_rwby_character,blonde_hair,green_eyes,black_dress,white_blouse,black_boots,riding_crop,teacher,serious_expression

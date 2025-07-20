@@ -1,1 +1,1 @@
-raven_rwby_character,long teal hair,red eyes,red and black clothing,dark kimono-style outfit,samurai-style sword,mask,gloves
+raven_rwby_character,long teal hair,red eyes,red and black kimono-like outfit,katana,mask,dark background

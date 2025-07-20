@@ -1,1 +1,1 @@
-glynda_rwby_character,blonde hair,purple eyes,white shirt,purple cloak,dark pants,cane,magic,pink energy ring
+glynda_rwby_character,blond_hair,purple_eyes,purple_cloak,white_shirt,dark_pants,cane,magic_circle,grim_reaper_weapon

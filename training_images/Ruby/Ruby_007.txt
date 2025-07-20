@@ -1,1 +1,1 @@
-ruby_rwby_character,brown hair,red eyes,red hooded cloak,black and grey outfit,high-heeled boots,high-powered scythe weapon
+ruby_rwby_character,brown hair,red eyes,red hooded cape,dark clothing,high-heeled boots,high-school-style skirt,crescent rose (weapon)

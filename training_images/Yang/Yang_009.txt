@@ -1,1 +1,1 @@
-yang_rwby_character,blonde hair,purple eyes,brown jacket,orange bandana,yellow prosthetic arm,gloves
+yang_rwby_character,blonde hair,purple eyes,yellow prosthetic arm,orange bandana,brown jacket,yellow gloves

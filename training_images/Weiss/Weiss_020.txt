@@ -1,1 +1,1 @@
-weiss_rwby_character,white hair,blue eyes,white dress,red ribbon,long sleeves,silver weapon,bare legs
+weiss_rwby_character,white hair,light blue eyes,white dress,red accents,long sleeves,short dress,silver weapon,dust particles,dynamic pose

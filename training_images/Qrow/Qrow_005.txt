@@ -1,1 +1,1 @@
-qrow_rwby_character,black hair,brown eyes,grey jacket,black pants,dark red cape,no weapon visible
+qrow_rwby_character,black hair,brown eyes,grey jacket,black pants,red cape,no weapon visible

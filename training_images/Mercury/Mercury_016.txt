@@ -1,1 +1,1 @@
-mercury_rwby_character,gray hair,brown eyes,gray jacket,black shirt,metal arm,no visible weapon
+mercury_rwby_character,gray hair,brown eyes,gray jacket,black undershirt,metal accents,no visible weapon

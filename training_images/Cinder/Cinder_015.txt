@@ -1,1 +1,1 @@
-cinder_rwby_character,black_hair,brown_eyes,black_clothing,gold_trim,eye_patch,bandaged_arm,cape,feathered_detail
+cinder_rwby_character,black hair,brown eyes,black clothing,gold accents,eye patch,bandaged arm,cape,no visible weapons

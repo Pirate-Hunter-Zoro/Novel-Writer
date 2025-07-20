@@ -1,1 +1,1 @@
-oscar_rwby_character,brown_hair,brown_skin,green_eyes,white_shirt,red_suspenders,brown_pants,red_gloves,dirt_stained_clothing
+oscar_rwby_character,brown hair,green eyes,tan skin,white shirt,red suspenders,brown pants,red gloves,dirt-stained clothing

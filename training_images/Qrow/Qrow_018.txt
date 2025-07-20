@@ -1,1 +1,1 @@
-qrow_rwby_character,black_hair,red_eyes,brown_vest,dark_pants,red_cape,scythe,long_sleeved_shirt
+qrow_rwby_character,black_hair,brown_eyes,brown_vest,red_cape,black_pants,black_boots,scythe,long_coat

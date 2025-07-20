@@ -1,1 +1,1 @@
-marrow_rwby_character,teal_hair,brown_skin,dark_brown_eyes,white_uniform,red_accent_clothing,dark_grey_belt,faunus_dog_tail
+marrow_rwby_character,dark brown skin,teal hair,dark eyes,white and dark blue military-style jacket,red cravat,black belt,dog faunus,tail

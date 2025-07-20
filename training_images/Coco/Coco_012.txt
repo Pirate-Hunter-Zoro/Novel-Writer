@@ -1,1 +1,1 @@
-coco_rwby_character,brown hair,gold eyes,brown jacket,black beret,sunglasses,military gear,pistol
+coco_rwby_character,brown hair,gold eyes,brown jacket,sunglasses,beret,rifle,military gear

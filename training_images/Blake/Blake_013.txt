@@ -1,1 +1,1 @@
-blake_rwby_character,black_hair,red_eyes,cat_ears,black_clothing,dark_purple_clothing,white_clothing,weapon_whipping,long_hair,faunus
+blake_rwby_character,black hair,red eyes,cat ears,black clothing,purple accents,weapon,short boots,dark stockings,combat pose

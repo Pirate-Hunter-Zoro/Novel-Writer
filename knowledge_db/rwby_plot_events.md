@@ -132,34 +132,3 @@
 * **Neo's Vengeance & Fate:** Neopolitan, driven by her single-minded quest for revenge against Ruby, pursues Team RWBY through the Ever After. She attempts to force Ruby to break emotionally. In a climactic confrontation, Neo ultimately defeats and *consumes* the Curious Cat, absorbing its abilities and taking its place as a new, powerful entity. Neo remains in the Ever After, having achieved her twisted form of "Ascension" by consuming the Cat.
 * **Revelations about Summer Rose:** Ruby gains some partial insight into her mother Summer Rose's past, including a vision of Summer meeting Raven to go after Salem, and learns more about the Brother Gods and the Tree.
 * **Return to Remnant:** After their trials and transformations, Team RWBY and Jaune Arc find a way to return to Remnant through the "tree" (the Tree of Life), landing in Vacuo. The state of Remnant upon their return indicates a war is either happening or imminent, with Atlesian military ships and the Amity Communication Tower now flying above Vacuo.
-
-### Chapter 1, Part 1 (Logged on 2025-07-17)
-* Team RWBY and Jaune Arc are violently ejected from the Ever After.
-* They land in the Vacuan desert.
-* They are separated initially but regroup near wreckage.
-* Jaune experiences the physical reversal of his aging but retains the memories.
-* They are disoriented and suffering from the harsh desert environment.
-
-### Chapter 1, Part 2 (Logged on 2025-07-17)
-* The protagonists (Ruby, Weiss, Blake, and Yang) arrive in Vacuo and struggle with the harsh desert environment.
-* Blake hears a metallic clang carried by the wind.
-* They follow the sound and discover a recently destroyed settlement, abandoned by its inhabitants.  
-* They find signs of a panicked evacuation on the road leading away from the settlement.
-
-### Chapter 1, Part 3 (Logged on 2025-07-17)
-* Jaune, Weiss, Yang, and Ruby are ejected from the Ever After.
-* They experience physical pain and discomfort due to the return to a world with gravity, heat, and other sensations.
-* They struggle to adapt to their physical bodies after their time in the Ever After.
-* They gather together for comfort and support.
-
-### Chapter 1, Part 4 (Logged on 2025-07-17)
-* Ruby, Weiss, Blake, Yang, and Jaune arrive in a harsh desert environment.
-* Jaune identifies a rocky ridge as potential shelter.
-* Ruby establishes a three-part plan: 1) Find shelter at the ridge, 2) Locate supplies (water), 3) Gather information about their location and surroundings.
-* The group begins moving towards the ridge.
-
-### Chapter 1, Part 5 (Logged on 2025-07-17)
-* The group returned to Vacuo.
-* Jaune assessed their surroundings and determined the sun's position.
-* He located a rock formation and suggested it as their next destination, hoping to find shelter, shade, and possibly water.
-* The group agreed and began moving towards the rock formation.

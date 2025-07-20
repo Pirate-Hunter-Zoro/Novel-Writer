@@ -1,1 +1,1 @@
-neo_rwby_character,two-toned pink and white hair,red eyes,white and pink jacket,dark pants,black umbrella,necklace
+neo_rwby_character,pink_hair,maroon_hair,white_clothing,dark_clothing,umbrella,black_umbrella,closed_eyes,smiling

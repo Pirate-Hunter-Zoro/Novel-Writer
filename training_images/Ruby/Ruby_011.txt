@@ -1,1 +1,1 @@
-ruby_rwby_character,red hair,red eyes,red hooded cape,black short dress,high-heeled boots,scythe,long silver hair accents
+ruby_rwby_character,red hair,red eyes,red hooded cloak,black dress,high-heeled boots,scythe,crimson scythe,anime style

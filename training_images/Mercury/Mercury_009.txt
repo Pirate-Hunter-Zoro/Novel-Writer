@@ -1,1 +1,1 @@
-mercury_rwby_character,gray hair,grey eyes,black clothing,gray clothing,metal prosthetic arm,martial arts pose,energy effect,kick
+mercury_rwby_character,gray hair,red eyes,gray shirt,black pants,black boots,metal prosthetic arm,fighting pose,energy blast effect

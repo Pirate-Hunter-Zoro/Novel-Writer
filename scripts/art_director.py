@@ -1,93 +1,95 @@
-# art_director.py (v1.0 - The Visual Dreamer)
-# This bot analyzes the approved prose of a chapter part and generates
-# a detailed, high-quality prompt for an image generation model.
+# scripts/art_director.py
 
 import os
-import argparse
-from dotenv import load_dotenv
 import google.generativeai as genai
+from dotenv import load_dotenv
+import json
 
-# --- INITIALIZATION & ENVIRONMENT SETUP ---
+# --- Configuration ---
 load_dotenv()
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# --- CONFIGURATION ---
-GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
+# Using a powerful model for this creative task
+MODEL_NAME = "gemini-2.5-pro"
 
-# --- BOT FUNCTION ---
-
-def generate_image_prompt_from_prose(prose_text: str) -> str:
+def generate_image_prompt_from_prose(prose_text):
     """
-    Uses the most powerful Gemini model to analyze prose and create a rich
-    image prompt.
+    Analyzes prose to generate a detailed image prompt AND a list of key characters.
+    Returns a tuple: (prompt_string, character_list)
     """
-    print("--- Art Director Bot: Engaging VISUAL ANALYSIS Mode ---")
+    print("🎨 Art Director Bot v2.0 (Diplomatic Edition) activated! Analyzing prose for visual potential...")
+    
+    model = genai.GenerativeModel(MODEL_NAME)
+    
+    prompt_for_director = f"""
+    You are an expert Art Director for the RWBY series. Your task is to read a passage of prose and generate a single, detailed, and vivid image prompt that captures the most visually striking moment. Additionally, you must identify the key characters present.
 
-    if not GEMINI_API_KEY:
-        raise ValueError("ERROR: GOOGLE_API_KEY not found. Please set it in your .env file.")
+    **CRITICAL SAFETY DIRECTIVE:** The image generation model you are writing a prompt for has sensitive safety filters. To avoid tripping them, do NOT use words directly associated with violence, gore, self-harm, or overt aggression (e.g., avoid words like 'battle', 'brutal', 'blood', 'kill', 'fight', 'war-torn', 'attack'). Instead, use creative, evocative language to imply the scene's intensity and mood. Describe the aftermath of a conflict, not the conflict itself. Focus on expressions, environment, and atmosphere to convey the drama.
 
-    genai.configure(api_key=GEMINI_API_KEY)
-
-    # We use our most powerful model for this complex, subjective, creative task!
-    model = genai.GenerativeModel('gemini-2.5-pro')  # Using the powerful art director model!
-
-    # This meta-prompt is the Art Director's soul! It tells the AI how to think like an artist.
-    meta_prompt = f"""
-    You are an expert Art Director with a profound understanding of visual storytelling, composition, and emotional impact. Your task is to read the following section of a novel and generate a single, high-quality, detailed prompt for an advanced AI image generation model.
-
-    **Your Process:**
-    1.  **Identify the Core Moment:** Read the entire text and identify the single most visually compelling and emotionally resonant moment. This could be a dramatic action, a quiet character beat, or a stunning landscape reveal.
-    2.  **Construct the Prompt:** Build a detailed prompt that vividly describes this moment.
-
-    **Prompt Requirements:**
-    * **Subject & Action:** Clearly describe the main character(s), their poses, expressions, and what they are doing.
-    * **Composition & Framing:** Specify the shot type (e.g., "wide shot," "extreme close-up," "medium shot from a low angle").
-    * **Environment & Background:** Detail the surroundings, including key landmarks, textures, and atmospheric conditions.
-    * **Lighting:** Describe the quality of the light (e.g., "harsh midday sun," "soft twilight," "ominous, magical glow").
-    * **Color Palette & Mood:** Suggest the dominant colors and the overall mood or tone (e.g., "desaturated and grim," "vibrant and hopeful," "dark and terrifying").
-    * **Style:** Specify a desired art style (e.g., "hyper-realistic digital painting," "cinematic anime style," "gritty, textured concept art").
-    * **Negative Prompt (Optional but helpful):** Suggest things to avoid (e.g., "no text, no speech bubbles, not blurry").
-
-    --- PROSE TO ANALYZE ---
+    Analyze the following prose:
+    ---
     {prose_text}
     ---
 
-    Now, generate the single, detailed image prompt.
+    Based on the prose, provide your output in a single JSON object with two keys:
+    1. "prompt": A string containing the detailed, evocative, and SAFETY-COMPLIANT art prompt. The prompt should be a single paragraph describing the scene, characters' actions and expressions, the environment, and the overall mood. Describe the visual style as "beautiful anime-style" and "vibrant colors".
+    2. "characters": A JSON list of strings containing the full names of the key characters in the scene (e.g., ["Ruby Rose", "Weiss Schnee"]). If no specific characters are mentioned, provide an empty list [].
+
+    Do not include any other text or formatting in your response besides the single JSON object.
     """
 
-    print("Art Director Bot: Analyzing prose for visual potential...")
-    response = model.generate_content(meta_prompt)
-    print("Art Director Bot: Image prompt generated!")
+    try_count = 0
+    while try_count < 3:
+        try:
+            response = model.generate_content(prompt_for_director)
+            
+            clean_response_text = response.text.strip().replace("```json", "").replace("```", "").strip()
+            
+            data = json.loads(clean_response_text)
+            
+            image_prompt = data.get("prompt", "")
+            characters = data.get("characters", [])
+            
+            if image_prompt and isinstance(characters, list):
+                print(f"✅ Art Director analysis complete.")
+                print(f"   - Identified Characters: {characters}")
+                print(f"   - Generated (Safety-Compliant) Prompt: '{image_prompt}'")
+                return image_prompt, characters
+            else:
+                raise ValueError("JSON output was missing 'prompt' or 'characters' key.")
 
-    return response.text.strip()
+        except (json.JSONDecodeError, ValueError, Exception) as e:
+            try_count += 1
+            print(f"⚠️ Anomaly in Art Director's brainwave! Retrying... (Attempt {try_count}/3). Error: {e}")
+            if try_count >= 3:
+                print("❌ ERROR: Art Director failed to generate a valid response after 3 attempts.")
+                return "A beautiful anime-style portrait of a main character from RWBY.", []
 
+    return "A beautiful anime-style portrait of a main character from RWBY.", []
 
-# --- TESTING BLOCK ---
-def main():
-    """A simple function to test the Art Director bot's capabilities."""
-    print("--- Running Art Director Bot Test Sequence ---")
-
-    # 1. Create a sample piece of prose to analyze
-    sample_prose = """
-    The silence that followed their return was a fraud. It was a thin veneer stretched taut over a cacophony of howling wind and the frantic, ragged symphony of their own breathing. Here, in the heart of Vacuo’s desolation, the world was an anvil and the sun a hammer, beating down with a relentless, percussive force that baked the very air until it shimmered like troubled water.
-
-    Yang stood with her feet planted wide, a defiant silhouette against the shimmering horizon. For her, the heat was a tangible enemy, something to be met with a stubborn glare and clenched fists. Her cybernetic arm, a marvel of Atlesian engineering, had become a brand. The metal, exposed to the direct solar onslaught, was a conduit of pure heat, radiating a searing warmth through its socket into the very bone of her shoulder. She consciously kept it away from her body, the air around it visibly wavering. Her gaze flickered to Ruby, and the fire in her eyes banked into a smoldering, protective concern.
-
-    Ruby herself was the quietest of all. She stood slightly apart, Crescent Rose planted in the sand beside her like a grim, metal shepherd’s crook. The metallic scent of her scythe, the familiar heft of its grip in her hand—these were the only anchors tethering her to this blistering present. *I led them here,* the insidious thought whispered, a chilling counterpoint to the hot wind. *I led them to the fall. Now… what?* She looked at Jaune, then at Weiss and Blake and her sister, seeing not just her team, but the totality of her responsibility manifest as four figures slowly being worn down by the elements.
+# --- NEW DE-EDGIFIER RAY FUNCTION! ---
+def refine_prompt_for_safety(original_prompt):
     """
+    Takes a rejected prompt and rephrases it to be safer for generation models.
+    """
+    print("   > Engaged De-Edgifier Ray! Rephrasing rejected prompt...")
+    model = genai.GenerativeModel(MODEL_NAME)
+    
+    refinement_prompt = f"""
+    The following image prompt was rejected by an AI's safety filter, likely due to words implying violence, aggression, or other sensitive topics.
+    Your task is to rephrase this prompt to be more evocative and atmospheric, focusing on emotion and environment rather than direct action or potentially triggering words. Maintain the core characters, setting, and mood, but express it in a safer, more poetic way.
 
-    print("\n--- ANALYZING THE FOLLOWING PROSE ---")
-    print(sample_prose)
-    print("------------------------------------")
+    ORIGINAL REJECTED PROMPT:
+    "{original_prompt}"
 
-    # 2. Run the prompt generation function
-    image_prompt = generate_image_prompt_from_prose(sample_prose)
-
-    # 3. Display the magnificent result!
-    print("\n--- GENERATED IMAGE PROMPT ---")
-    print(image_prompt)
-
-    print("\n--- Art Director Bot Test Sequence Complete! ---")
-
-
-if __name__ == '__main__':
-    main()
+    Return only the new, safer prompt as a single string.
+    """
+    
+    try:
+        response = model.generate_content(refinement_prompt)
+        new_prompt = response.text.strip()
+        print(f"   > De-Edgifier successful! New prompt: '{new_prompt}'")
+        return new_prompt
+    except Exception as e:
+        print(f"   > 💥 De-Edgifier Ray malfunctioned! Error: {e}")
+        return original_prompt # Failsafe, return the original prompt

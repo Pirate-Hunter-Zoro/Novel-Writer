@@ -1,1 +1,1 @@
-ren_rwby_character,black hair,dark eyes,teal shirt,gold trim,pink accents,long sleeves,asian-inspired clothing,no weapon visible
+ren_rwby_character,black hair,dark eyes,teal shirt,gold trim,pink accents,long sleeves,high collar,manga style,anime style

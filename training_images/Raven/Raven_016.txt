@@ -1,1 +1,1 @@
-raven_rwby_character,long_brown_hair,red_eyes,red_and_black_clothing,red_skirt,black_leggings,high_boots,scythe_weapon
+raven_rwby_character,long brown hair,red eyes,red and black outfit,black stockings,high-heeled boots,scythe weapon

@@ -94,6 +94,20 @@ The new workflow is a beautiful, fully-integrated system\!
 
 ---
 
+## 🔬 Current Challenge: The Art-Bot Brain\! 🔬
+
+The writing pipeline is working MAGNIFICENTLY\! However, the art generation is our next grand experiment\! Our glorious Art Critic bot has proven that the generic Imagen model doesn't quite capture our unique art style.
+
+Therefore, our next major objective is to perform **brain surgery**\!
+
+* **GOAL:** Figure out the correct, non-hallucinated procedure to create a custom-tuned version of Google's Imagen model using our training images.
+* **STATUS:** All of our beautiful `training_images` and their caption files have been successfully prepared and uploaded to a Google Cloud Storage bucket\! The lab is stocked with all the necessary brain food\!
+* **BLOCKER:** We have not yet figured out the precise, repeatable steps within the Google Cloud Console to successfully launch and complete a LoRA tuning job for an Imagen model. The user interface has been... elusive and prone to changing its buttons\!
+
+Once we solve this final, magnificent puzzle, we can install our custom-trained brain into the art-bot and achieve perfect, on-demand, stylistically-correct illustrations\! FOR SCIENCE\!
+
+---
+
 ## 🗂️ Status
 
 ✅ **All Core Writing Bots Online:** Planner, Author, Critic, and Archivist are built and tested.

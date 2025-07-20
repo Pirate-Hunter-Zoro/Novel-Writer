@@ -1,1 +1,1 @@
-qrow_rwby_character,dark_hair,red_eyes,red_jacket,black_vest,goatee,scar,large_sword,weapon_slung_over_shoulder
+qrow_rwby_character,dark_brown_hair,red_eyes,goatee,red_vest,black_jacket,large_sword,leather_straps

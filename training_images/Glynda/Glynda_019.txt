@@ -1,1 +1,1 @@
-glynda_rwby_character,blonde hair,green eyes,black dress,white blouse,black boots,nuns-chack-style weapon, glasses
+glynda_rwby_character,blonde_hair,green_eyes,black_dress,black_boots,white_blouse,purple_accents,riding_crop,long_hair,glasses

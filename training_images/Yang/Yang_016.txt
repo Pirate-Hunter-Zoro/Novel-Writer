@@ -1,1 +1,1 @@
-yang_rwby_character,blonde hair,purple eyes,yellow sleeveless jacket,black shorts,gauntlets,orange stockings,fire-emblazoned gauntlets
+yang_rwby_character,blonde hair,purple eyes,yellow jacket,black shorts,gauntlets,orange stockings,fire-themed weapon

@@ -1,1 +1,1 @@
-salem_rwby_character,long white hair,red eyes,dark red and black robe,seated,barefoot,stone throne
+salem_rwby_character,long_white_hair,red_eyes,dark_red_dress,black_robe,barefoot,seated_on_throne

@@ -1,1 +1,1 @@
-elm_rwby_character,brown hair,brown eyes,white pants,white sleeveless jacket,blue accents on jacket,brown belt,possible hidden weapon
+elm_rwby_character: brown hair, brown eyes, white pants, white and blue sleeveless jacket, brown belt, device in hand

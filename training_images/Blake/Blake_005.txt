@@ -1,1 +1,1 @@
-blake_rwby_character,black_hair,red_eyes,black_clothing,red_weapon,cat_ears,chains,anime,manga
+blake_rwby_character,black_hair,red_eyes,black_clothing,red_accents,twin_katanas,cat_ears,faunus

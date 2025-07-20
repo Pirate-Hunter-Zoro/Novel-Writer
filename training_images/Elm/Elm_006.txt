@@ -1,1 +1,1 @@
-elm_rwby_character,brown hair,brown eyes,brown skin,white pants,white jacket,dark grey sleeves,red sash,gun
+elm_rwby_character,brown_hair,brown_eyes,dark_brown_skin,high_ponytail,white_pants,white_vest,dark_sleeves,gun,red_sash

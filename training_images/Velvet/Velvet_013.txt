@@ -1,1 +1,1 @@
-velvet_rwby_character,brown_hair,brown_eyes,brown_cat_ears,brown_jumpsuit,gold_accents,camera_weapon,faunus
+velvet_rwby_character,brown hair,brown eyes,brown bodysuit,gold accents,cat ears,long hair,weapon,camera,kneeling pose

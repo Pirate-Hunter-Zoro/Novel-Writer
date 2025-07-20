@@ -1,1 +1,1 @@
-yang_rwby_character,blonde hair,purple eyes,brown and gold outfit,gauntlets,shorts,boots,muscular
+yang_rwby_character,blonde_hair,purple_eyes,brown_outfit,yellow_accents,gauntlets,short_shorts,boots,muscular_build

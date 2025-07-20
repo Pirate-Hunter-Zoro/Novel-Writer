@@ -1,1 +1,1 @@
-oobleck_rwby_character,green hair,pale skin,brown coat,white shirt,yellow tie,glasses,long pole weapon,explorer hat
+oobleck_rwby_character,tan_coat,white_shirt,yellow_tie,khaki_pants,glasses,light_skin,green_hair,long_hair,boonie_hat,long_pole_weapon

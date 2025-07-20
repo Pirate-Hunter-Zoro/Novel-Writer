@@ -1,1 +1,1 @@
-qrow_rwby_character,black hair,red eyes,white shirt,black pants,red cape,large sword,boots
+qrow_rwby_character,black hair,red eyes,grey and white outfit,red cape,large sword,boots

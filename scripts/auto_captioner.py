@@ -1,3 +1,5 @@
+# scripts/auto_captioner.py
+
 import os
 import google.generativeai as genai
 import argparse
@@ -72,21 +74,48 @@ def process_character_folder(character_name):
         caption_text = generate_caption_via_api(image_path, character_name)
         
         if caption_text:
-            with open(caption_path, "w") as f:
+            with open(caption_path, "w", encoding='utf-8') as f:
                 f.write(caption_text)
             print(f"  + Caption saved to {caption_path.name}")
             
     print(f"--- Finished API Auto-Captioning for {character_name} ---")
 
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Auto-caption images for LoRA training via API.")
-    parser.add_argument("--character", required=True, help="The name of the character folder to process inside 'training_images'.")
-    args = parser.parse_args()
+# --- NEW, SMARTER MAIN BRAIN! ---
+def main():
+    """
+    Finds all character folders in the training_images directory
+    and processes each one.
+    """
+    print("🤖 DEPLOYING AUTONOMOUS CAPTIONER BOT! 🤖")
     
     if not os.getenv('GOOGLE_API_KEY'):
         print("ERROR: The GOOGLE_API_KEY environment variable is not set.")
         print("Please set it to your API key to continue.")
-    else:
-        genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
-        process_character_folder(args.character)
+        return
+
+    genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
+    
+    base_folder = Path("training_images")
+    if not base_folder.is_dir():
+        print(f"ERROR: The base directory '{base_folder}' was not found!")
+        return
+        
+    # This is the magic part! It finds all the folders for us!
+    character_folders = [d for d in base_folder.iterdir() if d.is_dir()]
+    
+    if not character_folders:
+        print("No character folders found to process. All done!")
+        return
+        
+    print(f"Found {len(character_folders)} character folders to process!")
+    
+    for char_folder in character_folders:
+        # The name of the folder IS the character's name! So smart!
+        process_character_folder(char_folder.name)
+
+    print("\n🎉 ALL FOLDERS PROCESSED! The entire library has been captioned! 🎉")
+
+
+if __name__ == "__main__":
+    # No more arguments! We just run the main brain! WOOO!
+    main()

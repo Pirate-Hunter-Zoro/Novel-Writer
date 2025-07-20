@@ -1,1 +1,1 @@
-glynda_rwby_character,blonde hair,green eyes,purple cape,brown dress,white blouse,glasses
+glynda_rwby_character,blonde_hair,green_eyes,purple_cape,brown_dress,white_blouse,glasses

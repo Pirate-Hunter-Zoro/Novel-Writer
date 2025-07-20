@@ -1,1 +1,1 @@
-ghira_rwby_character,black_hair,brown_eyes,beard,mustache,purple_robe,white_fur_trim,silver_armor,torso_exposed,faunus_cat_like_features
+ghira_rwby_character,black hair,brown eyes,purple robe,white fur collar,silver chest armor,muscular build,faunus,cat-like features

@@ -1,1 +1,1 @@
-jaune_rwby_character,blond hair,blue eyes,white armor,black shirt,red accents,smiling,thumbs up
+jaune_rwby_character,blond hair,blue eyes,white armor,black undershirt,thumbs up gesture

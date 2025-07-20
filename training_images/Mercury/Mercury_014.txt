@@ -1,1 +1,1 @@
-mercury_rwby_character,grey hair,light skin,grey eyes,black pants,grey jacket,black boots,metal gauntlets,no visible weapon
+mercury_rwby_character,grey hair,grey eyes,black clothing,grey jacket,black pants,boots,metal gauntlets,no visible weapon

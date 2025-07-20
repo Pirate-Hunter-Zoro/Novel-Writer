@@ -1,1 +1,1 @@
-marrow_rwby_character,teal hair,brown skin,blue eyes,white coat,dark blue accents,red scarf,large chainsaw weapon
+marrow_rwby_character,brown skin,teal hair,blue eyes,white coat,red scarf,dark blue accents,chainsaw weapon

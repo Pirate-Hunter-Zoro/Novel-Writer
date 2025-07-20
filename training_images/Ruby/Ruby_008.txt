@@ -1,1 +1,1 @@
-ruby_rwby_character,black hair,red eyes,red hooded cloak,black dress,red boots,crescent moon scythe,long hair
+ruby_rwby_character,red_hair,black_eyes,red_cape,black_dress,red_boots,high_heeled_boots,crescent_rose,scythe,long_sleeves

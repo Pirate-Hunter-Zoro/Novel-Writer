@@ -1,1 +1,1 @@
-robyn_rwby_character,blonde hair,brown eyes,gray jacket,brown scarf,dark clothing,red accents,long sleeve shirt,no visible weapon
+robyn_rwby_character,blonde hair,brown eyes,gray jacket,brown scarf,dark clothing,long hair,updo hairstyle,no visible weapon

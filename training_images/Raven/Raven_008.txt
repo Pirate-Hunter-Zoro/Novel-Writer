@@ -1,1 +1,1 @@
-raven_rwby_character,long_brown_hair,red_eyes,red_and_black_clothing,red_hooded_jacket,black_shorts,thigh_high_black_boots,katana,long_dark_brown_tail
+raven_rwby_character,long brown hair,red eyes,red and black outfit,red hooded cloak, katana,black boots,thigh-high stockings

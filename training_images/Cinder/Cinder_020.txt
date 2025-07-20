@@ -1,1 +1,1 @@
-cinder_rwby_character,black hair,red eyes,red dress,long sleeves,gold detailing,dark gloves
+cinder_rwby_character,black hair,red eyes,red dress,long sleeves,gold embroidery

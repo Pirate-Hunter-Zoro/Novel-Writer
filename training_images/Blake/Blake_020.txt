@@ -1,1 +1,1 @@
-blake_rwby_character,black hair,yellow eyes,cat ears,black clothing,white shorts,dark purple tights,black boots,twin blades,weapon,action pose
+blake_rwby_character,black_hair,yellow_eyes,cat_ears,black_clothing,purple_leggings,boots,twin_katanas,dynamic_pose

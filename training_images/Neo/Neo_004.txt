@@ -1,1 +1,1 @@
-neo_rwby_character,pink hair,red eyes,white jacket,brown pants,pink boots,umbrella weapon,black corset,gloves
+neo_rwby_character,pink hair,red eyes,white jacket,brown pants,pink gloves,white boots,red umbrella,corset

@@ -1,1 +1,1 @@
-tyrian_rwby_character,dark_brown_hair,braided_hair,yellow_eyes,faunus_scorpion_tail,white_clothing,brown_sleeveless_shirt,arm_blades,crouching_pose
+tyrian_rwby_character,dark_brown_hair,long_tail,scorpion_tail,faunus,cat_like_features,brown_eyes,white_and_grey_clothing,clawed_gauntlets,knives,action_pose

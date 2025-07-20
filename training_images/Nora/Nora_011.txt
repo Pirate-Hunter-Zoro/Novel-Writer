@@ -1,1 +1,1 @@
-nora_rwby_character,orange hair,blue eyes,pink dress,thigh-high stockings,black gloves,large hammer weapon,high heels
+nora_rwby_character,short_orange_hair,blue_eyes,coral_dress,high_heels,black_gloves,thigh_high_stockings,large_hammer_weapon

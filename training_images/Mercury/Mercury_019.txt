@@ -1,1 +1,1 @@
-mercury_rwby_character,gray hair,purple eyes,gray clothing,purple accents,metal prosthetic arm,gloves
+mercury_rwby_character,gray hair,gray eyes,purple clothing,gray clothing,metal prosthetic arm,gloves,serious expression

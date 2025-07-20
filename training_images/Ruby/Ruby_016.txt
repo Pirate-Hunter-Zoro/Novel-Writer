@@ -1,1 +1,1 @@
-ruby_rwby_character,red_hair,red_eyes,black_dress,red_cape,scythe,rose_petals
+ruby_rwby_character,red hair,silver eyes,black dress,red cape,high boots,scythe,rose petals

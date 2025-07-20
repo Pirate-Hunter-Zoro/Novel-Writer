@@ -1,1 +1,1 @@
-robyn_rwby_character,blonde hair,purple eyes,tan skin,gray coat,red vest,tan scarf,bun hairstyle
+robyn_rwby_character,blonde hair,purple eyes,tan skin,grey coat,red vest,tan scarf,bun hairstyle

@@ -1,1 +1,1 @@
-qrow_rwby_character,black hair,red eyes,white shirt,black pants,grey coat,red cape,scythe weapon,crouching pose,rain
+qrow_rwby_character,black_hair,red_eyes,white_shirt,black_pants,grey_coat,red_cape,scythe,long_coat

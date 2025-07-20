@@ -1,1 +1,1 @@
-harriet_rwby_character,brown skin,short brown hair,light brown mohawk,red eyes,white and dark blue outfit,robotic arms,red necktie
+harriet_rwby_character: brown_skin, short_brown_hair, light_brown_highlights, red_eyes, white_and_dark_blue_outfit, mechanical_arm_attachments, red_necktie

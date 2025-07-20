@@ -1,1 +1,1 @@
-nora_rwby_character,orange hair,green eyes,pink skirt,dark blue jacket,hammer,midriff,knee-high socks,pink boots
+nora_rwby_character,orange hair,green eyes,pink skirt,dark blue jacket,hammer weapon,jumping pose

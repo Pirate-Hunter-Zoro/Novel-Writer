@@ -1,1 +1,1 @@
-maria_rwby_character,white hair,gray eyes,gray clothing,dark brown robe,large goggles,blue glowing goggles,reading a book
+maria_rwby_character,white hair,gray eyes,gray clothing,glasses,book,elderly woman

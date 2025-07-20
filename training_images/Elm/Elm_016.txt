@@ -1,1 +1,1 @@
-elm_rwby_character,brown hair,brown eyes,white vest,gray shirt,red waistband,metal forearm guards
+elm_rwby_character,brown hair,brown eyes,white vest,gray shirt,metal forearm guards,dark skin

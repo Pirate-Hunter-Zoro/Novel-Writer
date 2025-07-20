@@ -1,1 +1,1 @@
-coco_rwby_character,brown hair,brown eyes,beret,brown jacket,black pants,belt,large gun,ammo belt,scarf
+coco_rwby_character,brown hair,brown eyes,beret,brown jacket,black pants,belt,high boots,gun,ammunition belt

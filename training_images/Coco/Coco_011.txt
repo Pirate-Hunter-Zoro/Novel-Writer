@@ -1,1 +1,1 @@
-coco_rwby_character,brown hair,dark eyes,tan sweater,black beret,bullet bandolier,black choker necklace,rose brooch
+coco_rwby_character,brown hair,dark eyes,tan turtleneck sweater,black beret,bullet bandolier,rose accessory

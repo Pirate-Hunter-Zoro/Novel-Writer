@@ -1,1 +1,1 @@
-ruby_rwby_character,red hair,red eyes,black dress,red cape,black boots,red tights,rose brooch,high-collared top
+ruby_rwby_character,black hair,red eyes,red cape,black dress,high boots,black tights,rose brooch,short hair

@@ -1,1 +1,1 @@
-ruby_rwby_character,red hair,silver eyes,black outfit,red cape,high boots,crescent rose
+ruby_rwby_character,red hair,red cloak,black outfit,silver eyes,high boots, scythe

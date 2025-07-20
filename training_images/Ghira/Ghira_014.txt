@@ -1,1 +1,1 @@
-ghira_rwby_character,black hair,beard,gold eyes,muscular,dark clothing,fur collar,faunus,cat-like features
+ghira_rwby_character,black hair,gold eyes,beard,muscular,dark clothing,fur collar,faunus,cat ears

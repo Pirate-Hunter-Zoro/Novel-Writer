@@ -1,1 +1,1 @@
-neo_rwby_character,pink_hair,black_hair,grey_eyes,white_boots,black_pants,white_jacket,pink_cape,umbrella_weapon,black_gloves
+neo_rwby_character,pink_hair,black_hair,white_boots,gray_pants,white_jacket,black_jacket,pink_scarf,umbrella_weapon,long_hair

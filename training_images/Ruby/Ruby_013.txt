@@ -1,1 +1,1 @@
-ruby_rwby_character,red_hair,red_eyes,red_and_cream_clothing,high_collared_shirt,long_sleeve_shirt,cape,high_boots,crescent_rose,large_high_caliber_sniper_rifle,flowing_clothing
+ruby_rwby_character,long_brown_hair,red_eyes,red_and_cream_clothing,high_collared_jacket,cape,large_red_weapon,high_heels,anime_style

@@ -1,1 +1,1 @@
-marrow_rwby_character,teal hair,brown eyes,white jacket,red scarf,dark blue accents,military uniform,rifle,Faunus,goat horns
+marrow_rwby_character,teal hair,brown eyes,white coat,red scarf,dark blue accents,long coat,rifle,backpack,faunus,no visible ears

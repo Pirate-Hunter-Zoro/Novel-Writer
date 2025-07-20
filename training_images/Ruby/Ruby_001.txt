@@ -1,1 +1,1 @@
-ruby_rwby_character,red hair,black eyes,red scarf,black and white outfit,high ponytail
+ruby_rwby_character,red hair,silver eyes,red scarf,black and white outfit,rose symbol,high ponytail

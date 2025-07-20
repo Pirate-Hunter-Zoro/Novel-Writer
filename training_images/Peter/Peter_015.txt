@@ -1,1 +1,1 @@
-peter_rwby_character,grey hair,grey mustache,brown eyes,dark red double-breasted coat,gold trim,high collar,no visible weapon
+peter_rwby_character,grey hair,blue eyes,mustache,dark red coat,gold trim,double-breasted coat,formal attire

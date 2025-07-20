@@ -1,1 +1,1 @@
-oscar_rwby_character,brown hair,brown eyes,freckles,tan skin,orange gloves,beige shirt,brown pants,suspenders,long sword
+oscar_rwby_character,brown hair,brown eyes,freckles,tan skin,beige shirt,orange suspenders,brown pants,orange gloves,sword,staff

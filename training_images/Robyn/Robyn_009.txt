@@ -1,1 +1,1 @@
-robyn_rwby_character,blonde hair,brown eyes,grey coat,red shirt,brown pants,black boots,tan scarf,fingerless gloves
+robyn_rwby_character,white hair,light brown eyes,grey jacket,dark coat,red shirt,brown pants,black boots,tan scarf,fingerless gloves

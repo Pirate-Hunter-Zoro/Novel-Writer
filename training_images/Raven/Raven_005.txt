@@ -1,1 +1,1 @@
-raven_rwby_character,long black hair,red eyes,red and black clothing,samurai-style outfit,dark-colored skirt,red and black armguards,no visible weapon
+raven_rwby_character,long_black_hair,red_eyes,red_and_black_clothing,red_armor,dark_red_kimono,short_dark_skirt,katana

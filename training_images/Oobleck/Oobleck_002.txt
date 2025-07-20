@@ -1,1 +1,1 @@
-oobleck_rwby_character,light_brown_hair,pale_skin,brown_eyes,green_coat,yellow_shirt,brown_boots,long_staff_weapon,fedora_hat
+oobleck_rwby_character,light-brown_hair,pale_skin,brown_eyes,green_coat,yellow_tie,brown_pants,brown_boots,long_staff_weapon

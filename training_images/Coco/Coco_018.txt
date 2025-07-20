@@ -1,1 +1,1 @@
-coco_rwby_character,black hair,brown eyes,brown corset,brown pants,brown boots,large circular weapon,back view
+coco_rwby_character,black hair,brown eyes,brown clothing,corset,pants,boots,large circular weapon,belt,back view

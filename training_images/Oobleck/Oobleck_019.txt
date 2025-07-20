@@ -1,1 +1,1 @@
-oobleck_rwby_character,brown hair,light skin,brown eyes,beige suit,tan hat,round glasses,holding object
+oobleck_rwby_character,brown_hair,light_skin,brown_eyes,beige_suit,tan_fedora,yellow_tie,round_glasses,holding_object

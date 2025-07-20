@@ -1,1 +1,1 @@
-blake_rwby_character,black hair,yellow eyes,cat ears,black clothing,purple accents,boots,katana,sheath,black leggings
+blake_rwby_character,black hair,yellow eyes,black clothing,purple accents,cat ears,black boots,katana,sheath

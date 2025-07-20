@@ -1,1 +1,1 @@
-oscar_rwby_character,brown hair,brown eyes,green jacket,brown pants,red boots,orange gloves,staff,long coat,leather belt
+oscar_rwby_character,dark brown hair,brown eyes,green jacket,brown pants,red boots,orange gloves,staff,long coat,belt

@@ -1,1 +1,1 @@
-peter_rwby_character,white hair,brown eyes,red coat,dark pants,boots,axe,gun,mustache
+peter_rwby_character,white hair,brown eyes,red coat,dark pants,black boots,large axe,gun,mustache

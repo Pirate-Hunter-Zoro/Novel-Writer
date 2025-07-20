@@ -1,1 +1,1 @@
-robyn_rwby_character,white hair,purple eyes,tan skin,brown scarf,dark jacket,red undershirt,button,no weapon visible
+robyn_rwby_character,white hair,purple eyes,brown skin,tan scarf,black jacket,red vest,no visible weapon

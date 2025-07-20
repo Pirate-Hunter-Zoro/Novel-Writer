@@ -1,1 +1,1 @@
-taiyang_rwby_character,blond hair,purple eyes,tan skin,brown vest,pale shoulder armor,no visible weapon
+taiyang_rwby_character,blond hair,purple eyes,tan skin,brown shirt,shoulder armor,no visible weapon

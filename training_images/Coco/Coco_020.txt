@@ -1,1 +1,1 @@
-coco_rwby_character,brown hair,orange highlights,brown eyes,sunglasses,beret,brown jacket,scarf,bullet belt,gloves
+coco_rwby_character,brown hair,orange highlights,brown eyes,sunglasses,beret,brown coat,scarf,bullet belt,gloves

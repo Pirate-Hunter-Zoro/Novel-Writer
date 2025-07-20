@@ -1,1 +1,1 @@
-neptune_rwby_character,light_blue_hair,brown_eyes,red_jacket,black_shirt,black_tie,goggles,no_faunus_traits
+neptune_rwby_character,light_blue_hair,brown_eyes,red_jacket,black_shirt,black_tie,goggles,no_visible_weapon

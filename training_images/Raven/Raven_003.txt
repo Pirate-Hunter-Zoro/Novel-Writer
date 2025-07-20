@@ -1,1 +1,1 @@
-raven_rwby_character,black_hair,red_eyes,red_and_black_clothing,long_sleeved_shirt,short_skirt,thigh_high_stockings,katana,glowing_blue_energy,dark_background
+raven_rwby_character,black_hair,red_eyes,red_and_black_clothing,katana,long_sleeves,thigh_high_stockings,dark_clothing,flowing_hair

@@ -1,1 +1,1 @@
-jaune_rwby_character,blond hair,blue eyes,gold armor,black turtleneck,sword,serious expression
+jaune_rwby_character,blond_hair,blue_eyes,gold_armor,black_turtleneck,sword,human

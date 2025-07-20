@@ -1,1 +1,1 @@
-yang_rwby_character,blonde hair,gold eyes,brown jacket,gray pants,brown boots,purple bandana,gauntlets,long coat,no visible weapon
+yang_rwby_character,blonde hair,yellow eyes,brown jacket,grey pants,brown boots,gauntlets,purple bandana,long coat,anime style

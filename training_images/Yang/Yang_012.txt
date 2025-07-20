@@ -1,1 +1,1 @@
-yang_rwby_character,blonde hair,purple eyes,brown jacket,yellow scarf,gold gauntlets,cropped top,dark pants
+yang_rwby_character,blonde hair,purple eyes,brown jacket,yellow sleeveless shirt,orange scarf,gold gauntlets,belt,dark pants

@@ -1,1 +1,1 @@
-qrow_rwby_character,black hair,grey eyes,white duster coat,red cape,black pants,long sword,combat boots
+qrow_rwby_character,black hair,red eyes,white duster coat,black pants,red cape,long sword,weapon,serious expression

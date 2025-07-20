@@ -1,1 +1,1 @@
-mercury_rwby_character,gray hair,dark eyes,gray jacket,pink accents,serious expression
+mercury_rwby_character,gray hair,gray eyes,gray jacket,pink accents,dark clothing

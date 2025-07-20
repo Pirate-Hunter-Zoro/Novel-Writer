@@ -1,1 +1,1 @@
-ruby_rwby_character,black hair,red eyes,red hooded cloak,black outfit,high boots
+ruby_rwby_character,black hair,red eyes,black clothing,red cape,high boots,crescent rose (partially visible)

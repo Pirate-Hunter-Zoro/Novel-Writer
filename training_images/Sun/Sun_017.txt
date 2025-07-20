@@ -1,1 +1,1 @@
-sun_rwby_character,blond hair,brown eyes,yellow shirt,blue jeans,sneakers,upside down,window,faunus,cat ears,no weapon visible
+sun_rwby_character,blond hair,brown eyes,tan skin,light blue jeans,white shirt,red undershirt,yellow accents,no visible weapon,hanging upside down,open window background

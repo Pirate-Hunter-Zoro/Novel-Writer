@@ -1,1 +1,1 @@
-neo_rwby_character,pink hair,black hair,green eyes,black jacket,white corset,top hat,gloves,finger pointing,short pants
+neo_rwby_character,pink_hair,black_hair,green_eyes,black_jacket,white_corset,top_hat,gloves,scarf

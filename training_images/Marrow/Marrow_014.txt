@@ -1,1 +1,1 @@
-marrow_rwby_character,dark_green_hair,brown_skin,dark_brown_eyes,white_coat,dark_blue_pants,black_boots,red_accents,grey_wolf_tail,faunus,wolf_faunus
+marrow_rwby_character,dark-green hair,brown skin,dark brown eyes,white coat,dark pants,dark boots,red accents,grey wolf tail,faunus,wolf faunus

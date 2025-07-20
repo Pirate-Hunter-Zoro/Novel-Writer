@@ -1,1 +1,1 @@
-marrow_rwby_character,teal hair,brown eyes,white coat,dark blue pants,gray wolf tail,gun-like weapon,faunus
+marrow_rwby_character,teal hair,brown eyes,white coat,dark blue pants,grey wolf tail,gun-blaster weapon,faunus
