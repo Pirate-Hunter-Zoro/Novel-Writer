@@ -12,7 +12,6 @@ The novel is written chapter by chapter, with each chapter being autonomously br
 2. **Prose Generation & Revision** (`author.py`)
 3. **Quality & Lore Evaluation** (`critic.py`)
 4. **Canon Archiving** (`archivist.py`)
-5. **Art Department** (`art_director.py`, `image_generator.py`) - **REWIRED FOR THE ART-CANNON!**
 
 ---
 
@@ -23,7 +22,7 @@ Novel-Writer/
 ├── scripts/                 # Main program logic (our magnificent little bots!)
 ├── knowledge_db/            # Character & lore markdown files (the canon!)
 ├── output/                  # Generated chapter parts & images
-├── training_images/         # Images for future custom model training!
+├── training_images/         # Images for future custom model training - because we'd LIKE to produce art!
 ├── .env                     # API keys for all our bots!
 └── README.md                # You are here!
 ````
