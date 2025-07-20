@@ -2,8 +2,6 @@
 
 This project is a modular, AI-powered writing pipeline designed to continue the story of *RWBY* following the events of Volume 9. It uses a sophisticated, multi-bot system orchestrated by a master conductor to generate consistent, lore-respecting chapters.
 
-After a series of magnificent, data-rich, and gloriously explosive failures, we have abandoned the clusterfucks of local installations and confusing cloud platforms! Our Art Department is now powered by a **remote-controlled, high-powered art-cannon** using the **Stability AI API**! It's magnificent, and it actually works!
-
 ---
 
 ## 📚 Project Overview
