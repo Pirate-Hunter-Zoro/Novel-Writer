@@ -67,13 +67,10 @@ def append_events_to_log(events_summary: str, chapter_part_info: str):
     if "No major plot events." in events_summary:
         print("No plot events to log. The timeline remains unchanged.")
         return
-
-    # Get the current date for our log entry
-    current_date = datetime.now().strftime("%Y-%m-%d")
     
     # Format the entry for the markdown file
     log_entry = f"""
-### {chapter_part_info} (Logged on {current_date})
+## {chapter_part_info}
 {events_summary}
 """
     
