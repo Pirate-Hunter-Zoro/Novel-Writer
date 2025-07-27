@@ -78,25 +78,18 @@ def main():
                     f.write(current_prose)
                 print(f"\n--- [CONDUCTOR] Approved text saved to: {os.path.basename(part_filename)}")
 
-                # --- THE NEW, SIMPLER, MORE POWERFUL ART PIPELINE! ---
+                # --- ART GENERATION MODIFICATION ---
                 print("\n--- [CONDUCTOR] Engaging Art Director Bot ---")
                 art_prompt, characters = generate_image_prompt_from_prose(current_prose)
 
                 if art_prompt and characters:
-                    image_filename = os.path.join(chapter_output_dir, f'chapter_{args.chapter_number:02d}_part_{i}_image.png')
-                    print("\n--- [CONDUCTOR] FIRING THE STYLE-INJECTION ART CANNON! ---")
+                    print("\n--- [CONDUCTOR] Art prompt generated successfully.")
+                    print("--- Use the following prompt in your Colab notebook for image generation: ---")
+                    # Construct the final prompt with the LoRA invocation
+                    lora_name = f"{characters[0].split()[0]}.safetensors" # Assumes LoRA is named after the first character
+                    final_art_prompt = f"<lora:{lora_name}:1> {art_prompt}"
+                    print(f"\nPROMPT: {final_art_prompt}\n")
                     
-                    # This is the new, beautiful, simple command!
-                    command = [
-                        sys.executable,
-                        ART_GENERATOR_SCRIPT,
-                        "--prompt", art_prompt,
-                        "--characters"
-                    ] + characters + [
-                        "--output-path", image_filename
-                    ]
-                    
-                    subprocess.run(command)
                 else:
                     print("--- [CONDUCTOR] Art Director failed to provide a prompt or characters. Skipping art generation. ---")
                 

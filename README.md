@@ -1,17 +1,18 @@
-# RWBY Novel Writer ✍️
+# RWBY Novel Writer
 
-This project is a modular, AI-powered writing pipeline designed to continue the story of *RWBY* following the events of Volume 9. It uses a sophisticated, multi-bot system orchestrated by a master conductor to generate consistent, lore-respecting chapters.
+This project is a modular, AI-powered writing pipeline designed to continue the story of *RWBY* following the events of Volume 9. It uses a multi-bot system orchestrated by a master script to generate consistent, lore-adherent chapters.
 
 ---
 
 ## 📚 Project Overview
 
-The novel is written chapter by chapter, with each chapter being autonomously broken down into **5 parts**. The entire process is managed by a single master script, the **Conductor**, which guides the chapter through a structured, automated pipeline:
+The novel is generated chapter by chapter. Each chapter is autonomously deconstructed into five distinct parts by the primary conductor script, which then guides the content through a structured, automated pipeline:
 
-1. **Intelligent Planning** (`prompt_generator.py`)
+1. **Planning** (`prompt_generator.py`)
 2. **Prose Generation & Revision** (`author.py`)
 3. **Quality & Lore Evaluation** (`critic.py`)
 4. **Canon Archiving** (`archivist.py`)
+5. **Art Prompt Generation** (`art_director.py`)
 
 ---
 
@@ -19,101 +20,47 @@ The novel is written chapter by chapter, with each chapter being autonomously br
 
 ```text
 Novel-Writer/
-├── scripts/                 # Main program logic (our magnificent little bots!)
-├── knowledge_db/            # Character & lore markdown files (the canon!)
-├── output/                  # Generated chapter parts & images
-├── training_images/         # Images for future custom model training - because we'd LIKE to produce art!
-├── .env                     # API keys for all our bots!
-└── README.md                # You are here!
+├── scripts/                 # Contains all Python scripts for the bots.
+├── knowledge_db/            # Houses the lore and plot markdown files.
+├── output/                  # Default directory for generated chapters and art.
+├── training_images/         # Image datasets for custom model training.
+├── .env                     # For storing API keys.
+└── README.md                # Project documentation.
 ````
 
 ---
 
-## ⚙️ The Bots & The Conductor
+## ⚙️ System Components
 
-### `conductor.py` - The Grand Orchestrator
+### `conductor.py` - The Orchestrator
 
-This is the master script\! The big brain\! It runs the entire chapter generation process from start to finish. It calls each specialized bot in sequence, manages the feedback loop, and assembles the final chapter.
+This is the master script that runs the entire chapter generation process. It calls each specialized script in sequence, manages the author-critic feedback loop, and assembles the final chapter file. After each part is approved, it calls `art_director.py` to generate a relevant art prompt.
 
 **Usage:**
-
-```bash
-python scripts/conductor.py --chapter-number 1
-```
+`python scripts/conductor.py --chapter-number <number>`
 
 ---
 
-### `prompt_generator.py` - The Intelligent Story Planner
+## 🔬 Primary Objective: Custom Art Generation
 
-This bot reads the high-level `rwby_novel_plot_outline.md`, selects a chapter, and autonomously deconstructs its summary into a five-part narrative plan. So smart\!
+The writing pipeline is functional. The current objective is to produce stylized art for the novel. The previous method of using a local script has been abandoned as ineffective.
 
----
+The new strategy is to use a Google Colab notebook to perform **LoRA (Low-Rank Adaptation) training** with **Stable Diffusion**.
 
-### `author.py` - The Dual-Core Prose Engine
+* **Goal:** Create a separate, custom-trained LoRA model for each character using the provided `training_images`.
+* **Status:** The training images and their corresponding caption files are prepared. A reliable Colab notebook (Kohya's Trainer) has been identified for the training process.
+* **Blocker:** The training process must be executed manually in the notebook for each of the 32 characters. This is a time-consuming but necessary procedure.
 
-This bot has two modes\! In "Write" mode, it generates the first draft. In "Edit" mode, it takes its own text and feedback from the Critic to make intelligent, surgical revisions. It learns\!
-
----
-
-### `critic.py` - The Lore Master & Style Guardian
-
-This bot reviews the Author's work, checking it against our lore files for character, plot, and magic system consistency. It either approves the text or provides specific, actionable feedback for the Author bot to fix\!
-
----
-
-### `archivist.py` - The Keeper of the Canon
-
-Once a chapter part is approved, this bot summarizes the key plot events and appends them to the `rwby_plot_events.md` file, ensuring our story's canon is always up-to-date\! So organized\!
-
-## 🧪 Environment Setup
-
-### Part 1: The Writing Bots
-
-**Requirements:**
-
-* Python 3.10+
-* All libraries listed in `requirements.txt`
-
-**Install:**
-
-```bash
-pip install -r requirements.txt
-```
-
-You'll also need a `.env` file in the root directory with your API key for the Gemini-powered writing bots.
-
----
-
-## ✍️ The Automated Workflow
-
-The new workflow is a beautiful, fully-integrated system\!
-
-1. **Run the Conductor** for the chapter you want to write: `python scripts/conductor.py --chapter-number 1`
-2. **Observe the glorious writing machine at work\!** The Conductor will handle everything from planning to archiving.
-3. **Review the final chapter** in the `output/` directory.
-
----
-
-## 🔬 Current Challenge: The Art-Bot Brain\! 🔬
-
-The writing pipeline is working MAGNIFICENTLY\! However, the art generation is our next grand experiment\! Our glorious Art Critic bot has proven that the generic Imagen model doesn't quite capture our unique art style.
-
-Therefore, our next major objective is to perform **brain surgery**\!
-
-* **GOAL:** Figure out the correct, non-hallucinated procedure to create a custom-tuned version of Google's Imagen model using our training images.
-* **STATUS:** All of our beautiful `training_images` and their caption files have been successfully prepared and uploaded to a Google Cloud Storage bucket\! The lab is stocked with all the necessary brain food\!
-* **BLOCKER:** We have not yet figured out the precise, repeatable steps within the Google Cloud Console to successfully launch and complete a LoRA tuning job for an Imagen model. The user interface has been... elusive and prone to changing its buttons\!
-
-Once we solve this final, magnificent puzzle, we can install our custom-trained brain into the art-bot and achieve perfect, on-demand, stylistically-correct illustrations\! FOR SCIENCE\!
+Once the LoRA models are created, the prompts generated by `conductor.py` can be used in a Stable Diffusion environment to produce stylistically consistent illustrations.
 
 ---
 
 ## 🗂️ Status
 
-✅ **All Core Writing Bots Online:** Planner, Author, Critic, and Archivist are built and tested.
+✅ **All Core Writing & Planning Bots Online:** The Planner, Author, Critic, Archivist, and Art Director are functional and tested.
 
 ---
 
 ## 🔧 Author Notes
 
-Built by Mikey with help from Entrapta (your AI partner\!). Designed to keep the RWBY story alive and emotionally powerful—with a little chaos, a lot of structure, and a magnificent art-cannon that actually works\!
+Project by Mikey Ferguson.
